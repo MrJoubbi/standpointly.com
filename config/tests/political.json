@@ -1,0 +1,510 @@
+{
+  "id": "political",
+  "version": 1,
+  "title_key": "test.political.title",
+  "summary_key": "test.political.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "econ",
+      "name_key": "axis.econ.name",
+      "negative_label_key": "axis.econ.left",
+      "positive_label_key": "axis.econ.right",
+      "max_raw": 104
+    },
+    "y": {
+      "id": "social",
+      "name_key": "axis.social.name",
+      "negative_label_key": "axis.social.libertarian",
+      "positive_label_key": "axis.social.authoritarian",
+      "max_raw": 124
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "collectivist",
+      "name_key": "sector.political.collectivist",
+      "label_key": "cell.political.collectivist",
+      "description_key": "description.political.collectivist"
+    },
+    {
+      "id": "guardian",
+      "name_key": "sector.political.guardian",
+      "label_key": "cell.political.guardian",
+      "description_key": "description.political.guardian"
+    },
+    {
+      "id": "traditionalist",
+      "name_key": "sector.political.traditionalist",
+      "label_key": "cell.political.traditionalist",
+      "description_key": "description.political.traditionalist"
+    },
+    {
+      "id": "egalitarian",
+      "name_key": "sector.political.egalitarian",
+      "label_key": "cell.political.egalitarian",
+      "description_key": "description.political.egalitarian"
+    },
+    {
+      "id": "moderate",
+      "name_key": "sector.political.moderate",
+      "label_key": "cell.political.moderate",
+      "description_key": "description.political.moderate"
+    },
+    {
+      "id": "marketeer",
+      "name_key": "sector.political.marketeer",
+      "label_key": "cell.political.marketeer",
+      "description_key": "description.political.marketeer"
+    },
+    {
+      "id": "communalist",
+      "name_key": "sector.political.communalist",
+      "label_key": "cell.political.communalist",
+      "description_key": "description.political.communalist"
+    },
+    {
+      "id": "individualist",
+      "name_key": "sector.political.individualist",
+      "label_key": "cell.political.individualist",
+      "description_key": "description.political.individualist"
+    },
+    {
+      "id": "libertarian",
+      "name_key": "sector.political.libertarian",
+      "label_key": "cell.political.libertarian",
+      "description_key": "description.political.libertarian"
+    }
+  ],
+  "questions": [
+    {
+      "id": "e01",
+      "text_key": "q.political.e01",
+      "w": {
+        "econ": 2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e02",
+      "text_key": "q.political.e02",
+      "w": {
+        "econ": -2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e03",
+      "text_key": "q.political.e03",
+      "w": {
+        "econ": -1,
+        "social": 0
+      }
+    },
+    {
+      "id": "e04",
+      "text_key": "q.political.e04",
+      "w": {
+        "econ": 2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e05",
+      "text_key": "q.political.e05",
+      "w": {
+        "econ": 2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e06",
+      "text_key": "q.political.e06",
+      "w": {
+        "econ": -2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e07",
+      "text_key": "q.political.e07",
+      "w": {
+        "econ": 2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e08",
+      "text_key": "q.political.e08",
+      "w": {
+        "econ": -1,
+        "social": 0
+      }
+    },
+    {
+      "id": "e09",
+      "text_key": "q.political.e09",
+      "w": {
+        "econ": -2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e10",
+      "text_key": "q.political.e10",
+      "w": {
+        "econ": 2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e11",
+      "text_key": "q.political.e11",
+      "w": {
+        "econ": -2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e12",
+      "text_key": "q.political.e12",
+      "w": {
+        "econ": -2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e13",
+      "text_key": "q.political.e13",
+      "w": {
+        "econ": 2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e14",
+      "text_key": "q.political.e14",
+      "w": {
+        "econ": -2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e15",
+      "text_key": "q.political.e15",
+      "w": {
+        "econ": 2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e16",
+      "text_key": "q.political.e16",
+      "w": {
+        "econ": -1,
+        "social": 0
+      }
+    },
+    {
+      "id": "e17",
+      "text_key": "q.political.e17",
+      "w": {
+        "econ": 2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e18",
+      "text_key": "q.political.e18",
+      "w": {
+        "econ": 2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e19",
+      "text_key": "q.political.e19",
+      "w": {
+        "econ": -2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e20",
+      "text_key": "q.political.e20",
+      "w": {
+        "econ": 2,
+        "social": 0
+      }
+    },
+    {
+      "id": "e21",
+      "text_key": "q.political.e21",
+      "w": {
+        "econ": -1,
+        "social": 0
+      }
+    },
+    {
+      "id": "e22",
+      "text_key": "q.political.e22",
+      "w": {
+        "econ": -2,
+        "social": 0
+      }
+    },
+    {
+      "id": "s01",
+      "text_key": "q.political.s01",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s02",
+      "text_key": "q.political.s02",
+      "w": {
+        "econ": 0,
+        "social": -2
+      }
+    },
+    {
+      "id": "s03",
+      "text_key": "q.political.s03",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s04",
+      "text_key": "q.political.s04",
+      "w": {
+        "econ": 0,
+        "social": -2
+      }
+    },
+    {
+      "id": "s05",
+      "text_key": "q.political.s05",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s06",
+      "text_key": "q.political.s06",
+      "w": {
+        "econ": 0,
+        "social": -2
+      }
+    },
+    {
+      "id": "s07",
+      "text_key": "q.political.s07",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s08",
+      "text_key": "q.political.s08",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s09",
+      "text_key": "q.political.s09",
+      "w": {
+        "econ": 0,
+        "social": -2
+      }
+    },
+    {
+      "id": "s10",
+      "text_key": "q.political.s10",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s11",
+      "text_key": "q.political.s11",
+      "w": {
+        "econ": 0,
+        "social": -2
+      }
+    },
+    {
+      "id": "s12",
+      "text_key": "q.political.s12",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s13",
+      "text_key": "q.political.s13",
+      "w": {
+        "econ": 0,
+        "social": -3
+      }
+    },
+    {
+      "id": "s14",
+      "text_key": "q.political.s14",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s15",
+      "text_key": "q.political.s15",
+      "w": {
+        "econ": 0,
+        "social": -2
+      }
+    },
+    {
+      "id": "s16",
+      "text_key": "q.political.s16",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s17",
+      "text_key": "q.political.s17",
+      "w": {
+        "econ": 0,
+        "social": -3
+      }
+    },
+    {
+      "id": "s18",
+      "text_key": "q.political.s18",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s19",
+      "text_key": "q.political.s19",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s20",
+      "text_key": "q.political.s20",
+      "w": {
+        "econ": 0,
+        "social": -3
+      }
+    },
+    {
+      "id": "s21",
+      "text_key": "q.political.s21",
+      "w": {
+        "econ": 0,
+        "social": 2
+      }
+    },
+    {
+      "id": "s22",
+      "text_key": "q.political.s22",
+      "w": {
+        "econ": 0,
+        "social": -3
+      }
+    },
+    {
+      "id": "c01",
+      "text_key": "q.political.c01",
+      "w": {
+        "econ": 2,
+        "social": 2
+      }
+    },
+    {
+      "id": "c02",
+      "text_key": "q.political.c02",
+      "w": {
+        "econ": 2,
+        "social": -3
+      }
+    },
+    {
+      "id": "c03",
+      "text_key": "q.political.c03",
+      "w": {
+        "econ": 2,
+        "social": 2
+      }
+    },
+    {
+      "id": "c04",
+      "text_key": "q.political.c04",
+      "w": {
+        "econ": -2,
+        "social": -2
+      }
+    },
+    {
+      "id": "c05",
+      "text_key": "q.political.c05",
+      "w": {
+        "econ": -2,
+        "social": 3
+      }
+    },
+    {
+      "id": "c06",
+      "text_key": "q.political.c06",
+      "w": {
+        "econ": -2,
+        "social": -2
+      }
+    }
+  ]
+}

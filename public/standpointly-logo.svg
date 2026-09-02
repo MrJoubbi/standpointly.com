@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 360" role="img" aria-labelledby="title desc">
+  <title id="title">Standpointly logo</title>
+  <desc id="desc">A modern indigo wordmark with an original perspective-point icon.</desc>
+  <defs>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17142D"/>
+      <stop offset="1" stop-color="#30235E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF5C87"/>
+      <stop offset="1" stop-color="#FF9A4D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Supplied pin-on-base symbol, recolored for the Standpointly identity. -->
+  <g transform="translate(64 66) scale(.82)">
+    <path d="M14 201 60 151h61l24 28 25-28h61l45 50Z" fill="url(#ink)"/>
+    <path d="M145 24c-46 0-77 33-77 76 0 56 77 135 77 135s77-79 77-135c0-43-31-76-77-76Z" fill="url(#ink)"/>
+    <circle cx="145" cy="100" r="28" fill="#fff"/>
+  </g>
+
+  <text x="303" y="226" fill="url(#ink)"
+        font-family="Hiragino Kaku Gothic StdN, Hiragino Sans, Avenir Next, Arial Black, sans-serif"
+        font-size="154" font-weight="900" letter-spacing="-9"
+        transform="skewX(-8)">Standpointly</text>
+</svg>

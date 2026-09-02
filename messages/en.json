@@ -1,0 +1,360 @@
+{
+  "test": {
+    "political": {
+      "title": "The Political Test",
+      "summary": "Where you sit on two questions most political disagreement actually turns on: who should own and distribute things, and how far the state may direct private life."
+    },
+    "attachment": {
+      "title": "Attachment Style",
+      "summary": "How you form and hold close relationships, across the two dimensions the research literature actually uses: avoidance and anxiety."
+    }
+  },
+  "axis": {
+    "econ": {
+      "left": "Left",
+      "right": "Right",
+      "name": "Economic"
+    },
+    "social": {
+      "libertarian": "Libertarian",
+      "authoritarian": "Authoritarian",
+      "name": "Social"
+    },
+    "avoidance": {
+      "close": "Intimate",
+      "avoidant": "Avoidant",
+      "name": "Avoidance"
+    },
+    "anxiety": {
+      "secure": "Grounded",
+      "anxious": "Anxious",
+      "name": "Anxiety"
+    }
+  },
+  "sector": {
+    "political": {
+      "collectivist": "The Collectivist",
+      "guardian": "The Guardian",
+      "traditionalist": "The Traditionalist",
+      "egalitarian": "The Egalitarian",
+      "moderate": "The Moderate",
+      "marketeer": "The Marketeer",
+      "communalist": "The Communalist",
+      "individualist": "The Individualist",
+      "libertarian": "The Libertarian"
+    },
+    "attachment": {
+      "preoccupied": "The Preoccupied",
+      "vigilant": "The Vigilant",
+      "fearful": "The Fearful",
+      "open": "The Open",
+      "balanced": "The Balanced",
+      "guarded": "The Guarded",
+      "secure": "The Secure",
+      "autonomous": "The Autonomous",
+      "dismissing": "The Dismissing"
+    }
+  },
+  "scale": {
+    "strongly_disagree": "Strongly disagree",
+    "disagree": "Disagree",
+    "neutral": "Neutral",
+    "agree": "Agree",
+    "strongly_agree": "Strongly agree"
+  },
+  "flow": {
+    "progress": "{current} / {total}",
+    "answered": "{count} answered",
+    "back": "Back",
+    "skip": "Skip",
+    "finish": "See result",
+    "hint": "Press 1–5 to answer · ← to go back",
+    "resumed": "Resumed where you left off",
+    "loading": "Loading",
+    "incomplete": "{count} unanswered",
+    "unanswered_jump": "Go to the first unanswered statement"
+  },
+  "q": {
+    "political": {
+      "e01": "A person's wealth is mostly the result of their own effort.",
+      "e02": "Essential services like water and electricity should never be run for profit.",
+      "e03": "Inheritance should be taxed heavily so that advantage does not compound across generations.",
+      "e04": "Trade unions do more to hold an economy back than to protect workers.",
+      "e05": "A high minimum wage destroys more jobs than it saves.",
+      "e06": "Healthcare should be free at the point of use, funded entirely through taxation.",
+      "e07": "Competition between private firms delivers better results than state planning.",
+      "e08": "The gap between the richest and the poorest in my country is a scandal.",
+      "e09": "People who cannot work should still be guaranteed a decent standard of living by the state.",
+      "e10": "Regulation is usually a brake on prosperity.",
+      "e11": "Large corporations have too much influence over ordinary people's lives.",
+      "e12": "Housing should be treated as a right, not an investment.",
+      "e13": "Taxes on high earners in my country are already too high.",
+      "e14": "Some industries are too important to be left in private hands.",
+      "e15": "Charity is a better answer to poverty than government programmes.",
+      "e16": "The gains from automation should be shared through public policy, not left to the market.",
+      "e17": "Free trade agreements generally benefit ordinary people.",
+      "e18": "Employers should be free to hire and dismiss staff with minimal restriction.",
+      "e19": "Education, from nursery to university, should be publicly funded and free.",
+      "e20": "Economic growth matters more than reducing inequality.",
+      "e21": "Protecting the environment should take priority over economic growth.",
+      "e22": "Land and natural resources belong to everyone, not to whoever can afford to buy them.",
+      "s01": "Some ideas are dangerous enough that they should not be given a public platform.",
+      "s02": "Adults should be free to use any drug they choose, provided they harm no one else.",
+      "s03": "Respect for authority is one of the most important things a child can learn.",
+      "s04": "Sexual morality is a private matter and no business of the state.",
+      "s05": "Harsher sentences are the most effective way to reduce crime.",
+      "s06": "The state should never have the power to read a citizen's private messages.",
+      "s07": "National security justifies a degree of surveillance that most people never see.",
+      "s08": "Traditions deserve to be preserved even when they no longer serve a practical purpose.",
+      "s09": "Schools should teach children to question authority, including their teachers.",
+      "s10": "Immigration changes a country's character in ways that ought to be controlled.",
+      "s11": "People should be free to end their own lives with medical assistance.",
+      "s12": "A strong leader who bypasses the usual procedures is sometimes what a country needs.",
+      "s13": "Censorship of art is never justified.",
+      "s14": "Military service, or an equivalent, should be expected of every young citizen.",
+      "s15": "Religion should have no influence on the laws of a country.",
+      "s16": "Protest that disrupts ordinary people's daily lives has gone too far.",
+      "s17": "What consenting adults do in private is entirely their own affair.",
+      "s18": "Patriotism is a virtue that should be actively taught.",
+      "s19": "The death penalty is justified for the most serious crimes.",
+      "s20": "People should be free to say things that others find deeply offensive.",
+      "s21": "Order in society matters more than individual freedom of expression.",
+      "s22": "Same-sex couples should have exactly the same rights as everyone else.",
+      "c01": "My country's interests should come before international agreements.",
+      "c02": "Taxation beyond the bare minimum is a form of coercion.",
+      "c03": "Welfare recipients should be required to work or train in return for support.",
+      "c04": "Workers should have a legal right to seats on company boards.",
+      "c05": "The state should direct the economy toward national goals rather than leave it to markets.",
+      "c06": "Cooperatives and worker ownership are a better model than shareholder companies."
+    },
+    "attachment": {
+      "av01": "I prefer not to show a partner how I feel deep down.",
+      "av02": "I feel uncomfortable when someone gets emotionally too close to me.",
+      "av03": "I find it difficult to allow myself to depend on romantic partners.",
+      "av04": "When life gets stressful, I prefer dealing with things completely alone.",
+      "av05": "I am nervous when partners start wanting more intimacy than I am ready for.",
+      "av06": "I try to avoid getting too attached to anyone.",
+      "av07": "Keeping some emotional distance is essential for protecting my peace of mind.",
+      "av08": "I rarely turn to others for comfort when I am upset.",
+      "av09": "I value self-sufficiency far more than deep mutual interdependence.",
+      "av10": "I feel uneasy sharing my most private thoughts with people close to me.",
+      "av11": "I feel very comfortable being open and emotionally vulnerable with close partners.",
+      "av12": "I find it easy and natural to depend on the people I love.",
+      "av13": "I genuinely enjoy having a high level of closeness and shared time in relationships.",
+      "av14": "Turning to a partner for reassurance feels reassuring rather than weak.",
+      "av15": "I am at ease expressing my affectionate and loving feelings openly.",
+      "av16": "I don't mind when a partner needs a lot of my emotional presence.",
+      "av17": "Letting someone see all my flaws and insecurities feels safe in a good relationship.",
+      "av18": "Mutual reliance makes relationships stronger, not burdensome.",
+      "av19": "I rarely feel smothered when someone wants to spend most of their time with me.",
+      "av20": "I find it easy to trust that others will support me when I ask for help.",
+      "an01": "I worry a lot about my relationships ending or drifting away.",
+      "an02": "I often worry that my partner does not really care about me as much as I care about them.",
+      "an03": "I need a lot of constant reassurance that I am loved and valued.",
+      "an04": "When a partner does not reply promptly, I immediately wonder if they are pulling away.",
+      "an05": "My self-esteem rises and falls depending on how connected I feel to my partner.",
+      "an06": "I often worry that if people really knew me, they would lose interest.",
+      "an07": "I find myself over-analysing subtle shifts in a partner's tone of voice or mood.",
+      "an08": "The possibility of being abandoned by someone I care about terrifies me.",
+      "an09": "I often feel an intense urgency to resolve any tension immediately, before I can relax.",
+      "an10": "I worry that I am too demanding or too much for people to handle.",
+      "an11": "I rarely worry about being abandoned or forgotten by the people in my life.",
+      "an12": "I feel confident that people I love will still care about me even when we spend time apart.",
+      "an13": "If a partner seems quiet or distant for a day, I assume they just need space or are tired.",
+      "an14": "I don't constantly need reminders or proof that a partner loves me.",
+      "an15": "I am comfortable handling relationship disagreements without fearing it means the end.",
+      "an16": "My sense of self-worth is steady regardless of whether my relationship is smooth or stormy.",
+      "an17": "I don't spend time wondering if my friends or partner are secretly annoyed with me.",
+      "an18": "I trust that love and connection survive natural periods of busyness or silence.",
+      "an19": "I rarely feel panicked when someone takes time to make up their mind about something.",
+      "an20": "I can let a partner have private friendships and hobbies without feeling threatened.",
+      "c01": "I want to be close to others, but I am constantly afraid of being hurt if I open up.",
+      "c02": "I often pull away from someone right when feelings start getting intense and risky.",
+      "c03": "I prefer relying solely on myself, and I feel completely untroubled by spending long periods alone.",
+      "c04": "I rarely worry about what others think of me, and I see little need for deep emotional attachments.",
+      "c05": "I crave total emotional merger with a partner, and I worry intensely when we are not in constant contact.",
+      "c06": "I am quick to give my entire heart away, which leaves me hypervigilant about whether it will be returned.",
+      "c07": "I find it easy to form warm, lasting bonds without worrying about losing my independence or being rejected.",
+      "c08": "Being emotionally close feels safe, natural, and free of persistent anxiety."
+    }
+  },
+  "landing": {
+    "title": "standpointly.com",
+    "tagline": "Fifty statements. Two axes. One reading.",
+    "cta": "Take the political test",
+    "lede": "Most political quizzes tell you what you already suspected, in a voice that flatters you for it. This one is built to be checkable: the questions are balanced so that agreeing with everything puts you dead centre, the weights are published, and the arithmetic is on the method page.",
+    "detail_time": "About 7 minutes",
+    "detail_count": "{count} statements",
+    "detail_privacy": "No account, no tracking",
+    "footer_note": "Your answers never leave your browser."
+  },
+  "cell": {
+    "political": {
+      "collectivist": "Collectivist",
+      "guardian": "Guardian",
+      "traditionalist": "Traditionalist",
+      "egalitarian": "Egalitarian",
+      "moderate": "Moderate",
+      "marketeer": "Marketeer",
+      "communalist": "Communalist",
+      "individualist": "Individualist",
+      "libertarian": "Libertarian"
+    },
+    "attachment": {
+      "preoccupied": "Preoccupied",
+      "vigilant": "Vigilant",
+      "fearful": "Fearful",
+      "open": "Open",
+      "balanced": "Balanced",
+      "guarded": "Guarded",
+      "secure": "Secure",
+      "autonomous": "Autonomous",
+      "dismissing": "Dismissing"
+    }
+  },
+  "result": {
+    "reading": "{axis} {value}",
+    "invalid_title": "That reading could not be read",
+    "invalid_body": "The coordinates in this link are missing or malformed, so there is nothing to plot.",
+    "invalid_cta": "Take the test",
+    "version_notice": "Plotted from an earlier version of this test (v{version}).",
+    "how_scored": "How this is scored"
+  },
+  "description": {
+    "political": {
+      "collectivist": "You see collective provision as the proper business of the state, and you are willing to give that state real authority to deliver it. Where markets allocate badly — housing, healthcare, essential infrastructure — you would rather they did not allocate at all. That instinct extends past economics: shared standards, common institutions and a degree of social cohesion strike you as things worth defending rather than relics to be dismantled. The objection is that concentrating economic and social power in one place removes the checks that make either safe. You would answer that dispersed power has its own failure mode, and that it usually looks like the strong doing as they please while everyone else is told they are free.",
+      "guardian": "Order is your first concern, and you are pragmatic about the economics that deliver it. You are not especially exercised about whether an industry is publicly or privately owned, so long as it works, stays accountable, and does not destabilise the society around it. What you do care about is continuity: institutions that outlast the people running them, laws enforced rather than admired, a state confident enough to act. The charge is that order is usually defined by whoever currently holds it, and that stability can be a polite word for not being allowed to object. Your reply is that societies which lose the capacity to enforce anything do not become freer — they become governed by something less accountable.",
+      "traditionalist": "You favour free enterprise and settled social norms, and you do not find the two in tension. A market economy rewards effort and moves decisions away from officials; a shared moral and cultural inheritance is what stops that economy dissolving into pure appetite. You are sceptical of rapid social change, particularly when it arrives by administrative fiat rather than consent. Opponents argue that markets are themselves the most powerful engine of social change ever built, and that defending tradition while deregulating capital is a contradiction. You would say the contradiction is overstated: what people buy and what they believe are not the same thing, and confusing them is how societies lose both.",
+      "egalitarian": "You think the distribution of wealth is a political choice rather than a natural outcome, and you would choose differently. Progressive taxation, strong public services and a floor below which nobody falls are not, to you, interventions in an otherwise free market — they are the terms on which a market is worth having. On social questions you are broadly permissive and uninterested in legislating private life. The objection you hear most is that redistribution blunts the incentives that generate the wealth being redistributed. You tend to think the trade-off is real but far smaller than it is usually claimed to be, and that societies with strong safety nets have not obviously impoverished themselves.",
+      "moderate": "You sit near the middle on both axes, which is a position rather than the absence of one. On economics you are unconvinced that either markets or the state holds a general answer, and you would decide case by case: some things are better tendered, some better run publicly, and the honest test is which works. On social questions you are similarly unwilling to hold a fixed line, weighing liberty against order according to what is actually at stake. The criticism is that this is indecision dressed as judgement. The defence is that most political questions are empirical, that the people most certain of their answers have usually stopped checking, and that changing your mind is a feature.",
+      "marketeer": "You trust markets to allocate better than committees, and you are relaxed about the social consequences of people making their own choices. Competition, private ownership and light regulation strike you as the arrangement most likely to raise living standards, and you would rather correct market failures narrowly than replace the mechanism. On social questions you have little interest in enforcing conformity. The standard objection is that markets concentrate as readily as they distribute, and that light regulation becomes no regulation once the regulated are also the funders. You would grant that capture is a real risk, while noting that the alternative — allocation by whoever holds office — has a longer record of getting things wrong at scale.",
+      "communalist": "You want economic life organised around cooperation rather than command, and you are as suspicious of the state as of the boardroom. Worker ownership, mutual aid, commons held in common: the appeal is not only fairer outcomes but the removal of hierarchy from the arrangement itself. You are permissive on personal conduct and regard most attempts to legislate private behaviour as the abuse of a power that should not exist. The objection is scale — cooperation is well evidenced in small groups and much harder to demonstrate across millions of strangers. Your answer is that the burden of proof runs both ways, and that existing large institutions perform badly enough to make the experiment worth running.",
+      "individualist": "Your defining commitment is personal autonomy, and you are pragmatic about the economics that support it. You do not think the state should have much to say about what adults believe, say, take or do in private, and you are wary of any argument that begins by assuming people cannot be trusted with themselves. On economics you are unideological: whatever arrangement leaves the most room for people to live differently. The criticism is that autonomy is unevenly distributed — that formal freedom means little without the means to use it. You take that seriously enough to stay flexible on economics, which is precisely why you sit here rather than further out on either side.",
+      "libertarian": "You want the state small on both counts: out of the economy and out of private life. Voluntary exchange and voluntary association are the same principle applied to different domains, and most coercion is objectionable whether it arrives as a tax or a prohibition. You would rather tolerate outcomes you dislike than authorise someone to prevent them. The objection you meet most often is that concentrations of private power coerce too, and that a state weak enough to be harmless is usually too weak to stop anyone else. You would answer that private power at least has to keep persuading people, and that the state's version comes with a monopoly on force attached."
+    },
+    "attachment": {
+      "preoccupied": "You experience relationships with high intensity and emotional urgency. Closeness is your primary anchor, and you invest deeply in maintaining proximity and emotional connection with your partner. You are acutely tuned to changes in a partner's attention, and distance can trigger intense anxiety about abandonment or unreciprocated love. The critique is that seeking constant reassurance can paradoxically place heavy emotional demands on relationships and blur personal boundaries. Your perspective is that emotional openness and genuine devotion are essential to real intimacy, and that wanting active reassurance is a natural response to caring deeply.",
+      "vigilant": "You maintain moderate comfort with intimacy while remaining highly sensitive to the stability of your bond. You value close relationships and willingly open up, but your attachment system remains on alert for subtle signs of withdrawal, disappointment, or impending conflict. You tend to address tension immediately to restore emotional equilibrium before worry can escalate. The challenge is that hypervigilance can cause you to misinterpret ordinary fatigue or busyness as rejection. Your strength is your emotional attunement: you care intensely about the health of your connections and work proactively to nurture and repair them.",
+      "fearful": "You experience a painful push-pull between the deep longing for intimacy and an equally powerful fear of vulnerability. You want genuine emotional connection, but past wounds or fears of rejection make closeness feel dangerous and unsafe. When relationships become emotionally close, an impulse to pull away often clashes with the fear of being left behind. The objection is that giving mixed signals can confuse partners and create the very distance you fear. Your response is that guardedness is an understandable protective shield, and that finding safety with consistent, patient people allows genuine trust to gradually take root.",
+      "open": "You are naturally comfortable with closeness, emotional sharing, and mutual reliance. You express feelings freely, enjoy spending meaningful time with loved ones, and do not fear losing your identity in a relationship. At the same time, your anxiety levels remain moderate, meaning you can handle temporary distance or disagreement without immediate panic. The potential pitfall is occasionally assuming that everyone is as comfortable with rapid vulnerability as you are, which may overwhelm more reserved partners. Your gift is creating a warm, welcoming environment where others feel invited to be honest and authentic.",
+      "balanced": "You navigate relationships with flexibility, balancing intimacy and personal independence according to the situation. You are neither driven by pervasive worry about abandonment nor compelled to erect rigid emotional walls. You can lean on partners during difficult times and offer steady support in return, while feeling secure in your own individuality when alone. The critique is that maintaining a middle stance can sometimes appear cautious or moderate. Your strength is relational agility: you can adapt to different partner styles, communicate clearly through friction, and build enduring connections grounded in mutual respect.",
+      "guarded": "You value your self-reliance and prefer to take time before letting people into your inner world, while maintaining an emotionally calm baseline. You are not overwhelmed by relationship anxiety, but you feel most comfortable when your personal boundaries and autonomy are clearly respected. You prefer steady, low-drama interactions over intense emotional demands. The objection is that emotional reserve can sometimes be mistaken for indifference or a lack of commitment. Your viewpoint is that healthy relationships require personal space to thrive, and that true loyalty is demonstrated through reliable actions rather than constant emotional displays.",
+      "secure": "You are grounded in a deep sense of relational security, comfortable with both deep intimacy and healthy autonomy. You trust that loved ones care for you even during periods of separation, and you approach conflicts as problems to be solved together rather than threats to the relationship. You share vulnerabilities easily and support others without feeling suffocated or anxious. The critique is that people with secure attachment may sometimes struggle to comprehend the intense anxieties or defensive retreats of insecure partners. Your anchor is resilience: you foster trust, communicate with clarity, and build enduring emotional safety.",
+      "autonomous": "You possess a steady, grounded self-assurance and an easy relationship with solitude. You do not worry about rejection or need continuous validation from others, and you manage life's challenges with composure. While you participate in relationships and care for partners, you rarely feel compelled to merge lives completely or rely heavily on external support. The criticism is that extreme self-containment can leave partners feeling unneeded or kept at arm's length. Your response is that independence is a source of strength, and that coming together as two whole, capable individuals makes a partnership clearer and more enduring.",
+      "dismissing": "You pride yourself on fierce emotional independence and self-sufficiency. You view close dependence on others as unnecessary or risky, preferring to handle feelings and challenges strictly on your own. When relationship demands for intimacy increase, you instinctively protect your freedom and emotional equilibrium by stepping back. The standard critique is that compulsive self-reliance suppresses genuine emotional needs and makes deep reciprocal intimacy difficult to sustain. Your perspective is that self-reliance prevents disappointment and ensures resilience, and that one should never surrender personal mastery to another."
+    }
+  },
+  "certificate": {
+    "footnote": "Scored from 50 statements on two independent axes. This is a self-report instrument, not a diagnosis, and no record of it is kept — the result exists only in the link it came from.",
+    "download": "Download certificate",
+    "issued_to": "Issued to",
+    "name_label": "Name on the certificate (optional)",
+    "name_placeholder": "Leave blank for an unnamed certificate",
+    "name_note": "Sent once to generate the PDF, never stored, and never placed in a link."
+  },
+  "nav": {
+    "about": "About",
+    "method": "Method",
+    "privacy": "Privacy",
+    "home": "standpointly.com"
+  },
+  "about": {
+    "title": "About",
+    "lede": "Standpointly places you on two independent axes and names the region you land in. It is a self-report instrument, which means it measures what you say about yourself on a particular afternoon — useful, but not the same as measuring what you would do.",
+    "s1_title": "What the two axes are",
+    "s1_body": "The horizontal axis runs from collective provision to private enterprise: who should own things, and who should decide how they are distributed. The vertical axis runs from personal liberty to social authority: how much the state may direct private conduct. They are deliberately independent, because in practice they are — economic and social views come apart in people far more often than a single left-to-right line allows.",
+    "s2_title": "Why a grid and not a compass",
+    "s2_body": "An earlier version placed people on a compass rose with eight bearings. It looked better and read worse: a bearing tells you a direction but not a magnitude, and readers consistently mistook the needle for a verdict. A 3×3 grid can be taught in one animation — the vertical guide finds your economic score, the horizontal finds your social one, and the cell where they cross is the name you get. The precision standpoint mark survives as the logo.",
+    "s3_title": "What it is not",
+    "s3_body": "It is not a diagnosis, not a prediction of how you vote, and not a measure of how well-informed you are. Nine named regions cannot contain the actual variety of political belief, and the name you get is a label for a neighbourhood, not a description of you. If a statement felt like it was missing an option you would have chosen, that is a real limitation of the format and not a subtle test of something.",
+    "s4_title": "Originality",
+    "s4_body": "Every statement, weight, region name and illustration here is original work. None of it is derived from other published political tests, whose propositions are copyrighted and whose weights were never disclosed in any case."
+  },
+  "method": {
+    "title": "Method",
+    "lede": "Everything below is what the code actually does. The numbers on this page are read from the live test configuration rather than typed here, so they cannot drift out of date.",
+    "s1_title": "The instrument",
+    "s1_body": "{questions} statements, each answered on a five-point scale from strongly disagree to strongly agree. {xCount} load on the {xAxis} axis alone, {yCount} on the {yAxis} axis alone, and {crossCount} load on both at once. Each statement carries a signed weight per axis; a negative weight means agreement moves you toward the negative pole.",
+    "s2_title": "Scoring",
+    "s2_body": "Your answers map to −2…+2. For each axis the raw score is the sum of your answer multiplied by that statement's weight for the axis. The raw score is divided by the axis maximum ({xMax} for {xAxis}, {yMax} for {yAxis}), multiplied by a gain of {gain}, and clamped to ±{clamp}. The gain exists because dividing by the theoretical maximum alone pins almost everyone near the origin — nobody answers every question at the extreme.",
+    "s3_title": "Why agreeing with everything puts you in the centre",
+    "s3_body": "The weights on each axis sum to exactly zero. Someone who agrees with all {questions} statements scores zero on both axes and lands in the middle cell. This is deliberate: acquiescence bias — the tendency to agree with whatever is put in front of you — is one of the best-documented artefacts in survey research, and an unbalanced instrument silently converts it into a political opinion. A continuous integration check fails the build if any weight edit breaks the balance.",
+    "s4_title": "Placing you in a cell",
+    "s4_body": "Each axis is divided at ±{band}. Below the lower boundary is the first column or row, above the upper boundary is the third, and anything between is the middle. That produces nine regions. The boundaries are a presentational choice rather than a discovered threshold: someone at {bandJustUnder} and someone at {bandJustOver} are described differently while being, in truth, nearly identical.",
+    "s5_title": "What is still provisional",
+    "s5_body": "The gain of {gain} was calibrated against simulated respondents, not real ones. Simulated answer patterns spread wider than human ones, so the value is likely to need raising once a real sample exists. Until that pilot is run, treat the magnitude of your score as indicative and the cell you land in as approximate — particularly if you are close to a boundary.",
+    "s6_title": "Reference figures",
+    "s6_body": "There are none on the grid, and there will be none until each placement has a stated method and a citable source published here. Plotting well-known figures from impression alone would be inventing data and presenting it as measurement."
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lede": "The short version: this site has no accounts, no database, no analytics and no cookies. Nothing you answer is transmitted anywhere.",
+    "s1_title": "Your answers",
+    "s1_body": "Answers are held in your browser's sessionStorage while you take the test, so a refresh does not cost you fifty answers. They are deleted the moment the test completes, and sessionStorage is cleared by your browser when you close the tab in any case. Your answers are never sent to the server.",
+    "s2_title": "Your result",
+    "s2_body": "Scoring runs entirely in your browser. The result is two numbers, and those two numbers live in the URL — that is the whole storage mechanism. There is no row in a database with your name on it because there is no database. Anyone you send the link to can see the result, so treat the link the way you would treat the result itself.",
+    "s3_title": "Share images and certificates",
+    "s3_body": "When a result link is posted somewhere that unfurls previews, our server renders an image from the two numbers in the URL and caches it for 24 hours under a hash of those numbers. The cache holds no identifier of any kind. The PDF certificate is generated on request and never stored. If you choose to put a name on the certificate, that name is sent to the server once, used to render the page, and discarded when the request ends — it is submitted as form data rather than in the address so it does not appear in your browser history or in our access logs.",
+    "s4_title": "Server logs",
+    "s4_body": "Like any web server, ours records requests — timestamp, requested path, IP address, user agent — for security and debugging. Because results travel in the URL, a request for a result page records that result alongside the requesting IP in those logs. Logs are retained for {logRetention} and are not used to build profiles.",
+    "s5_title": "Cookies and analytics",
+    "s5_body": "There are none. No analytics package, no advertising, no third-party embeds, no consent banner — because there is nothing to consent to. If that ever changes, this page changes first and a consent mechanism ships with it.",
+    "s6_title": "Who is responsible",
+    "s6_body": "This site is operated by {controller}. For questions about this policy or about data we hold, contact {contact}.",
+    "s7_title": "Your rights",
+    "s7_body": "Under the UK GDPR and EU GDPR you have rights of access, rectification, erasure, restriction, portability and objection. In practice we hold nothing that identifies you apart from the server logs described above, so a request will usually be answered by explaining that there is nothing to return.",
+    "updated": "Last reviewed: {date}",
+    "placeholder_warning": "This policy has not yet been reviewed by a lawyer, and the operator and contact details below are placeholders. Both must be settled before launch."
+  },
+  "home": {
+    "hero_title": "Understand yourself. Understand the people around you.",
+    "hero_body": "Standpointly builds measuring instruments, not quizzes. Each test asks you to react to a set of statements, scores them on two independent axes, and shows you where you land — with every weight and every formula published, so you can check the result instead of just believing it.",
+    "hero_cta": "Take the political test",
+    "hero_secondary": "How the scoring works",
+    "tests_title": "The tests",
+    "tests_body": "One is ready. The others are being written to the same standard, which takes longer than writing a quiz.",
+    "status_available": "Available",
+    "status_planned": "In development",
+    "card_meta": "{count} statements · about {minutes} min",
+    "card_cta": "Start",
+    "card_unavailable": "Not yet available",
+    "how_title": "How a test works",
+    "how_1_title": "Answer the statements",
+    "how_1_body": "One statement per screen, five options, no time limit. There is no right answer and no trick question — a statement you find easy to agree with is doing exactly as much work as one you don't.",
+    "how_2_title": "Two independent axes",
+    "how_2_body": "Each statement carries a weight on one or both axes. Your answers are summed, normalised, and placed on a grid. Because the weights on each axis cancel to zero, agreeing with everything puts you in the middle rather than anywhere flattering.",
+    "how_3_title": "A position, with its reasoning",
+    "how_3_body": "You get two numbers, a named region, and a description that includes the strongest objection to the position you landed in. The result lives in its own link, so you can keep it, share it, or throw it away.",
+    "why_title": "Why trust this one",
+    "why_1_title": "The method is published",
+    "why_1_body": "Every formula, every constant and every known limitation is on the method page — including the fact that the current calibration is provisional until real pilot data exists.",
+    "why_2_title": "Nothing is collected",
+    "why_2_body": "No account, no database, no analytics, no cookies. Your answers stay in your browser and your result exists only in the URL you were given.",
+    "why_3_title": "It is not a horoscope",
+    "why_3_body": "Nine named regions cannot contain the real variety of political belief, and the name you get is a label for a neighbourhood rather than a description of you. The site says so on the result page too."
+  },
+  "planned": {
+    "attachment": {
+      "title": "Attachment style",
+      "summary": "How you form and hold close relationships, across the two dimensions the research literature actually uses: avoidance and anxiety."
+    },
+    "moral": {
+      "title": "Moral foundations",
+      "summary": "Which moral intuitions you weigh most heavily when they pull against each other."
+    },
+    "interpersonal": {
+      "title": "Interpersonal style",
+      "summary": "How you behave in groups, and what other people are likely to read that behaviour as."
+    },
+    "career": {
+      "title": "Working style",
+      "summary": "The conditions under which you do your best work, as distinct from the job titles you are drawn to."
+    }
+  },
+  "theme": {
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "toggle": "Theme: {current}. Click to change."
+  }
+}

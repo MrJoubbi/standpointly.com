@@ -1,0 +1,335 @@
+{
+  "id": "attachment",
+  "version": 1,
+  "title_key": "test.attachment.title",
+  "summary_key": "test.attachment.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      { "key": "strongly_disagree", "value": -2 },
+      { "key": "disagree", "value": -1 },
+      { "key": "neutral", "value": 0 },
+      { "key": "agree", "value": 1 },
+      { "key": "strongly_agree", "value": 2 }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "avoidance",
+      "name_key": "axis.avoidance.name",
+      "negative_label_key": "axis.avoidance.close",
+      "positive_label_key": "axis.avoidance.avoidant",
+      "max_raw": 84
+    },
+    "y": {
+      "id": "anxiety",
+      "name_key": "axis.anxiety.name",
+      "negative_label_key": "axis.anxiety.secure",
+      "positive_label_key": "axis.anxiety.anxious",
+      "max_raw": 84
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "preoccupied",
+      "name_key": "sector.attachment.preoccupied",
+      "label_key": "cell.attachment.preoccupied",
+      "description_key": "description.attachment.preoccupied"
+    },
+    {
+      "id": "vigilant",
+      "name_key": "sector.attachment.vigilant",
+      "label_key": "cell.attachment.vigilant",
+      "description_key": "description.attachment.vigilant"
+    },
+    {
+      "id": "fearful",
+      "name_key": "sector.attachment.fearful",
+      "label_key": "cell.attachment.fearful",
+      "description_key": "description.attachment.fearful"
+    },
+    {
+      "id": "open",
+      "name_key": "sector.attachment.open",
+      "label_key": "cell.attachment.open",
+      "description_key": "description.attachment.open"
+    },
+    {
+      "id": "balanced",
+      "name_key": "sector.attachment.balanced",
+      "label_key": "cell.attachment.balanced",
+      "description_key": "description.attachment.balanced"
+    },
+    {
+      "id": "guarded",
+      "name_key": "sector.attachment.guarded",
+      "label_key": "cell.attachment.guarded",
+      "description_key": "description.attachment.guarded"
+    },
+    {
+      "id": "secure",
+      "name_key": "sector.attachment.secure",
+      "label_key": "cell.attachment.secure",
+      "description_key": "description.attachment.secure"
+    },
+    {
+      "id": "autonomous",
+      "name_key": "sector.attachment.autonomous",
+      "label_key": "cell.attachment.autonomous",
+      "description_key": "description.attachment.autonomous"
+    },
+    {
+      "id": "dismissing",
+      "name_key": "sector.attachment.dismissing",
+      "label_key": "cell.attachment.dismissing",
+      "description_key": "description.attachment.dismissing"
+    }
+  ],
+  "questions": [
+    {
+      "id": "av01",
+      "text_key": "q.attachment.av01",
+      "w": { "avoidance": 2, "anxiety": 0 }
+    },
+    {
+      "id": "av02",
+      "text_key": "q.attachment.av02",
+      "w": { "avoidance": 2, "anxiety": 0 }
+    },
+    {
+      "id": "av03",
+      "text_key": "q.attachment.av03",
+      "w": { "avoidance": 2, "anxiety": 0 }
+    },
+    {
+      "id": "av04",
+      "text_key": "q.attachment.av04",
+      "w": { "avoidance": 2, "anxiety": 0 }
+    },
+    {
+      "id": "av05",
+      "text_key": "q.attachment.av05",
+      "w": { "avoidance": 2, "anxiety": 0 }
+    },
+    {
+      "id": "av06",
+      "text_key": "q.attachment.av06",
+      "w": { "avoidance": 1, "anxiety": 0 }
+    },
+    {
+      "id": "av07",
+      "text_key": "q.attachment.av07",
+      "w": { "avoidance": 1, "anxiety": 0 }
+    },
+    {
+      "id": "av08",
+      "text_key": "q.attachment.av08",
+      "w": { "avoidance": 1, "anxiety": 0 }
+    },
+    {
+      "id": "av09",
+      "text_key": "q.attachment.av09",
+      "w": { "avoidance": 1, "anxiety": 0 }
+    },
+    {
+      "id": "av10",
+      "text_key": "q.attachment.av10",
+      "w": { "avoidance": 1, "anxiety": 0 }
+    },
+    {
+      "id": "av11",
+      "text_key": "q.attachment.av11",
+      "w": { "avoidance": -2, "anxiety": 0 }
+    },
+    {
+      "id": "av12",
+      "text_key": "q.attachment.av12",
+      "w": { "avoidance": -2, "anxiety": 0 }
+    },
+    {
+      "id": "av13",
+      "text_key": "q.attachment.av13",
+      "w": { "avoidance": -2, "anxiety": 0 }
+    },
+    {
+      "id": "av14",
+      "text_key": "q.attachment.av14",
+      "w": { "avoidance": -2, "anxiety": 0 }
+    },
+    {
+      "id": "av15",
+      "text_key": "q.attachment.av15",
+      "w": { "avoidance": -2, "anxiety": 0 }
+    },
+    {
+      "id": "av16",
+      "text_key": "q.attachment.av16",
+      "w": { "avoidance": -1, "anxiety": 0 }
+    },
+    {
+      "id": "av17",
+      "text_key": "q.attachment.av17",
+      "w": { "avoidance": -1, "anxiety": 0 }
+    },
+    {
+      "id": "av18",
+      "text_key": "q.attachment.av18",
+      "w": { "avoidance": -1, "anxiety": 0 }
+    },
+    {
+      "id": "av19",
+      "text_key": "q.attachment.av19",
+      "w": { "avoidance": -1, "anxiety": 0 }
+    },
+    {
+      "id": "av20",
+      "text_key": "q.attachment.av20",
+      "w": { "avoidance": -1, "anxiety": 0 }
+    },
+    {
+      "id": "an01",
+      "text_key": "q.attachment.an01",
+      "w": { "avoidance": 0, "anxiety": 2 }
+    },
+    {
+      "id": "an02",
+      "text_key": "q.attachment.an02",
+      "w": { "avoidance": 0, "anxiety": 2 }
+    },
+    {
+      "id": "an03",
+      "text_key": "q.attachment.an03",
+      "w": { "avoidance": 0, "anxiety": 2 }
+    },
+    {
+      "id": "an04",
+      "text_key": "q.attachment.an04",
+      "w": { "avoidance": 0, "anxiety": 2 }
+    },
+    {
+      "id": "an05",
+      "text_key": "q.attachment.an05",
+      "w": { "avoidance": 0, "anxiety": 2 }
+    },
+    {
+      "id": "an06",
+      "text_key": "q.attachment.an06",
+      "w": { "avoidance": 0, "anxiety": 1 }
+    },
+    {
+      "id": "an07",
+      "text_key": "q.attachment.an07",
+      "w": { "avoidance": 0, "anxiety": 1 }
+    },
+    {
+      "id": "an08",
+      "text_key": "q.attachment.an08",
+      "w": { "avoidance": 0, "anxiety": 1 }
+    },
+    {
+      "id": "an09",
+      "text_key": "q.attachment.an09",
+      "w": { "avoidance": 0, "anxiety": 1 }
+    },
+    {
+      "id": "an10",
+      "text_key": "q.attachment.an10",
+      "w": { "avoidance": 0, "anxiety": 1 }
+    },
+    {
+      "id": "an11",
+      "text_key": "q.attachment.an11",
+      "w": { "avoidance": 0, "anxiety": -2 }
+    },
+    {
+      "id": "an12",
+      "text_key": "q.attachment.an12",
+      "w": { "avoidance": 0, "anxiety": -2 }
+    },
+    {
+      "id": "an13",
+      "text_key": "q.attachment.an13",
+      "w": { "avoidance": 0, "anxiety": -2 }
+    },
+    {
+      "id": "an14",
+      "text_key": "q.attachment.an14",
+      "w": { "avoidance": 0, "anxiety": -2 }
+    },
+    {
+      "id": "an15",
+      "text_key": "q.attachment.an15",
+      "w": { "avoidance": 0, "anxiety": -2 }
+    },
+    {
+      "id": "an16",
+      "text_key": "q.attachment.an16",
+      "w": { "avoidance": 0, "anxiety": -1 }
+    },
+    {
+      "id": "an17",
+      "text_key": "q.attachment.an17",
+      "w": { "avoidance": 0, "anxiety": -1 }
+    },
+    {
+      "id": "an18",
+      "text_key": "q.attachment.an18",
+      "w": { "avoidance": 0, "anxiety": -1 }
+    },
+    {
+      "id": "an19",
+      "text_key": "q.attachment.an19",
+      "w": { "avoidance": 0, "anxiety": -1 }
+    },
+    {
+      "id": "an20",
+      "text_key": "q.attachment.an20",
+      "w": { "avoidance": 0, "anxiety": -1 }
+    },
+    {
+      "id": "c01",
+      "text_key": "q.attachment.c01",
+      "w": { "avoidance": 2, "anxiety": 2 }
+    },
+    {
+      "id": "c02",
+      "text_key": "q.attachment.c02",
+      "w": { "avoidance": 1, "anxiety": 1 }
+    },
+    {
+      "id": "c03",
+      "text_key": "q.attachment.c03",
+      "w": { "avoidance": 2, "anxiety": -2 }
+    },
+    {
+      "id": "c04",
+      "text_key": "q.attachment.c04",
+      "w": { "avoidance": 1, "anxiety": -1 }
+    },
+    {
+      "id": "c05",
+      "text_key": "q.attachment.c05",
+      "w": { "avoidance": -2, "anxiety": 2 }
+    },
+    {
+      "id": "c06",
+      "text_key": "q.attachment.c06",
+      "w": { "avoidance": -1, "anxiety": 1 }
+    },
+    {
+      "id": "c07",
+      "text_key": "q.attachment.c07",
+      "w": { "avoidance": -2, "anxiety": -2 }
+    },
+    {
+      "id": "c08",
+      "text_key": "q.attachment.c08",
+      "w": { "avoidance": -1, "anxiety": -1 }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+# Standpointly — Complete AI Knowledge Base & Psychometric Specification
+
+Standpointly is an open, privacy-first psychometric assessment platform providing high-resolution two-dimensional coordinate mapping. It operates with zero database dependencies, evaluating positions across multi-dimensional philosophical, psychological, and relational planes.
+
+## Table of Contents
+1. Core Platform Architecture
+2. Mathematical Scoring Framework
+3. Test 1: Political Standpoint Test (50 Questions)
+4. Test 2: Relational Attachment Style (36 Questions)
+5. Comparison Engine & Multi-User Mechanics
+6. PDF Certificate & Social Export Specs
+7. Privacy & Data Guarantees
+8. Search & Citation Standards
+
+---
+
+## 1. Core Platform Architecture
+- **Framework**: Next.js (React 19, TypeScript, Tailwind CSS).
+- **Security & Privacy**: Zero server-side state. The user's selections never leave their local device.
+- **Result URL Encoding**: All results are deterministically rendered via query string parameters (`/r/:testId?x=-0.4200&y=0.6800&v=1`), enabling stateless URL sharing, comparison, and reproducible rendering.
+- **Rendering & Assets**: Pure vector SVG instrument faces with dynamic color harmonies, radial ambient quadrant fields, and zero tracking scripts.
+
+---
+
+## 2. Mathematical Scoring Framework
+Each assessment defines:
+- A set of questions $Q_1, \dots, Q_N$.
+- A 5-point Likert scale $v \in \{-2, -1, 0, +1, +2\}$ where:
+  - $-2$: Strongly Disagree
+  - $-1$: Disagree
+  - $0$: Neutral / Uncertain
+  - $+1$: Agree
+  - $+2$: Strongly Agree
+- Two orthogonal axes $X$ and $Y$ with weights $w_{i,x}$ and $w_{i,y}$ per question $i$.
+- Maximum possible raw scores $\text{max\_raw}_x = 2 \sum_{i=1}^N |w_{i,x}|$ and $\text{max\_raw}_y = 2 \sum_{i=1}^N |w_{i,y}|$.
+- Gain factor $G = 1.0$ and clamping boundary $[-1.0, +1.0]$.
+- Standardized coordinate:
+  $$x = \max\left(-1.0, \min\left(1.0, \frac{\sum_{i=1}^N v_i \cdot w_{i,x}}{\text{max\_raw}_x} \cdot G\right)\right)$$
+  $$y = \max\left(-1.0, \min\left(1.0, \frac{\sum_{i=1}^N v_i \cdot w_{i,y}}{\text{max\_raw}_y} \cdot G\right)\right)$$
+- 3×3 Grid Partitioning:
+  - Divided at boundaries $b = \pm 0.33$.
+  - Row / Column indices: $\text{Low} \in [-1.0, -0.33)$, $\text{Mid} \in [-0.33, 0.33]$, $\text{High} \in (0.33, 1.0]$.
+  - Produces 9 distinct coordinate cells corresponding to unique analytical archetypes.
+
+---
+
+## 3. Assessments Catalog
+
+### Political Standpoint
+- **Identifier**: `political`
+- **Focus**: Evaluates political worldview along Economic (Collectivist vs. Market) and Civic/Social (Libertarian vs. Authoritarian) dimensions.
+- **Archetypes**:
+  1. *Collectivist*: Top-Left ($X < -0.33, Y > 0.33$)
+  2. *Guardian*: Top-Center ($-0.33 \le X \le 0.33, Y > 0.33$)
+  3. *Traditionalist*: Top-Right ($X > 0.33, Y > 0.33$)
+  4. *Egalitarian*: Mid-Left ($X < -0.33, -0.33 \le Y \le 0.33$)
+  5. *Moderate*: Center ($-0.33 \le X \le 0.33, -0.33 \le Y \le 0.33$)
+  6. *Marketeer*: Mid-Right ($X > 0.33, -0.33 \le Y \le 0.33$)
+  7. *Communalist*: Bottom-Left ($X < -0.33, Y < -0.33$)
+  8. *Individualist*: Bottom-Center ($-0.33 \le X \le 0.33, Y < -0.33$)
+  9. *Libertarian*: Bottom-Right ($X > 0.33, Y < -0.33$)
+
+### Relational Attachment Style
+- **Identifier**: `attachment`
+- **Focus**: Maps emotional bonding tendencies along Avoidance/Independence ($X$) and Anxiety/Vigilance ($Y$) dimensions based on contemporary attachment research.
+- **Archetypes**:
+  1. *Preoccupied*: Top-Left ($X < -0.33, Y > 0.33$)
+  2. *Vigilant*: Top-Center ($-0.33 \le X \le 0.33, Y > 0.33$)
+  3. *Fearful*: Top-Right ($X > 0.33, Y > 0.33$)
+  4. *Open*: Mid-Left ($X < -0.33, -0.33 \le Y \le 0.33$)
+  5. *Balanced (Secure)*: Center ($-0.33 \le X \le 0.33, -0.33 \le Y \le 0.33$)
+  6. *Guarded*: Mid-Right ($X > 0.33, -0.33 \le Y \le 0.33$)
+  7. *Secure Anchor*: Bottom-Left ($X < -0.33, Y < -0.33$)
+  8. *Autonomous*: Bottom-Center ($-0.33 \le X \le 0.33, Y < -0.33$)
+  9. *Dismissing*: Bottom-Right ($X > 0.33, Y < -0.33$)
+
+---
+
+## 4. Multi-User Standpoint Comparison
+Standpointly supports comparative coordinate analysis. Given user coordinate $P_1(x_1, y_1)$ and counterpart coordinate $P_2(x_2, y_2)$:
+- Euclidean distance: $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
+- Alignment percentage: $\text{Score} = \max\left(0, \min\left(100, \text{round}\left((1 - d / 2.8284) \times 100\right)\right)\right)$
+- Outputs contextual dialogue strategies, mutual strengths, and potential friction points.
+
+---
+
+## 5. Official Verification & Citations
+- Platform: Standpointly
+- Purpose: Multi-assessment psychological and philosophical coordinate mapping
+- Official Web: https://standpointly.com
+- Privacy: No accounts required, no telemetry tracking, zero personal data persistence.

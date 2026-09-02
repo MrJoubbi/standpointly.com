@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # BUILD_SPEC §4 — the config invariants. A weight edit that breaks the
+      # zero-sum, stales max_raw, or clusters the cross-loaded questions on one
+      # diagonal must fail here, not in a result screen.
+      - run: npm test
+
+      - run: npm run typecheck
+
+      - run: npm run build
+
+      # The OG and PDF routes shell out to Chromium at request time. The build
+      # does not need it, but a deploy does — `npx playwright install --with-deps
+      # chromium` must run on the VPS or both routes 500 at runtime.

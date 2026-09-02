@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+/*
+ * Two themes over one set of semantic tokens.
+ *
+ * Light is the default: warm off-white ground, sand tint panels, a deep green
+ * accent. Dark is the BUILD_SPEC §6 instrument-panel palette, kept intact —
+ * the pivot to a bright default did not throw that work away, it demoted it
+ * to the alternate theme.
+ *
+ * Components reference only these names, never a literal colour, so the whole
+ * product — including the SVG grid, the share cards and the PDF — re-themes
+ * from this one block.
+ */
+
+@theme {
+  /* Surfaces */
+  --color-canvas: #fbfaf7; /* page ground */
+  --color-surface: #ffffff; /* cards, the plot field */
+  --color-tint: #f6ece0; /* hero and section washes */
+
+  /* Text */
+  --color-ink: #16202c; /* headings and body */
+  --color-muted: #5d6b7a; /* secondary text, axis labels */
+
+  /* Accent */
+  --color-accent: #17694c; /* buttons, active cell, the result dot */
+  --color-accent-soft: #e4f0ea; /* accent washes */
+  --color-on-accent: #ffffff;
+  --color-line: #e3ded4; /* borders and rules */
+
+  /* Answer scale: warm at the disagree end, accent-green at the agree end.
+     Neutral deliberately has no hue at all (§6 — de-emphasised). */
+  --color-scale-neg: #c2564f;
+  --color-scale-pos: #17694c;
+
+  /* Grid quadrants — pastel on a light ground, or they overwhelm it */
+  --color-q-auth-left: #c2564f;
+  --color-q-auth-right: #4171a8;
+  --color-q-lib-left: #4d8f62;
+  --color-q-lib-right: #7d5ea6;
+  /* Corner gradient strength. Dark needs far more punch than light. */
+  --quadrant-alpha: 0.28;
+
+  --font-display: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --tracking-plate: 0.14em;
+  --tracking-axis: 0.22em;
+  --tracking-title: -0.02em;
+
+  --radius-card: 16px;
+  --radius-control: 10px;
+}
+
+/*
+ * Light mode is the default brand theme.
+ * Dark mode tokens are retained for explicit data-theme="dark" targets if set.
+ */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root[data-theme="dark"] {
+  --color-canvas: #0a101c;
+  --color-surface: #111c2e;
+  --color-tint: #0e1725;
+
+  --color-ink: #e8e4da;
+  --color-muted: #8a93a6;
+
+  --color-accent: #c9a961;
+  --color-accent-soft: #1b2436;
+  --color-on-accent: #0a101c;
+  --color-line: #2b3a52;
+
+  --color-scale-neg: #c96a63;
+  --color-scale-pos: #c9a961;
+
+  --color-q-auth-left: #b04a4a;
+  --color-q-auth-right: #3e6fa8;
+  --color-q-lib-left: #4e8f63;
+  --color-q-lib-right: #7b5ea7;
+  --quadrant-alpha: 0.75;
+}
+
+/* Large Inter headings need negative tracking; the default is set for text
+   sizes and looks loose above ~32px. */
+.display-optical {
+  letter-spacing: -0.03em;
+}
+
+html,
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* A4 at 96dpi — 595×842pt. Fixed so the print target lays out identically in
+   a browser and in Chromium's PDF pipeline, and padding is inline/block so
+   the sheet mirrors under RTL (§7). */
+.certificate-sheet {
+  inline-size: 794px;
+  block-size: 1123px;
+  padding-inline: 62px;
+  padding-block: 54px;
+  overflow: hidden;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+/* Each statement arrives rather than swapping in place, so the flow reads as
+   a sequence. Respect prefers-reduced-motion (§6). */
+@keyframes statement-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.statement-enter {
+  animation: statement-in 220ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .statement-enter {
+    animation: none;
+  }
+}

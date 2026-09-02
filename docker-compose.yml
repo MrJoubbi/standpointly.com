@@ -1,0 +1,35 @@
+services:
+  # 1. Standpointly Next.js Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: standpointly-app
+    restart: unless-stopped
+    ports:
+      # Exposes 127.0.0.1:3000 to host (safe for Nginx reverse proxy or Cloudflare Tunnel)
+      - "127.0.0.1:3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - SITE_URL=${SITE_URL:-https://standpointly.com}
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"require('http').get('http://127.0.0.1:3000', (r) => {if (r.statusCode < 500) process.exit(0); else process.exit(1);})\""]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  # 2. Cloudflare Tunnel (Optional - recommended for 0-open-ports secure VPS hosting)
+  # Uncomment if using Cloudflare Tunnel. Just set CLOUDFLARE_TUNNEL_TOKEN in your .env
+  # cloudflared:
+  #   image: cloudflare/cloudflared:latest
+  #   container_name: standpointly-tunnel
+  #   restart: unless-stopped
+  #   command: tunnel --no-autoupdate run
+  #   environment:
+  #     - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+  #   depends_on:
+  #     - app
