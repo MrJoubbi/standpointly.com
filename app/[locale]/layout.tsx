@@ -126,11 +126,25 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R64MQ2WQ5G"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-R64MQ2WQ5G');
+            `,
+          }}
+        />
         <script dangerouslySetInnerHTML={{ __html: NO_FLASH }} />
         <JsonLd data={websiteJsonLd} />
       </head>
       <body className="min-h-screen bg-canvas font-body text-ink antialiased">
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-R64MQ2WQ5G"} />
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
