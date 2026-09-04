@@ -5,6 +5,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { THEME_STORAGE_KEY } from "@/lib/theme";
 import { JsonLd, buildWebsiteJsonLd } from "@/components/JsonLd";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 // §8 — self-hosted and served from our own origin, never fetched from Google
 // at render time. Both are SIL Open Font License. This is also what makes the
@@ -86,6 +87,13 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
     apple: "/icon.svg",
   },
+  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? {
+        verification: {
+          google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+        },
+      }
+    : {}),
 };
 
 /**
@@ -122,6 +130,7 @@ export default async function LocaleLayout({
         <JsonLd data={websiteJsonLd} />
       </head>
       <body className="min-h-screen bg-canvas font-body text-ink antialiased">
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-R64MQ2WQ5G"} />
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
