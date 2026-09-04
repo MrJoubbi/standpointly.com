@@ -64,9 +64,9 @@ export function StandpointFullLogo({
 }: StandpointFullLogoProps) {
   return (
     <svg
-      viewBox="0 0 1160 216"
+      viewBox="0 0 1380 216"
       height={height}
-      className={`max-w-full ${className}`}
+      className={`max-w-full overflow-visible ${className}`}
       role="img"
       aria-label="Standpointly"
       {...props}
