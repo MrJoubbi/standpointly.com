@@ -64,7 +64,7 @@ export function StandpointFullLogo({
 }: StandpointFullLogoProps) {
   return (
     <svg
-      viewBox="0 0 950 216"
+      viewBox="0 0 1160 216"
       height={height}
       className={`max-w-full ${className}`}
       role="img"
