@@ -1,6 +1,6 @@
 {
   "name": "Standpointly",
-  "description": "A multi-test platform including the political test and attachment style test with scoring, 3x3 archetype grid, shareable results, and certificate generation.",
+  "description": "A multi-test psychometric platform organized into 5 thematic clusters: Personality, Relationships, Beliefs & Values, Wellbeing, and Career & Work.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

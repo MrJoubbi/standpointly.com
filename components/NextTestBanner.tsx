@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Compass, Heart, Briefcase } from "lucide-react";
+import { ArrowRight, Compass, Heart, Briefcase, Brain, Scale, Sprout } from "lucide-react";
 import { availableTests, type AvailableTest } from "@/lib/catalogue";
 
 interface NextTestBannerProps {
@@ -8,10 +8,18 @@ interface NextTestBannerProps {
   locale: string;
 }
 
-const TEST_ICONS: Record<string, React.ReactNode> = {
-  political: <Compass className="h-5 w-5 text-accent" />,
-  attachment: <Heart className="h-5 w-5 text-accent" />,
-  leadership: <Briefcase className="h-5 w-5 text-accent" />,
+const CLUSTER_ICONS: Record<string, React.ReactNode> = {
+  personality: <Brain className="h-5 w-5 text-accent" />,
+  relationships: <Heart className="h-5 w-5 text-accent" />,
+  beliefs: <Scale className="h-5 w-5 text-accent" />,
+  wellbeing: <Sprout className="h-5 w-5 text-accent" />,
+  career: <Briefcase className="h-5 w-5 text-accent" />,
+};
+
+const TEST_DISPLAY_NAMES: Record<string, string> = {
+  political: "The Political Standpoint Test",
+  attachment: "Relational Attachment Style",
+  leadership: "Leadership & Decision Dynamics",
 };
 
 export function NextTestBanner({ currentTestId, locale }: NextTestBannerProps) {
@@ -35,7 +43,9 @@ export function NextTestBanner({ currentTestId, locale }: NextTestBannerProps) {
 
       <div className="flex flex-col gap-3 mt-1">
         {nextTests.map((test) => {
-          const icon = TEST_ICONS[test.id] || <Compass className="h-5 w-5 text-accent" />;
+          const icon = CLUSTER_ICONS[test.clusterId] || <Compass className="h-5 w-5 text-accent" />;
+          const title = TEST_DISPLAY_NAMES[test.id] || test.id.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+
           return (
             <Link
               key={test.id}
@@ -48,11 +58,7 @@ export function NextTestBanner({ currentTestId, locale }: NextTestBannerProps) {
                 </div>
                 <div>
                   <h3 className="text-[15px] font-bold text-ink group-hover:text-accent transition-colors">
-                    {test.id === "attachment"
-                      ? "Relational Attachment Style"
-                      : test.id === "leadership"
-                      ? "Leadership & Decision Dynamics"
-                      : "Political Standpoint Test"}
+                    {title}
                   </h3>
                   <p className="text-[13px] text-muted">
                     {test.questionCount} statements · about {test.minutes} min
@@ -70,3 +76,4 @@ export function NextTestBanner({ currentTestId, locale }: NextTestBannerProps) {
     </section>
   );
 }
+

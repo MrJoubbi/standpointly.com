@@ -2,17 +2,17 @@ import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { SiteHeader } from "@/components/SiteHeader";
-import { TestCard } from "@/components/TestCard";
+import { CatalogueSection } from "@/components/CatalogueSection";
 import { JsonLd } from "@/components/JsonLd";
-import { availableTests, catalogue } from "@/lib/catalogue";
+import { availableTests, catalogue, testClusters } from "@/lib/catalogue";
 
 const SITE_URL = process.env.SITE_URL ?? "https://standpointly.com";
 
 /**
  * Home — the platform, not the political test (§1).
  *
- * The catalogue is derived from /config/tests, so shipping test #2 really is
- * just adding a JSON file: it appears here on its own.
+ * Standpointly tests are divided into 5 psychometric domains:
+ * Personality, Relationships, Beliefs & Values, Wellbeing, Career & Work.
  */
 export default async function HomePage({
   params,
@@ -23,6 +23,7 @@ export default async function HomePage({
   setRequestLocale(locale);
 
   const t = await getTranslations();
+  const clusters = testClusters();
   const entries = catalogue();
   const available = availableTests();
   const featured = available.find(t => t.id === "political") ?? available[0];
@@ -79,23 +80,8 @@ export default async function HomePage({
           </div>
         </section>
 
-        {/* Catalogue */}
-        <section id="catalogue" className="bg-canvas">
-          <div className="mx-auto max-w-5xl px-6 py-20">
-            <h2 className="text-[13px] font-bold tracking-(--tracking-plate) text-accent uppercase">
-              {t("home.tests_title")}
-            </h2>
-            <p className="mt-4 max-w-[58ch] text-[16px] leading-[1.65] text-muted">
-              {t("home.tests_body")}
-            </p>
-
-            <div className="mt-10 grid gap-5 sm:grid-cols-2">
-              {entries.map((entry) => (
-                <TestCard key={entry.id} entry={entry} locale={locale} />
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* 5 Thematic Clusters Catalogue */}
+        <CatalogueSection clusters={clusters} locale={locale} />
 
         {/* How it works */}
         <section className="bg-canvas">
