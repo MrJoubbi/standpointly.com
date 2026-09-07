@@ -11,9 +11,19 @@ import type { TestConfig } from "@/lib/types";
 
 const SITE_URL = process.env.SITE_URL ?? "https://standpointly.com";
 
+const TEST_ID_ALIASES: Record<string, string> = {
+  "political-ideology": "political",
+  "attachment-style": "attachment",
+};
+
+function resolveTestId(id: string): string {
+  return TEST_ID_ALIASES[id] ?? id;
+}
+
 export function generateStaticParams() {
+  const ids = [...listTestIds(), ...Object.keys(TEST_ID_ALIASES)];
   return routing.locales.flatMap((locale) =>
-    listTestIds().map((testId) => ({ locale, testId })),
+    ids.map((testId) => ({ locale, testId })),
   );
 }
 
@@ -22,7 +32,8 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; testId: string }>;
 }): Promise<Metadata> {
-  const { locale, testId } = await params;
+  const { locale, testId: rawTestId } = await params;
+  const testId = resolveTestId(rawTestId);
   let config: TestConfig;
   try {
     config = loadTest(testId);
@@ -78,7 +89,8 @@ export default async function TestPage({
 }: {
   params: Promise<{ locale: string; testId: string }>;
 }) {
-  const { locale, testId } = await params;
+  const { locale, testId: rawTestId } = await params;
+  const testId = resolveTestId(rawTestId);
   setRequestLocale(locale);
 
   let config: TestConfig;

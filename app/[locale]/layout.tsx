@@ -22,11 +22,11 @@ const SITE_URL = process.env.SITE_URL ?? "https://standpointly.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Standpointly — 2D Psychometric & Standpoint Mapping",
+    default: "Standpointly — Discover Where You Stand",
     template: "%s | Standpointly",
   },
   description:
-    "A privacy-first, client-side standpoint assessment platform featuring political philosophy and relational attachment tests with 2D coordinate precision and archetype insights.",
+    "Discover where you stand. A research-informed psychometric assessment platform structured across 5 scientific fields: Personality, Relationships, Beliefs & Values, Wellbeing, and Work & Career.",
   keywords: [
     "political standpoint test",
     "political compass",

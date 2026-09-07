@@ -11,8 +11,8 @@ const SITE_URL = process.env.SITE_URL ?? "https://standpointly.com";
 /**
  * Home — the platform, not the political test (§1).
  *
- * Standpointly tests are divided into 5 psychometric domains:
- * Personality, Relationships, Beliefs & Values, Wellbeing, Career & Work.
+ * Standpointly instruments are organized into 5 scientific fields:
+ * Personality, Relationships, Beliefs & Values, Wellbeing, Work & Career.
  */
 export default async function HomePage({
   params,
@@ -41,7 +41,7 @@ export default async function HomePage({
       url:
         entry.status === "available"
           ? `${SITE_URL}/${locale}/test/${entry.id}`
-          : undefined,
+          : `${SITE_URL}/${locale}/tests/${entry.fieldSlug}/${entry.slug}`,
     })),
   };
 

@@ -311,13 +311,13 @@
     "hero_body": "Standpointly builds measuring instruments, not quizzes. Each test asks you to react to a set of statements, scores them on two independent axes, and shows you where you land — with every weight and every formula published, so you can check the result instead of just believing it.",
     "hero_cta": "Take the political test",
     "hero_secondary": "How the scoring works",
-    "tests_title": "The tests",
-    "tests_body": "Psychometric instruments organized into 5 thematic clusters. Available tests are fully calibrated and scored locally; planned tests are in active development to the same rigorous standard.",
+    "tests_title": "The Assessment Fields",
+    "tests_body": "Standpointly instruments are organized into 5 scientific fields. Discover where you stand across personality, relationships, beliefs, values, wellbeing, and work.",
     "status_available": "Available",
     "status_planned": "In development",
     "card_meta": "{count} statements · about {minutes} min",
     "card_cta": "Start",
-    "card_unavailable": "Not yet available",
+    "card_unavailable": "In development",
     "how_title": "How a test works",
     "how_1_title": "Answer the statements",
     "how_1_body": "One statement per screen, five options, no time limit. There is no right answer and no trick question — a statement you find easy to agree with is doing exactly as much work as one you don't.",
@@ -333,42 +333,74 @@
     "why_3_title": "It is not a horoscope",
     "why_3_body": "Nine named regions cannot contain the real variety of political belief, and the name you get is a label for a neighbourhood rather than a description of you. The site says so on the result page too."
   },
-  "cluster": {
-    "all": "All Clusters",
+  "field": {
+    "all": "All Fields",
     "all_count": "All ({count})",
-    "filter_label": "Explore by cluster",
+    "filter_label": "Filter by Field",
+    "available_badge": "{count} Available",
+    "planned_badge": "{count} In Development",
+    "personality": {
+      "title": "Personality",
+      "subtitle": "Core traits, behavioral tendencies, and emotional patterns",
+      "description": "Deep individual differences: from established personality dimensions and dark traits to empathy, emotional intelligence, and behavioral tendencies."
+    },
+    "relationships": {
+      "title": "Relationships",
+      "subtitle": "Attachment, intimacy, communication, and interpersonal patterns",
+      "description": "Understand how you connect, communicate, trust, and respond to intimacy, conflict, and emotional closeness."
+    },
+    "beliefs": {
+      "title": "Beliefs & Values",
+      "subtitle": "Ideology, morality, identity, and social values",
+      "description": "Explore the principles, beliefs, and values that shape how you understand society, morality, equality, freedom, and social change."
+    },
+    "wellbeing": {
+      "title": "Wellbeing",
+      "subtitle": "Emotional resilience, self-perception, and psychological patterns",
+      "description": "Reflect on the emotional and behavioral patterns that influence how you handle stress, challenges, self-perception, and everyday life."
+    },
+    "career": {
+      "title": "Work & Career",
+      "subtitle": "Motivation, work style, leadership, and career preferences",
+      "description": "Explore how you approach work, decisions, leadership, achievement, collaboration, and career choices."
+    }
+  },
+  "cluster": {
+    "all": "All Fields",
+    "all_count": "All ({count})",
+    "filter_label": "Filter by Field",
     "available_badge": "{count} Available",
     "planned_badge": "{count} In Development",
     "personality": {
       "title": "Personality",
       "tagline": "Core traits, behavioral tendencies, and emotional patterns",
-      "description": "Deep individual differences: from the standard Big Five factors and dark traits to empathy and human motivation heuristics."
+      "description": "Deep individual differences: from established personality dimensions and dark traits to empathy, emotional intelligence, and behavioral tendencies."
     },
     "relationships": {
       "title": "Relationships",
-      "tagline": "Attachment dynamics, connection styles, and interpersonal boundaries",
-      "description": "Relational psychology: attachment styles, love languages, compatibility dynamics, boundary setting, and communication."
+      "tagline": "Attachment, intimacy, communication, and interpersonal patterns",
+      "description": "Understand how you connect, communicate, trust, and respond to intimacy, conflict, and emotional closeness."
     },
     "beliefs": {
       "title": "Beliefs & Values",
-      "tagline": "Ideological standpoints, moral compasses, and social ethics",
-      "description": "Worldviews and ethics: political philosophy, feminism, moral foundations theory, gender perspectives, and social values."
+      "tagline": "Ideology, morality, identity, and social values",
+      "description": "Explore the principles, beliefs, and values that shape how you understand society, morality, equality, freedom, and social change."
     },
     "wellbeing": {
       "title": "Wellbeing",
-      "tagline": "Mental resilience, stress tolerance, and emotional balance",
-      "description": "Psychological health: stress vulnerability, burnout detection, self-esteem stability, resilience, and emotion regulation."
+      "tagline": "Emotional resilience, self-perception, and psychological patterns",
+      "description": "Reflect on the emotional and behavioral patterns that influence how you handle stress, challenges, self-perception, and everyday life."
     },
     "career": {
-      "title": "Career & Work",
-      "tagline": "Professional aptitude, leadership presence, and vocational drive",
-      "description": "Occupational psychology: career fulfillment anchors, leadership paradigms, DISC profiles, RIASEC vocations, and work style."
+      "title": "Work & Career",
+      "tagline": "Motivation, work style, leadership, and career preferences",
+      "description": "Explore how you approach work, decisions, leadership, achievement, collaboration, and career choices."
     }
   },
   "planned": {
     "big-five": {
       "title": "Big Five",
-      "summary": "The foundational five-factor model: Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism."
+      "summary": "The foundational five-factor model of personality, measuring openness, conscientiousness, extraversion, agreeableness, and neuroticism."
     },
     "dark-triad": {
       "title": "Dark Triad",
@@ -382,49 +414,85 @@
       "title": "Emotional Intelligence",
       "summary": "Evaluates emotional self-awareness, cognitive regulation, social attunement, and relationship management."
     },
+    "self-esteem": {
+      "title": "Self-Esteem",
+      "summary": "Explores core self-worth, emotional stability, self-compassion, and authentic vs contingent validation."
+    },
     "human-behavior": {
       "title": "Human Behavior",
       "summary": "Analyzes fundamental motivational drivers, decision-making heuristics, and social behavioral instincts."
     },
     "attachment": {
-      "title": "Attachment",
-      "summary": "How you form and hold close relationships across avoidance and anxiety dimensions."
+      "title": "Attachment Style",
+      "summary": "How you form and hold close relationships, across the two dimensions the research literature actually uses: avoidance and anxiety."
+    },
+    "attachment-style": {
+      "title": "Attachment Style",
+      "summary": "How you form and hold close relationships, across the two dimensions the research literature actually uses: avoidance and anxiety."
     },
     "love-language": {
       "title": "Love Language",
       "summary": "Identifies your primary and secondary modalities for expressing and receiving relational affection."
     },
     "compatibility": {
-      "title": "Compatibility",
+      "title": "Relationship Compatibility",
       "summary": "Assesses interpersonal complementarity, friction dynamics, and mutual values alignment."
     },
+    "relationship-compatibility": {
+      "title": "Relationship Compatibility",
+      "summary": "Assesses interpersonal complementarity, friction dynamics, and mutual values alignment."
+    },
+    "relationship-anxiety": {
+      "title": "Relationship Anxiety",
+      "summary": "Measures relationship hypervigilance, reassurance seeking, and attachment security."
+    },
     "boundaries": {
-      "title": "Boundaries",
+      "title": "Relationship Boundaries",
+      "summary": "Measures boundary permeability, interpersonal assertiveness, and healthy emotional differentiation."
+    },
+    "relationship-boundaries": {
+      "title": "Relationship Boundaries",
       "summary": "Measures boundary permeability, interpersonal assertiveness, and healthy emotional differentiation."
     },
     "communication": {
-      "title": "Communication",
+      "title": "Communication Style",
       "summary": "Examines conflict navigation styles, expressive clarity, receptivity, and listening habits."
     },
     "political": {
-      "title": "Political",
+      "title": "Political Ideology",
+      "summary": "Where you sit between collective provision vs private enterprise, and social authority vs liberty."
+    },
+    "political-ideology": {
+      "title": "Political Ideology",
       "summary": "Where you sit between collective provision vs private enterprise, and social authority vs liberty."
     },
     "feminism": {
-      "title": "Feminism",
-      "summary": "Maps perspectives on structural gender dynamics, institutional equity, and personal autonomy."
+      "title": "Feminist Perspectives",
+      "summary": "Measures nuanced standpoints on gender equality, gender roles, institutional structures, and personal autonomy across multidimensional axes."
+    },
+    "feminist-perspectives": {
+      "title": "Feminist Perspectives",
+      "summary": "Measures nuanced standpoints on gender equality, gender roles, institutional structures, and personal autonomy across multidimensional axes."
     },
     "moral-foundations": {
       "title": "Moral Foundations",
       "summary": "Scores your moral reasoning across care, fairness, loyalty, authority, sanctity, and liberty."
     },
     "moral": {
-      "title": "Moral foundations",
+      "title": "Moral Foundations",
       "summary": "Which moral intuitions you weigh most heavily when they pull against each other."
     },
     "gender": {
-      "title": "Gender",
-      "summary": "Explores standpoints on gender norms, essentialist versus social constructionist frameworks, and role expectations."
+      "title": "Gender Equality",
+      "summary": "Explores standpoints on gender norms, occupational parity, and domestic role expectations."
+    },
+    "gender-equality": {
+      "title": "Gender Equality",
+      "summary": "Explores standpoints on gender norms, occupational parity, and domestic role expectations."
+    },
+    "individualism-collectivism": {
+      "title": "Individualism vs Collectivism",
+      "summary": "Examines the balance between individual autonomy, personal merit, and collective responsibility."
     },
     "social-values": {
       "title": "Social Values",
@@ -432,15 +500,11 @@
     },
     "stress": {
       "title": "Stress",
-      "summary": "Evaluates physiological reactivity, cognitive stress appraisal, and personal strain thresholds."
+      "summary": "Evaluates cognitive strain appraisal, everyday tension patterns, and personal stress tolerance (self-reflection instrument; non-clinical)."
     },
     "burnout": {
       "title": "Burnout",
-      "summary": "Detects chronic work exhaustion, mental cynicism, depersonalization, and perceived efficacy."
-    },
-    "self-esteem": {
-      "title": "Self-Esteem",
-      "summary": "Explores baseline self-worth, emotional stability, and the balance between authentic and contingent validation."
+      "summary": "Measures chronic work exhaustion, mental cynicism, depersonalisation, and perceived efficacy."
     },
     "resilience": {
       "title": "Resilience",
@@ -450,12 +514,24 @@
       "title": "Emotional Regulation",
       "summary": "Assesses cognitive reappraisal strategies, expressive suppression habits, and distress tolerance."
     },
+    "procrastination": {
+      "title": "Procrastination",
+      "summary": "Analyzes task aversion, temporal discounting, perfectionistic hesitation, and decisional delay."
+    },
     "career": {
-      "title": "Career",
+      "title": "Career Personality",
+      "summary": "Uncovers primary vocational anchors, motivational incentives, and occupational fulfillment drivers."
+    },
+    "career-personality": {
+      "title": "Career Personality",
       "summary": "Uncovers primary vocational anchors, motivational incentives, and occupational fulfillment drivers."
     },
     "leadership": {
-      "title": "Leadership",
+      "title": "Leadership Style",
+      "summary": "Identifies dominant leadership posture across visionary, directive, servant, and situational leadership models."
+    },
+    "leadership-style": {
+      "title": "Leadership Style",
       "summary": "Identifies dominant leadership posture across visionary, directive, servant, and situational leadership models."
     },
     "disc": {
@@ -469,6 +545,14 @@
     "work-style": {
       "title": "Work Style",
       "summary": "Determines optimal workflow pace, autonomy preferences, collaboration needs, and problem-solving rhythm."
+    },
+    "career-values": {
+      "title": "Career Values",
+      "summary": "Identifies core vocational values across intellectual challenge, security, impact, autonomy, and mastery."
+    },
+    "decision-making-style": {
+      "title": "Decision-Making Style",
+      "summary": "Analyzes analytical, intuitive, collaborative, and pragmatic approaches to strategic decisions."
     },
     "interpersonal": {
       "title": "Interpersonal style",

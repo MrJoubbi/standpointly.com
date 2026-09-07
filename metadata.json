@@ -1,6 +1,6 @@
 {
   "name": "Standpointly",
-  "description": "A multi-test psychometric platform organized into 5 thematic clusters: Personality, Relationships, Beliefs & Values, Wellbeing, and Career & Work.",
+  "description": "Discover where you stand. A research-informed psychometric assessment platform structured across 5 scientific fields: Personality, Relationships, Beliefs & Values, Wellbeing, and Work & Career.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

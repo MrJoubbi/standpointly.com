@@ -3,8 +3,8 @@
 import React, { useId, useMemo, useState } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { ArrowRight, Search } from "lucide-react";
-import type { CatalogueEntry, TestCluster, TestClusterId } from "@/lib/catalogue";
+import { ArrowRight, Search, Sparkles } from "lucide-react";
+import type { CatalogueEntry, TestCluster, FieldId } from "@/lib/catalogue";
 
 interface CatalogueSectionProps {
   clusters: TestCluster[];
@@ -13,11 +13,11 @@ interface CatalogueSectionProps {
 
 export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
   const t = useTranslations();
-  const [selectedCluster, setSelectedCluster] = useState<"all" | TestClusterId>("all");
+  const [selectedField, setSelectedField] = useState<"all" | FieldId>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const searchInputId = useId();
 
-  const totalTests = useMemo(() => {
+  const totalInstruments = useMemo(() => {
     return clusters.reduce((acc, c) => acc + c.tests.length, 0);
   }, [clusters]);
 
@@ -25,12 +25,12 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
     return clusters.reduce((acc, c) => acc + c.availableCount, 0);
   }, [clusters]);
 
-  // Filter clusters and tests according to tab & search query
+  // Filter fields and instruments according to field tab & search query
   const filteredClusters = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
 
     return clusters
-      .filter((c) => selectedCluster === "all" || c.id === selectedCluster)
+      .filter((c) => selectedField === "all" || c.id === selectedField)
       .map((cluster) => {
         if (!query) return cluster;
 
@@ -38,7 +38,13 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
           const title = t(test.titleKey).toLowerCase();
           const summary = t(test.summaryKey).toLowerCase();
           const id = test.id.toLowerCase();
-          return title.includes(query) || summary.includes(query) || id.includes(query);
+          const code = test.code.toLowerCase();
+          return (
+            title.includes(query) ||
+            summary.includes(query) ||
+            id.includes(query) ||
+            code.includes(query)
+          );
         });
 
         return {
@@ -47,13 +53,13 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
         };
       })
       .filter((cluster) => cluster.tests.length > 0);
-  }, [clusters, selectedCluster, searchQuery, t]);
+  }, [clusters, selectedField, searchQuery, t]);
 
   return (
     <section id="catalogue" className="bg-canvas py-16 sm:py-24 border-t border-line">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         
-        {/* Section Header: Academic & Authoritative */}
+        {/* Section Header: Academic, Editorial & Authoritative */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10 border-b border-line">
           <div>
             <div className="flex items-center gap-3">
@@ -62,11 +68,11 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
               </span>
               <span className="text-line-strong">/</span>
               <span className="font-mono text-xs text-muted tracking-wider uppercase">
-                5 Research Domains · 25 Instruments
+                5 Research Fields · {totalInstruments} Standard Instruments
               </span>
             </div>
             <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-ink">
-              The Assessment Domains
+              The Assessment Fields
             </h2>
             <p className="mt-3 max-w-[68ch] text-[16px] sm:text-[17px] leading-[1.65] text-muted">
               {t("home.tests_body")}
@@ -81,42 +87,42 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
               </div>
               <div className="h-7 w-px bg-line" />
               <div>
-                <div className="font-mono text-[10px] uppercase text-muted tracking-wider">In Research</div>
-                <div className="text-base font-bold text-ink">{totalTests - totalAvailable} Instruments</div>
+                <div className="font-mono text-[10px] uppercase text-muted tracking-wider">In Development</div>
+                <div className="text-base font-bold text-ink">{totalInstruments - totalAvailable} Instruments</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Big Executive Category Deck */}
+        {/* Executive Field Selector Cards */}
         <div className="mt-10">
           <div className="flex items-center justify-between gap-4 mb-4">
             <p className="text-[12px] font-mono font-semibold tracking-wider text-muted uppercase">
-              Filter by Domain
+              Filter by Field
             </p>
-            {selectedCluster !== "all" && (
+            {selectedField !== "all" && (
               <button
                 type="button"
-                id="reset-cluster-filter"
-                onClick={() => setSelectedCluster("all")}
+                id="reset-field-filter"
+                onClick={() => setSelectedField("all")}
                 className="text-xs font-semibold text-accent hover:underline cursor-pointer"
               >
-                View all domains ({totalTests})
+                View all fields ({totalInstruments})
               </button>
             )}
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5" role="tablist">
             {clusters.map((cluster) => {
-              const isSelected = selectedCluster === cluster.id;
+              const isSelected = selectedField === cluster.id;
               return (
                 <button
                   key={cluster.id}
                   type="button"
                   role="tab"
-                  id={`domain-selector-${cluster.id}`}
+                  id={`field-selector-${cluster.id}`}
                   aria-selected={isSelected}
-                  onClick={() => setSelectedCluster(isSelected ? "all" : cluster.id)}
+                  onClick={() => setSelectedField(isSelected ? "all" : cluster.id)}
                   className={[
                     "group relative flex flex-col justify-between text-left p-5 rounded-xl border transition-all cursor-pointer",
                     isSelected
@@ -132,23 +138,23 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
                           isSelected ? "text-accent" : "text-muted group-hover:text-ink",
                         ].join(" ")}
                       >
-                        DOMAIN {cluster.code}
+                        FIELD {cluster.code}
                       </span>
                       {cluster.availableCount > 0 ? (
-                        <span className="h-2 w-2 rounded-full bg-accent" title="Available test in this domain" />
+                        <span className="h-2 w-2 rounded-full bg-accent" title="Available test in this field" />
                       ) : (
                         <span className="font-mono text-[10px] text-muted/60">ROADMAP</span>
                       )}
                     </div>
                     <h3 className="mt-3 font-display text-[18px] font-bold text-ink leading-snug group-hover:text-accent transition-colors">
-                      {t(`cluster.${cluster.id}.title`)}
+                      {t(`field.${cluster.id}.title`)}
                     </h3>
                   </div>
 
                   <div className="mt-5 pt-3 border-t border-line/50 flex items-center justify-between text-[11px] text-muted">
-                    <span>5 Instruments</span>
+                    <span className="font-mono">{cluster.tests.length} Instruments</span>
                     <span className={cluster.availableCount > 0 ? "font-semibold text-accent" : "text-muted"}>
-                      {cluster.availableCount > 0 ? `${cluster.availableCount} Ready` : "Planned"}
+                      {cluster.availableCount > 0 ? `${cluster.availableCount} Available` : "In Progress"}
                     </span>
                   </div>
                 </button>
@@ -157,14 +163,14 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
           </div>
         </div>
 
-        {/* Search & Filter Toolbar */}
+        {/* Search & Status Toolbar */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 py-4 px-5 rounded-xl border border-line bg-surface/50">
           <div className="flex items-center gap-3 w-full sm:w-auto">
             <span className="font-mono text-xs text-muted uppercase">Showing:</span>
             <span className="text-sm font-semibold text-ink">
-              {selectedCluster === "all"
-                ? `All Domains (${filteredClusters.reduce((acc, c) => acc + c.tests.length, 0)} instruments)`
-                : `${t(`cluster.${selectedCluster}.title`)} Domain (${filteredClusters.reduce((acc, c) => acc + c.tests.length, 0)} instruments)`}
+              {selectedField === "all"
+                ? `All Fields (${filteredClusters.reduce((acc, c) => acc + c.tests.length, 0)} instruments)`
+                : `${t(`field.${selectedField}.title`)} Field (${filteredClusters.reduce((acc, c) => acc + c.tests.length, 0)} instruments)`}
             </span>
           </div>
 
@@ -195,54 +201,60 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
               id="clear-search-btn"
               onClick={() => {
                 setSearchQuery("");
-                setSelectedCluster("all");
+                setSelectedField("all");
               }}
               className="mt-3 inline-block text-sm font-semibold text-accent underline-offset-4 hover:underline cursor-pointer"
             >
-              Reset search and show all domains
+              Reset search and show all fields
             </button>
           </div>
         )}
 
-        {/* Large Professional Domain Blocks */}
+        {/* Structured Field Blocks with Exact Prompt Hierarchy */}
         <div className="mt-12 space-y-14">
           {filteredClusters.map((cluster) => {
             return (
               <div
                 key={cluster.id}
-                id={`domain-panel-${cluster.id}`}
+                id={`field-panel-${cluster.id}`}
                 className="scroll-mt-12 rounded-2xl border border-line bg-surface/30 p-6 sm:p-8 md:p-10"
               >
-                {/* Big Category Header */}
+                {/* 11. Exact Field Header Hierarchy */}
                 <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-line">
                   <div>
+                    {/* Line 1: FIELD 01 · 5 STANDARD INSTRUMENTS */}
                     <div className="flex items-center gap-2.5">
                       <span className="font-mono text-xs font-bold text-accent uppercase tracking-wider">
-                        DOMAIN {cluster.code}
-                      </span>
-                      <span className="text-muted/50">·</span>
-                      <span className="font-mono text-xs text-muted uppercase tracking-wider">
-                        {cluster.tests.length} Standard Instruments
+                        FIELD {cluster.code} · {cluster.tests.length} STANDARD INSTRUMENTS
                       </span>
                     </div>
 
+                    {/* Line 2: Title */}
                     <h3 className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-ink">
-                      {t(`cluster.${cluster.id}.title`)}
+                      {t(`field.${cluster.id}.title`)}
                     </h3>
 
-                    <p className="mt-2 text-[15px] sm:text-[16px] font-medium text-ink/80">
-                      {t(`cluster.${cluster.id}.tagline`)}
+                    {/* Line 3: Subtitle */}
+                    <p className="mt-2 text-[15px] sm:text-[16px] font-medium text-ink/85">
+                      {t(`field.${cluster.id}.subtitle`)}
                     </p>
 
-                    <p className="mt-1.5 max-w-3xl text-[14px] text-muted leading-relaxed">
-                      {t(`cluster.${cluster.id}.description`)}
+                    {/* Line 4: Description paragraph */}
+                    <p className="mt-2 max-w-3xl text-[14px] sm:text-[15px] text-muted leading-relaxed">
+                      {t(`field.${cluster.id}.description`)}
                     </p>
                   </div>
 
                   <div className="flex items-center gap-3 shrink-0 self-start lg:self-center">
+                    <Link
+                      href={`/${locale}/tests/${cluster.slug}`}
+                      className="rounded-md border border-line bg-surface px-3.5 py-1.5 font-mono text-[11px] font-medium text-muted hover:text-ink hover:border-line-strong transition-colors"
+                    >
+                      Field Hub →
+                    </Link>
                     {cluster.availableCount > 0 ? (
                       <span className="rounded-md bg-accent/10 border border-accent/20 px-3 py-1 font-mono text-[11px] font-bold text-accent uppercase tracking-wider">
-                        {cluster.availableCount} Ready to take
+                        {cluster.availableCount} Available
                       </span>
                     ) : null}
                     <span className="rounded-md bg-surface border border-line px-3 py-1 font-mono text-[11px] font-medium text-muted uppercase tracking-wider">
@@ -251,14 +263,13 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
                   </div>
                 </div>
 
-                {/* Grid of Tests inside this Category */}
+                {/* 10. Standard Instrument Cards Grid */}
                 <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                  {cluster.tests.map((test, index) => (
-                    <ProfessionalTestCard
+                  {cluster.tests.map((test) => (
+                    <StandardInstrumentCard
                       key={test.id}
                       test={test}
-                      clusterCode={cluster.code}
-                      index={index + 1}
+                      fieldSlug={cluster.slug}
                       locale={locale}
                     />
                   ))}
@@ -273,20 +284,17 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
   );
 }
 
-function ProfessionalTestCard({
+function StandardInstrumentCard({
   test,
-  clusterCode,
-  index,
+  fieldSlug,
   locale,
 }: {
   test: CatalogueEntry;
-  clusterCode: string;
-  index: number;
+  fieldSlug: string;
   locale: string;
 }) {
   const t = useTranslations();
   const isAvailable = test.status === "available";
-  const instrumentCode = `${clusterCode}.${String(index).padStart(2, "0")}`;
 
   const cardContent = (
     <div className="flex flex-col justify-between h-full">
@@ -294,7 +302,7 @@ function ProfessionalTestCard({
         {/* Top line with code and status */}
         <div className="flex items-center justify-between gap-2">
           <span className="font-mono text-[11px] font-semibold tracking-wider text-muted">
-            CODE: {instrumentCode}
+            CODE: {test.code}
           </span>
           <span
             className={[
@@ -304,22 +312,22 @@ function ProfessionalTestCard({
                 : "bg-line/60 text-muted",
             ].join(" ")}
           >
-            {isAvailable ? "Available" : "In Development"}
+            {isAvailable ? "STANDARD INSTRUMENT" : "IN DEVELOPMENT"}
           </span>
         </div>
 
-        {/* Test Title */}
+        {/* Instrument Title */}
         <h4 className="mt-3 font-display text-[18px] sm:text-[19px] font-bold leading-tight text-ink group-hover:text-accent transition-colors">
           {t(test.titleKey)}
         </h4>
 
-        {/* Test Summary */}
+        {/* Short description */}
         <p className="mt-2.5 text-[13.5px] leading-[1.6] text-muted line-clamp-3">
           {t(test.summaryKey)}
         </p>
       </div>
 
-      {/* Footer info */}
+      {/* Footer info and CTA */}
       <div className="mt-6 pt-4 border-t border-line/60 flex items-center justify-between text-[12px]">
         {isAvailable ? (
           <>
@@ -331,31 +339,31 @@ function ProfessionalTestCard({
             </span>
           </>
         ) : (
-          <div className="flex items-center justify-between w-full font-mono text-[11px] text-muted/70">
-            <span>Research battery</span>
-            <span className="uppercase text-[10px]">Roadmap</span>
+          <div className="flex items-center justify-between w-full font-mono text-[11px] text-muted">
+            <span>Research Battery</span>
+            <span className="inline-flex items-center gap-1 text-muted/80 group-hover:text-ink transition-colors">
+              Instrument Spec <ArrowRight className="h-3 w-3" />
+            </span>
           </div>
         )}
       </div>
     </div>
   );
 
-  if (!isAvailable) {
-    return (
-      <div
-        id={`test-card-${test.id}`}
-        className="rounded-xl border border-line bg-surface/50 p-5.5 transition-all"
-      >
-        {cardContent}
-      </div>
-    );
-  }
+  const href = isAvailable
+    ? `/${locale}/test/${test.id}`
+    : `/${locale}/tests/${fieldSlug}/${test.slug}`;
 
   return (
     <Link
-      href={`/${locale}/test/${test.id}`}
-      id={`test-card-${test.id}`}
-      className="group rounded-xl border border-line bg-surface p-5.5 shadow-[0_1px_3px_rgba(0,0,0,0.04)] transition-all hover:border-accent hover:shadow-[0_8px_24px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 motion-reduce:transition-none"
+      href={href}
+      id={`instrument-card-${test.id}`}
+      className={[
+        "group rounded-xl border p-5.5 transition-all motion-reduce:transition-none flex flex-col justify-between",
+        isAvailable
+          ? "border-line bg-surface shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:border-accent hover:shadow-[0_8px_24px_rgba(0,0,0,0.07)] hover:-translate-y-0.5 cursor-pointer"
+          : "border-line bg-surface/50 hover:border-line-strong hover:bg-surface/80 hover:-translate-y-0.5 cursor-pointer",
+      ].join(" ")}
     >
       {cardContent}
     </Link>
