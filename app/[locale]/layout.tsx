@@ -126,6 +126,12 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381513533522940"
+          crossOrigin="anonymous"
+        />
         {/* Google tag (gtag.js) */}
         <script
           async
