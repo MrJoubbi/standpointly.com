@@ -6,6 +6,10 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
+        userAgent: "Mediapartners-Google",
+        allow: "/",
+      },
+      {
         userAgent: "*",
         allow: "/",
         disallow: ["/api/pdf/"], // Prevent bot load on dynamic PDF generation endpoint

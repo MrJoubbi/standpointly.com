@@ -126,6 +126,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
+        {/* Google AdSense Meta Verification */}
+        <meta name="google-adsense-account" content="ca-pub-3381513533522940" />
+
         {/* Google AdSense */}
         <script
           async
