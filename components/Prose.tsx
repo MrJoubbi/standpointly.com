@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 
 /**
  * Shell for the static pages. Logical properties throughout so these mirror
@@ -20,10 +21,10 @@ export async function Prose({
   const t = await getTranslations();
 
   return (
-    <div className="min-h-[100svh]">
+    <div className="min-h-[100svh] flex flex-col">
       <SiteHeader locale={locale} />
 
-      <main className="mx-auto max-w-[68ch] px-6 pb-24">
+      <main className="mx-auto max-w-[68ch] px-6 pb-24 flex-1 w-full">
         <h1 className="display-optical font-display text-4xl font-extrabold text-ink">{title}</h1>
         {lede && (
           <p className="mt-6 text-lg leading-[1.65] text-muted">
@@ -32,6 +33,8 @@ export async function Prose({
         )}
         <div className="mt-12 flex flex-col gap-10">{children}</div>
       </main>
+
+      <SiteFooter locale={locale} />
     </div>
   );
 }

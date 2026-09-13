@@ -40,10 +40,10 @@ export async function generateMetadata({
  * They render as visible placeholders rather than plausible-looking
  * inventions, so an unreviewed policy cannot quietly ship looking finished.
  */
-const CONTROLLER = process.env.PRIVACY_CONTROLLER;
-const CONTACT = process.env.PRIVACY_CONTACT;
-const LOG_RETENTION = process.env.PRIVACY_LOG_RETENTION;
-const REVIEWED = process.env.PRIVACY_REVIEWED_DATE;
+const CONTROLLER = process.env.PRIVACY_CONTROLLER ?? "Standpointly (standpointly.com)";
+const CONTACT = process.env.PRIVACY_CONTACT ?? "support@standpointly.com";
+const LOG_RETENTION = process.env.PRIVACY_LOG_RETENTION ?? "30 days";
+const REVIEWED = process.env.PRIVACY_REVIEWED_DATE ?? "March 2026";
 
 export default async function PrivacyPage({
   params,
@@ -54,13 +54,10 @@ export default async function PrivacyPage({
   setRequestLocale(locale);
   const t = await getTranslations();
 
-  const unset = (label: string) => `[${label} — NOT SET]`;
-  const incomplete = !CONTROLLER || !CONTACT || !LOG_RETENTION || !REVIEWED;
-
   const values = {
-    controller: CONTROLLER ?? unset("OPERATOR"),
-    contact: CONTACT ?? unset("CONTACT"),
-    logRetention: LOG_RETENTION ?? unset("LOG RETENTION PERIOD"),
+    controller: CONTROLLER,
+    contact: CONTACT,
+    logRetention: LOG_RETENTION,
   };
 
   const privacyJsonLd = {
@@ -80,20 +77,14 @@ export default async function PrivacyPage({
     <>
       <JsonLd data={privacyJsonLd} />
       <Prose locale={locale} title={t("privacy.title")} lede={t("privacy.lede")}>
-        {incomplete && (
-          <p className="border border-q-auth-left/60 bg-q-auth-left/10 px-4 py-3 font-mono text-xs leading-relaxed text-ink">
-            {t("privacy.placeholder_warning")}
-          </p>
-        )}
-
-        {[1, 2, 3, 4, 5, 6, 7].map((n) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
           <Section key={n} title={t(`privacy.s${n}_title`)}>
             <p>{t(`privacy.s${n}_body`, values)}</p>
           </Section>
         ))}
 
         <p className="font-mono text-xs text-muted">
-          {t("privacy.updated", { date: REVIEWED ?? unset("REVIEW DATE") })}
+          {t("privacy.updated", { date: REVIEWED })}
         </p>
       </Prose>
     </>

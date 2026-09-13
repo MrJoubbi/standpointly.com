@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 import { CatalogueSection } from "@/components/CatalogueSection";
 import { JsonLd } from "@/components/JsonLd";
 import { availableTests, catalogue, testClusters } from "@/lib/catalogue";
@@ -129,16 +130,7 @@ export default async function HomePage({
         </section>
       </main>
 
-      <footer className="border-t border-line">
-        <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-6 py-10 text-[14px] text-muted">
-          <p>{t("landing.footer_note")}</p>
-          <nav className="flex gap-5">
-            <Link href={`/${locale}/about`}>{t("nav.about")}</Link>
-            <Link href={`/${locale}/method`}>{t("nav.method")}</Link>
-            <Link href={`/${locale}/privacy`}>{t("nav.privacy")}</Link>
-          </nav>
-        </div>
-      </footer>
+      <SiteFooter locale={locale} />
     </div>
   );
 }

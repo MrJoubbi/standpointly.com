@@ -23,7 +23,7 @@ export async function SiteHeader({ locale }: { locale: string }) {
         </span>
       </Link>
 
-      <nav className="flex items-center gap-3.5 sm:gap-6 text-[13px] sm:text-[15px] font-medium text-muted">
+      <nav className="flex items-center gap-3 sm:gap-5 text-[13px] sm:text-[14px] font-medium text-muted">
         <Link href={`/${locale}/about`} className="hover:text-ink transition-colors">
           {t("nav.about")}
         </Link>
@@ -32,6 +32,9 @@ export async function SiteHeader({ locale }: { locale: string }) {
         </Link>
         <Link href={`/${locale}/privacy`} className="hover:text-ink transition-colors">
           {t("nav.privacy")}
+        </Link>
+        <Link href={`/${locale}/contact`} className="hover:text-ink transition-colors">
+          {t("nav.contact")}
         </Link>
       </nav>
     </header>

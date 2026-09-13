@@ -97,6 +97,13 @@ export const metadata: Metadata = {
 };
 
 /**
+ * Ensures window.fetch has both a getter and a setter in environments (such as sandboxed
+ * iframes or strict-mode script loaders) where fetch was defined with a getter only,
+ * preventing "Cannot set property fetch of #<Window> which has only a getter" errors.
+ */
+const FETCH_SHIM = `(function(){try{var f=window.fetch;Object.defineProperty(window,'fetch',{get:function(){return typeof f==='function'?f.bind(window):f;},set:function(v){f=v;},configurable:true,enumerable:true});}catch(e){}})();`;
+
+/**
  * Runs before first paint, so a reader who chose dark never sees a white
  * flash on the way in. It must stay tiny and dependency-free — anything that
  * waits for hydration is too late to prevent the flash.
@@ -126,6 +133,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
+        {/* Environment & sandbox fetch shim */}
+        <script dangerouslySetInnerHTML={{ __html: FETCH_SHIM }} />
+
         {/* Google AdSense Meta Verification */}
         <meta name="google-adsense-account" content="ca-pub-3381513533522940" />
 

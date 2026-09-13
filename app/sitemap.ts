@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
 
     // Static content pages
-    const staticPages = ["about", "method", "privacy"];
+    const staticPages = ["about", "method", "privacy", "terms", "contact"];
     for (const page of staticPages) {
       routes.push({
         url: `${baseUrl}/${locale}/${page}`,
