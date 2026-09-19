@@ -1,10 +1,13 @@
-export interface ArchetypeInsight {
-  strengths: string[];
-  blindspots: string[];
-  communicationTips: string[];
-}
+import { ArchetypeInsight } from "./insights/types";
+import { PERSONALITY_INSIGHTS } from "./insights/personality";
+import { RELATIONSHIPS_INSIGHTS } from "./insights/relationships";
+import { SOCIETY_INSIGHTS } from "./insights/society";
+import { WELLBEING_INSIGHTS } from "./insights/wellbeing";
+import { CAREER_INSIGHTS } from "./insights/career";
 
-export const ARCHETYPE_INSIGHTS: Record<string, Record<string, ArchetypeInsight>> = {
+export type { ArchetypeInsight };
+
+const BASE_INSIGHTS: Record<string, Record<string, ArchetypeInsight>> = {
   political: {
     collectivist: {
       strengths: [
@@ -418,7 +421,21 @@ export const ARCHETYPE_INSIGHTS: Record<string, Record<string, ArchetypeInsight>
   }
 };
 
+export const ARCHETYPE_INSIGHTS: Record<string, Record<string, ArchetypeInsight>> = {
+  ...BASE_INSIGHTS,
+  "leadership-style": BASE_INSIGHTS.leadership,
+  ...PERSONALITY_INSIGHTS,
+  ...RELATIONSHIPS_INSIGHTS,
+  ...SOCIETY_INSIGHTS,
+  ...WELLBEING_INSIGHTS,
+  ...CAREER_INSIGHTS
+};
+
 export function getArchetypeInsights(testId: string, cellId: string): ArchetypeInsight | null {
-  const normalizedId = testId === "leadership-style" ? "leadership" : testId;
-  return ARCHETYPE_INSIGHTS[normalizedId]?.[cellId] || null;
+  const normalizedId = testId === "leadership" ? "leadership-style" : testId;
+  return (
+    ARCHETYPE_INSIGHTS[normalizedId]?.[cellId] ||
+    ARCHETYPE_INSIGHTS[testId]?.[cellId] ||
+    null
+  );
 }
