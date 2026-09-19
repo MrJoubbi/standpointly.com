@@ -1,0 +1,398 @@
+{
+  "id": "emotional-regulation",
+  "version": 1,
+  "title_key": "test.emotional-regulation.title",
+  "summary_key": "test.emotional-regulation.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "cognitive_reappraisal",
+      "name_key": "axis.cognitive_reappraisal.name",
+      "negative_label_key": "axis.cognitive_reappraisal.negative",
+      "positive_label_key": "axis.cognitive_reappraisal.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "expressive_modulation",
+      "name_key": "axis.expressive_modulation.name",
+      "negative_label_key": "axis.expressive_modulation.negative",
+      "positive_label_key": "axis.expressive_modulation.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "stoic_processor",
+      "name_key": "sector.emotional-regulation.stoic_processor",
+      "label_key": "cell.emotional-regulation.stoic_processor",
+      "description_key": "description.emotional-regulation.stoic_processor"
+    },
+    {
+      "id": "calibrated_regulator",
+      "name_key": "sector.emotional-regulation.calibrated_regulator",
+      "label_key": "cell.emotional-regulation.calibrated_regulator",
+      "description_key": "description.emotional-regulation.calibrated_regulator"
+    },
+    {
+      "id": "strategic_reappraiser",
+      "name_key": "sector.emotional-regulation.strategic_reappraiser",
+      "label_key": "cell.emotional-regulation.strategic_reappraiser",
+      "description_key": "description.emotional-regulation.strategic_reappraiser"
+    },
+    {
+      "id": "quiet_internalizer",
+      "name_key": "sector.emotional-regulation.quiet_internalizer",
+      "label_key": "cell.emotional-regulation.quiet_internalizer",
+      "description_key": "description.emotional-regulation.quiet_internalizer"
+    },
+    {
+      "id": "adaptive_moderator",
+      "name_key": "sector.emotional-regulation.adaptive_moderator",
+      "label_key": "cell.emotional-regulation.adaptive_moderator",
+      "description_key": "description.emotional-regulation.adaptive_moderator"
+    },
+    {
+      "id": "mindful_reframer",
+      "name_key": "sector.emotional-regulation.mindful_reframer",
+      "label_key": "cell.emotional-regulation.mindful_reframer",
+      "description_key": "description.emotional-regulation.mindful_reframer"
+    },
+    {
+      "id": "raw_authentic",
+      "name_key": "sector.emotional-regulation.raw_authentic",
+      "label_key": "cell.emotional-regulation.raw_authentic",
+      "description_key": "description.emotional-regulation.raw_authentic"
+    },
+    {
+      "id": "spontaneous_expressor",
+      "name_key": "sector.emotional-regulation.spontaneous_expressor",
+      "label_key": "cell.emotional-regulation.spontaneous_expressor",
+      "description_key": "description.emotional-regulation.spontaneous_expressor"
+    },
+    {
+      "id": "expressive_synthesizer",
+      "name_key": "sector.emotional-regulation.expressive_synthesizer",
+      "label_key": "cell.emotional-regulation.expressive_synthesizer",
+      "description_key": "description.emotional-regulation.expressive_synthesizer"
+    }
+  ],
+  "questions": [
+    {
+      "id": "er01",
+      "text_key": "q.emotional-regulation.er01",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er02",
+      "text_key": "q.emotional-regulation.er02",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er03",
+      "text_key": "q.emotional-regulation.er03",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er04",
+      "text_key": "q.emotional-regulation.er04",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er05",
+      "text_key": "q.emotional-regulation.er05",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er06",
+      "text_key": "q.emotional-regulation.er06",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er07",
+      "text_key": "q.emotional-regulation.er07",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 2
+      }
+    },
+    {
+      "id": "er08",
+      "text_key": "q.emotional-regulation.er08",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 2
+      }
+    },
+    {
+      "id": "er09",
+      "text_key": "q.emotional-regulation.er09",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": -2
+      }
+    },
+    {
+      "id": "er10",
+      "text_key": "q.emotional-regulation.er10",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": -2
+      }
+    },
+    {
+      "id": "er11",
+      "text_key": "q.emotional-regulation.er11",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er12",
+      "text_key": "q.emotional-regulation.er12",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er13",
+      "text_key": "q.emotional-regulation.er13",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er14",
+      "text_key": "q.emotional-regulation.er14",
+      "w": {
+        "cognitive_reappraisal": 2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er15",
+      "text_key": "q.emotional-regulation.er15",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er16",
+      "text_key": "q.emotional-regulation.er16",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er17",
+      "text_key": "q.emotional-regulation.er17",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er18",
+      "text_key": "q.emotional-regulation.er18",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er19",
+      "text_key": "q.emotional-regulation.er19",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er20",
+      "text_key": "q.emotional-regulation.er20",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er21",
+      "text_key": "q.emotional-regulation.er21",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 2
+      }
+    },
+    {
+      "id": "er22",
+      "text_key": "q.emotional-regulation.er22",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 2
+      }
+    },
+    {
+      "id": "er23",
+      "text_key": "q.emotional-regulation.er23",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": -2
+      }
+    },
+    {
+      "id": "er24",
+      "text_key": "q.emotional-regulation.er24",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": -2
+      }
+    },
+    {
+      "id": "er25",
+      "text_key": "q.emotional-regulation.er25",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er26",
+      "text_key": "q.emotional-regulation.er26",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er27",
+      "text_key": "q.emotional-regulation.er27",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er28",
+      "text_key": "q.emotional-regulation.er28",
+      "w": {
+        "cognitive_reappraisal": -2,
+        "expressive_modulation": 0
+      }
+    },
+    {
+      "id": "er29",
+      "text_key": "q.emotional-regulation.er29",
+      "w": {
+        "cognitive_reappraisal": 0,
+        "expressive_modulation": 2
+      }
+    },
+    {
+      "id": "er30",
+      "text_key": "q.emotional-regulation.er30",
+      "w": {
+        "cognitive_reappraisal": 0,
+        "expressive_modulation": 2
+      }
+    },
+    {
+      "id": "er31",
+      "text_key": "q.emotional-regulation.er31",
+      "w": {
+        "cognitive_reappraisal": 0,
+        "expressive_modulation": 2
+      }
+    },
+    {
+      "id": "er32",
+      "text_key": "q.emotional-regulation.er32",
+      "w": {
+        "cognitive_reappraisal": 0,
+        "expressive_modulation": 2
+      }
+    },
+    {
+      "id": "er33",
+      "text_key": "q.emotional-regulation.er33",
+      "w": {
+        "cognitive_reappraisal": 0,
+        "expressive_modulation": -2
+      }
+    },
+    {
+      "id": "er34",
+      "text_key": "q.emotional-regulation.er34",
+      "w": {
+        "cognitive_reappraisal": 0,
+        "expressive_modulation": -2
+      }
+    },
+    {
+      "id": "er35",
+      "text_key": "q.emotional-regulation.er35",
+      "w": {
+        "cognitive_reappraisal": 0,
+        "expressive_modulation": -2
+      }
+    },
+    {
+      "id": "er36",
+      "text_key": "q.emotional-regulation.er36",
+      "w": {
+        "cognitive_reappraisal": 0,
+        "expressive_modulation": -2
+      }
+    }
+  ]
+}

@@ -419,5 +419,6 @@ export const ARCHETYPE_INSIGHTS: Record<string, Record<string, ArchetypeInsight>
 };
 
 export function getArchetypeInsights(testId: string, cellId: string): ArchetypeInsight | null {
-  return ARCHETYPE_INSIGHTS[testId]?.[cellId] || null;
+  const normalizedId = testId === "leadership-style" ? "leadership" : testId;
+  return ARCHETYPE_INSIGHTS[normalizedId]?.[cellId] || null;
 }

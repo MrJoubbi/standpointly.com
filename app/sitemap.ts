@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { listTestIds } from "@/lib/config";
+import { FIELDS_DEFINITION } from "@/lib/catalogue";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.SITE_URL ?? "https://standpointly.com";
@@ -23,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     });
 
-    // Test pages
+    // Test assessment flow pages
     for (const testId of testIds) {
       routes.push({
         url: `${baseUrl}/${locale}/test/${testId}`,
@@ -36,6 +37,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
           ),
         },
       });
+    }
+
+    // Field hub directory pages
+    for (const field of FIELDS_DEFINITION) {
+      routes.push({
+        url: `${baseUrl}/${locale}/tests/${field.slug}`,
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 0.85,
+        alternates: {
+          languages: Object.fromEntries(
+            routing.locales.map((l) => [l, `${baseUrl}/${l}/tests/${field.slug}`]),
+          ),
+        },
+      });
+
+      // Individual instrument landing pages (high SEO value)
+      for (const inst of field.instruments) {
+        routes.push({
+          url: `${baseUrl}/${locale}/tests/${field.slug}/${inst.slug}`,
+          lastModified: now,
+          changeFrequency: "weekly",
+          priority: 0.95,
+          alternates: {
+            languages: Object.fromEntries(
+              routing.locales.map((l) => [
+                l,
+                `${baseUrl}/${l}/tests/${field.slug}/${inst.slug}`,
+              ]),
+            ),
+          },
+        });
+      }
     }
 
     // Static content pages

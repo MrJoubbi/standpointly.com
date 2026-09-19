@@ -17,8 +17,40 @@ const FIELD_ICONS: Record<string, React.ReactNode> = {
 };
 
 const TEST_DISPLAY_NAMES: Record<string, string> = {
-  political: "The Political Standpoint Test",
+  // Field 01 - Personality
+  "big-five": "The Big Five Personality Spectrum",
+  "dark-triad": "The Dark Triad Spectrum",
+  empathy: "Affective & Cognitive Empathy Mapping",
+  "emotional-intelligence": "Emotional Intelligence Spectrum",
+  "self-esteem": "Self-Worth & Contingency Profile",
+
+  // Field 02 - Relationships
   attachment: "Relational Attachment Style",
+  "love-language": "Relational Affection Modalities",
+  compatibility: "Relational Compatibility Matrix",
+  "relationship-anxiety": "Relational Security & Vigilance",
+  boundaries: "Interpersonal Boundary Architecture",
+
+  // Field 03 - Beliefs & Values
+  political: "The Political Standpoint Test",
+  "feminist-perspectives": "Feminist Perspectives Compass",
+  "moral-foundations": "Moral Foundations Compass",
+  "gender-equality": "Gender Parity & Structural Equity",
+  "individualism-collectivism": "Individualism vs. Collectivism Spectrum",
+
+  // Field 04 - Wellbeing
+  stress: "Perceived Stress & Resilience Profile",
+  burnout: "Occupational Burnout & Exhaustion Index",
+  "emotional-regulation": "Emotion Regulation Strategies",
+  resilience: "Psychological Resilience & Tenacity",
+  procrastination: "Procrastination & Temporal Delay",
+
+  // Field 05 - Work & Career
+  "career-personality": "Career Personality & Occupational Anchors",
+  "work-style": "Workplace Rhythm & Execution Style",
+  "leadership-style": "Executive Leadership Architecture",
+  "career-values": "Career Values & Motivating Drivers",
+  "decision-making-style": "Decision-Making Style Matrix",
 };
 
 export function NextTestBanner({ currentTestId, locale }: NextTestBannerProps) {

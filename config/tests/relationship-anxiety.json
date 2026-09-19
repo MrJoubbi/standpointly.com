@@ -1,0 +1,398 @@
+{
+  "id": "relationship-anxiety",
+  "version": 1,
+  "title_key": "test.relationship-anxiety.title",
+  "summary_key": "test.relationship-anxiety.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "abandonment_vigilance",
+      "name_key": "axis.abandonment_vigilance.name",
+      "negative_label_key": "axis.abandonment_vigilance.negative",
+      "positive_label_key": "axis.abandonment_vigilance.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "reassurance_seeking",
+      "name_key": "axis.reassurance_seeking.name",
+      "negative_label_key": "axis.reassurance_seeking.negative",
+      "positive_label_key": "axis.reassurance_seeking.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "tranquil_secure",
+      "name_key": "sector.relationship-anxiety.tranquil_secure",
+      "label_key": "cell.relationship-anxiety.tranquil_secure",
+      "description_key": "description.relationship-anxiety.tranquil_secure"
+    },
+    {
+      "id": "anchored_partner",
+      "name_key": "sector.relationship-anxiety.anchored_partner",
+      "label_key": "cell.relationship-anxiety.anchored_partner",
+      "description_key": "description.relationship-anxiety.anchored_partner"
+    },
+    {
+      "id": "watchful_guardian",
+      "name_key": "sector.relationship-anxiety.watchful_guardian",
+      "label_key": "cell.relationship-anxiety.watchful_guardian",
+      "description_key": "description.relationship-anxiety.watchful_guardian"
+    },
+    {
+      "id": "quiet_stoic",
+      "name_key": "sector.relationship-anxiety.quiet_stoic",
+      "label_key": "cell.relationship-anxiety.quiet_stoic",
+      "description_key": "description.relationship-anxiety.quiet_stoic"
+    },
+    {
+      "id": "steady_reciprocator",
+      "name_key": "sector.relationship-anxiety.steady_reciprocator",
+      "label_key": "cell.relationship-anxiety.steady_reciprocator",
+      "description_key": "description.relationship-anxiety.steady_reciprocator"
+    },
+    {
+      "id": "attentive_seeker",
+      "name_key": "sector.relationship-anxiety.attentive_seeker",
+      "label_key": "cell.relationship-anxiety.attentive_seeker",
+      "description_key": "description.relationship-anxiety.attentive_seeker"
+    },
+    {
+      "id": "withdrawn_protector",
+      "name_key": "sector.relationship-anxiety.withdrawn_protector",
+      "label_key": "cell.relationship-anxiety.withdrawn_protector",
+      "description_key": "description.relationship-anxiety.withdrawn_protector"
+    },
+    {
+      "id": "longing_inquirer",
+      "name_key": "sector.relationship-anxiety.longing_inquirer",
+      "label_key": "cell.relationship-anxiety.longing_inquirer",
+      "description_key": "description.relationship-anxiety.longing_inquirer"
+    },
+    {
+      "id": "anxious_attacher",
+      "name_key": "sector.relationship-anxiety.anxious_attacher",
+      "label_key": "cell.relationship-anxiety.anxious_attacher",
+      "description_key": "description.relationship-anxiety.anxious_attacher"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ra01",
+      "text_key": "q.relationship-anxiety.ra01",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra02",
+      "text_key": "q.relationship-anxiety.ra02",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra03",
+      "text_key": "q.relationship-anxiety.ra03",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra04",
+      "text_key": "q.relationship-anxiety.ra04",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra05",
+      "text_key": "q.relationship-anxiety.ra05",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra06",
+      "text_key": "q.relationship-anxiety.ra06",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra07",
+      "text_key": "q.relationship-anxiety.ra07",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 2
+      }
+    },
+    {
+      "id": "ra08",
+      "text_key": "q.relationship-anxiety.ra08",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 2
+      }
+    },
+    {
+      "id": "ra09",
+      "text_key": "q.relationship-anxiety.ra09",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": -2
+      }
+    },
+    {
+      "id": "ra10",
+      "text_key": "q.relationship-anxiety.ra10",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": -2
+      }
+    },
+    {
+      "id": "ra11",
+      "text_key": "q.relationship-anxiety.ra11",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra12",
+      "text_key": "q.relationship-anxiety.ra12",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra13",
+      "text_key": "q.relationship-anxiety.ra13",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra14",
+      "text_key": "q.relationship-anxiety.ra14",
+      "w": {
+        "abandonment_vigilance": 2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra15",
+      "text_key": "q.relationship-anxiety.ra15",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra16",
+      "text_key": "q.relationship-anxiety.ra16",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra17",
+      "text_key": "q.relationship-anxiety.ra17",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra18",
+      "text_key": "q.relationship-anxiety.ra18",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra19",
+      "text_key": "q.relationship-anxiety.ra19",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra20",
+      "text_key": "q.relationship-anxiety.ra20",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra21",
+      "text_key": "q.relationship-anxiety.ra21",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 2
+      }
+    },
+    {
+      "id": "ra22",
+      "text_key": "q.relationship-anxiety.ra22",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 2
+      }
+    },
+    {
+      "id": "ra23",
+      "text_key": "q.relationship-anxiety.ra23",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": -2
+      }
+    },
+    {
+      "id": "ra24",
+      "text_key": "q.relationship-anxiety.ra24",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": -2
+      }
+    },
+    {
+      "id": "ra25",
+      "text_key": "q.relationship-anxiety.ra25",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra26",
+      "text_key": "q.relationship-anxiety.ra26",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra27",
+      "text_key": "q.relationship-anxiety.ra27",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra28",
+      "text_key": "q.relationship-anxiety.ra28",
+      "w": {
+        "abandonment_vigilance": -2,
+        "reassurance_seeking": 0
+      }
+    },
+    {
+      "id": "ra29",
+      "text_key": "q.relationship-anxiety.ra29",
+      "w": {
+        "abandonment_vigilance": 0,
+        "reassurance_seeking": 2
+      }
+    },
+    {
+      "id": "ra30",
+      "text_key": "q.relationship-anxiety.ra30",
+      "w": {
+        "abandonment_vigilance": 0,
+        "reassurance_seeking": 2
+      }
+    },
+    {
+      "id": "ra31",
+      "text_key": "q.relationship-anxiety.ra31",
+      "w": {
+        "abandonment_vigilance": 0,
+        "reassurance_seeking": 2
+      }
+    },
+    {
+      "id": "ra32",
+      "text_key": "q.relationship-anxiety.ra32",
+      "w": {
+        "abandonment_vigilance": 0,
+        "reassurance_seeking": 2
+      }
+    },
+    {
+      "id": "ra33",
+      "text_key": "q.relationship-anxiety.ra33",
+      "w": {
+        "abandonment_vigilance": 0,
+        "reassurance_seeking": -2
+      }
+    },
+    {
+      "id": "ra34",
+      "text_key": "q.relationship-anxiety.ra34",
+      "w": {
+        "abandonment_vigilance": 0,
+        "reassurance_seeking": -2
+      }
+    },
+    {
+      "id": "ra35",
+      "text_key": "q.relationship-anxiety.ra35",
+      "w": {
+        "abandonment_vigilance": 0,
+        "reassurance_seeking": -2
+      }
+    },
+    {
+      "id": "ra36",
+      "text_key": "q.relationship-anxiety.ra36",
+      "w": {
+        "abandonment_vigilance": 0,
+        "reassurance_seeking": -2
+      }
+    }
+  ]
+}

@@ -68,6 +68,22 @@ export async function generateMetadata({
       title: `${title} | Standpointly`,
       description,
       url: `${SITE_URL}${canonical}`,
+      siteName: "Standpointly",
+      type: "article",
+      images: [
+        {
+          url: `/api/og/${instrument.id}?x=0.00&y=0.00&format=og`,
+          width: 1200,
+          height: 630,
+          alt: `${t(instrument.titleKey)} Coordinate Grid`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | Standpointly`,
+      description,
+      images: [`/api/og/${instrument.id}?x=0.00&y=0.00&format=og`],
     },
   };
 }
@@ -93,19 +109,84 @@ export default async function InstrumentPage({
   const relatedInstruments = getRelatedInstruments(instrument);
 
   const testHref = isAvailable ? `/${locale}/test/${instrument.id}` : null;
+  const instrumentTitle = t(instrument.titleKey);
+  const instrumentSummary = t(instrument.summaryKey);
+
+  const faqItems = [
+    {
+      question: `What does the ${instrumentTitle} measure?`,
+      answer: `${instrumentTitle} evaluates your disposition across key dimensions: ${instrument.dimensions.join(", ")}. It maps responses onto a standardized 2D Cartesian plane to identify your exact archetype sector.`,
+    },
+    {
+      question: `How is my standpoint coordinate calculated?`,
+      answer: `Responses on a 5-point Likert scale are weighted using balanced zero-sum question loadings to prevent acquiescence bias. Raw scores are normalized to continuous coordinates between -1.0 and +1.0 along two orthogonal axes.`,
+    },
+    {
+      question: `Is my test data stored or tracked on servers?`,
+      answer: `No. Standpointly uses 100% client-side execution. Your responses never leave your browser, require no account registration, and are never saved to external databases.`,
+    },
+    {
+      question: `How does 2D coordinate mapping compare to 1D binary test scores?`,
+      answer: `Traditional tests force complex human tendencies into binary dichotomies. 2D coordinate mapping preserves nuance and tension between complementary traits, locating your precise position within 9 analytical archetype sectors.`,
+    },
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Assessment",
-    name: `${t(instrument.titleKey)} — Standpointly`,
-    description: t(instrument.summaryKey),
-    identifier: instrument.code,
-    url: `${SITE_URL}/${locale}/tests/${field.slug}/${instrument.slug}`,
-    isPartOf: {
-      "@type": "CollectionPage",
-      name: `Field ${field.code}: ${field.name}`,
-      url: `${SITE_URL}/${locale}/tests/${field.slug}`,
-    },
+    "@graph": [
+      {
+        "@type": "Assessment",
+        "@id": `${SITE_URL}/${locale}/tests/${field.slug}/${instrument.slug}#assessment`,
+        name: `${instrumentTitle} — Standpointly`,
+        description: instrumentSummary,
+        identifier: instrument.code,
+        url: `${SITE_URL}/${locale}/tests/${field.slug}/${instrument.slug}`,
+        provider: {
+          "@type": "Organization",
+          name: "Standpointly",
+          url: SITE_URL,
+        },
+        isPartOf: {
+          "@type": "CollectionPage",
+          name: `Field ${field.code}: ${field.name}`,
+          url: `${SITE_URL}/${locale}/tests/${field.slug}`,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `${SITE_URL}/${locale}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: `Field ${field.code}: ${field.name}`,
+            item: `${SITE_URL}/${locale}/tests/${field.slug}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: instrumentTitle,
+            item: `${SITE_URL}/${locale}/tests/${field.slug}/${instrument.slug}`,
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((f) => ({
+          "@type": "Question",
+          name: f.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: f.answer,
+          },
+        })),
+      },
+    ],
   };
 
   return (
@@ -299,6 +380,25 @@ export default async function InstrumentPage({
                     Evaluated through bidirectional Likert statements
                   </p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Frequently Asked Questions (GEO & Search Snippets) */}
+        <section className="mt-10 rounded-2xl border border-line bg-surface/50 p-6 sm:p-8">
+          <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-accent mb-4">
+            Frequently Asked Questions & Assessment Details
+          </h2>
+          <div className="flex flex-col divide-y divide-line/60">
+            {faqItems.map((item, idx) => (
+              <div key={idx} className="py-4 first:pt-0 last:pb-0">
+                <h3 className="font-display font-semibold text-[15px] sm:text-[16px] text-ink mb-1.5">
+                  {item.question}
+                </h3>
+                <p className="text-sm text-muted leading-relaxed">
+                  {item.answer}
+                </p>
               </div>
             ))}
           </div>

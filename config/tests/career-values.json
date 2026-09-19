@@ -1,0 +1,398 @@
+{
+  "id": "career-values",
+  "version": 1,
+  "title_key": "test.career-values.title",
+  "summary_key": "test.career-values.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "commercial_mastery",
+      "name_key": "axis.commercial_mastery.name",
+      "negative_label_key": "axis.commercial_mastery.negative",
+      "positive_label_key": "axis.commercial_mastery.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "lifestyle_equilibrium",
+      "name_key": "axis.lifestyle_equilibrium.name",
+      "negative_label_key": "axis.lifestyle_equilibrium.negative",
+      "positive_label_key": "axis.lifestyle_equilibrium.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "altruistic_guardian",
+      "name_key": "sector.career-values.altruistic_guardian",
+      "label_key": "cell.career-values.altruistic_guardian",
+      "description_key": "description.career-values.altruistic_guardian"
+    },
+    {
+      "id": "balanced_contributor",
+      "name_key": "sector.career-values.balanced_contributor",
+      "label_key": "cell.career-values.balanced_contributor",
+      "description_key": "description.career-values.balanced_contributor"
+    },
+    {
+      "id": "balanced_pragmatist",
+      "name_key": "sector.career-values.balanced_pragmatist",
+      "label_key": "cell.career-values.balanced_pragmatist",
+      "description_key": "description.career-values.balanced_pragmatist"
+    },
+    {
+      "id": "devoted_servant",
+      "name_key": "sector.career-values.devoted_servant",
+      "label_key": "cell.career-values.devoted_servant",
+      "description_key": "description.career-values.devoted_servant"
+    },
+    {
+      "id": "harmonious_professional",
+      "name_key": "sector.career-values.harmonious_professional",
+      "label_key": "cell.career-values.harmonious_professional",
+      "description_key": "description.career-values.harmonious_professional"
+    },
+    {
+      "id": "commercial_achiever",
+      "name_key": "sector.career-values.commercial_achiever",
+      "label_key": "cell.career-values.commercial_achiever",
+      "description_key": "description.career-values.commercial_achiever"
+    },
+    {
+      "id": "mission_driven_reformer",
+      "name_key": "sector.career-values.mission_driven_reformer",
+      "label_key": "cell.career-values.mission_driven_reformer",
+      "description_key": "description.career-values.mission_driven_reformer"
+    },
+    {
+      "id": "lifestyle_minimalist",
+      "name_key": "sector.career-values.lifestyle_minimalist",
+      "label_key": "cell.career-values.lifestyle_minimalist",
+      "description_key": "description.career-values.lifestyle_minimalist"
+    },
+    {
+      "id": "high_yield_capitalist",
+      "name_key": "sector.career-values.high_yield_capitalist",
+      "label_key": "cell.career-values.high_yield_capitalist",
+      "description_key": "description.career-values.high_yield_capitalist"
+    }
+  ],
+  "questions": [
+    {
+      "id": "cv01",
+      "text_key": "q.career-values.cv01",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv02",
+      "text_key": "q.career-values.cv02",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv03",
+      "text_key": "q.career-values.cv03",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv04",
+      "text_key": "q.career-values.cv04",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv05",
+      "text_key": "q.career-values.cv05",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv06",
+      "text_key": "q.career-values.cv06",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv07",
+      "text_key": "q.career-values.cv07",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 2
+      }
+    },
+    {
+      "id": "cv08",
+      "text_key": "q.career-values.cv08",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 2
+      }
+    },
+    {
+      "id": "cv09",
+      "text_key": "q.career-values.cv09",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": -2
+      }
+    },
+    {
+      "id": "cv10",
+      "text_key": "q.career-values.cv10",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": -2
+      }
+    },
+    {
+      "id": "cv11",
+      "text_key": "q.career-values.cv11",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv12",
+      "text_key": "q.career-values.cv12",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv13",
+      "text_key": "q.career-values.cv13",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv14",
+      "text_key": "q.career-values.cv14",
+      "w": {
+        "commercial_mastery": 2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv15",
+      "text_key": "q.career-values.cv15",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv16",
+      "text_key": "q.career-values.cv16",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv17",
+      "text_key": "q.career-values.cv17",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv18",
+      "text_key": "q.career-values.cv18",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv19",
+      "text_key": "q.career-values.cv19",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv20",
+      "text_key": "q.career-values.cv20",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv21",
+      "text_key": "q.career-values.cv21",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 2
+      }
+    },
+    {
+      "id": "cv22",
+      "text_key": "q.career-values.cv22",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 2
+      }
+    },
+    {
+      "id": "cv23",
+      "text_key": "q.career-values.cv23",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": -2
+      }
+    },
+    {
+      "id": "cv24",
+      "text_key": "q.career-values.cv24",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": -2
+      }
+    },
+    {
+      "id": "cv25",
+      "text_key": "q.career-values.cv25",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv26",
+      "text_key": "q.career-values.cv26",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv27",
+      "text_key": "q.career-values.cv27",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv28",
+      "text_key": "q.career-values.cv28",
+      "w": {
+        "commercial_mastery": -2,
+        "lifestyle_equilibrium": 0
+      }
+    },
+    {
+      "id": "cv29",
+      "text_key": "q.career-values.cv29",
+      "w": {
+        "commercial_mastery": 0,
+        "lifestyle_equilibrium": 2
+      }
+    },
+    {
+      "id": "cv30",
+      "text_key": "q.career-values.cv30",
+      "w": {
+        "commercial_mastery": 0,
+        "lifestyle_equilibrium": 2
+      }
+    },
+    {
+      "id": "cv31",
+      "text_key": "q.career-values.cv31",
+      "w": {
+        "commercial_mastery": 0,
+        "lifestyle_equilibrium": 2
+      }
+    },
+    {
+      "id": "cv32",
+      "text_key": "q.career-values.cv32",
+      "w": {
+        "commercial_mastery": 0,
+        "lifestyle_equilibrium": 2
+      }
+    },
+    {
+      "id": "cv33",
+      "text_key": "q.career-values.cv33",
+      "w": {
+        "commercial_mastery": 0,
+        "lifestyle_equilibrium": -2
+      }
+    },
+    {
+      "id": "cv34",
+      "text_key": "q.career-values.cv34",
+      "w": {
+        "commercial_mastery": 0,
+        "lifestyle_equilibrium": -2
+      }
+    },
+    {
+      "id": "cv35",
+      "text_key": "q.career-values.cv35",
+      "w": {
+        "commercial_mastery": 0,
+        "lifestyle_equilibrium": -2
+      }
+    },
+    {
+      "id": "cv36",
+      "text_key": "q.career-values.cv36",
+      "w": {
+        "commercial_mastery": 0,
+        "lifestyle_equilibrium": -2
+      }
+    }
+  ]
+}

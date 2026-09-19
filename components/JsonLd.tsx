@@ -69,6 +69,47 @@ export function buildWebsiteJsonLd(baseUrl: string) {
   };
 }
 
+function aboutTopicForTest(testId: string): string {
+  const topics: Record<string, string> = {
+    // Field 01 - Personality
+    "big-five": "Five-Factor Model of Personality & Trait Psychology",
+    "dark-triad": "Subclinical Machiavellianism, Narcissism & Psychopathy",
+    empathy: "Affective & Cognitive Empathy Psychometrics",
+    "emotional-intelligence": "Emotional Intelligence, Self-Regulation & Social Awareness",
+    "self-esteem": "Self-Esteem Contingencies & Psychological Self-Worth",
+
+    // Field 02 - Relationships
+    attachment: "Adult Attachment Theory & Relational Security",
+    "love-language": "Interpersonal Affection Modalities & Relational Expression",
+    compatibility: "Dyadic Compatibility & Interpersonal Synergy",
+    "relationship-anxiety": "Relational Attachment Vigilance & Abandonment Sensitivity",
+    boundaries: "Bowen Family Systems & Interpersonal Boundary Architecture",
+
+    // Field 03 - Beliefs & Values
+    political: "Political Philosophy, Civic Governance & Ideological Coordinates",
+    "feminist-perspectives": "Feminist Theory, Gender Philosophy & Sociological Paradigms",
+    "moral-foundations": "Moral Foundations Theory & Ethics Psychology",
+    "gender-equality": "Gender Equity, Structural Parity & Societal Roles",
+    "individualism-collectivism": "Cultural Axiology & Individualism vs. Collectivism",
+
+    // Field 04 - Wellbeing
+    stress: "Perceived Stress Scale & Psychological Coping Capacity",
+    burnout: "Maslach Burnout Inventory & Occupational Exhaustion",
+    "emotional-regulation": "Gross Emotion Regulation Process Model",
+    resilience: "Connor-Davidson Resilience Scale & Psychological Hardiness",
+    procrastination: "Temporal Motivation Theory & Procrastination Psychology",
+
+    // Field 05 - Work & Career
+    "career-personality": "Schein Career Anchors & Vocational Psychology",
+    "work-style": "Occupational Ergonomics & Execution Rhythm",
+    "leadership-style": "Full Range Leadership Model & Transformational Leadership",
+    "career-values": "Super's Work Values & Professional Motivation",
+    "decision-making-style": "General Decision-Making Style (GDMS) Psychology",
+  };
+
+  return topics[testId] ?? "Psychometrics, Coordinate Mapping & Personality Science";
+}
+
 export function buildQuizJsonLd({
   testId,
   title,
@@ -102,12 +143,7 @@ export function buildQuizJsonLd({
         },
         about: {
           "@type": "Thing",
-          name:
-            testId === "political"
-              ? "Political Philosophy & Civic Governance"
-              : testId === "attachment"
-              ? "Adult Attachment Theory & Relationship Psychology"
-              : "Personality and Psychometrics",
+          name: aboutTopicForTest(testId),
         },
       },
       {
@@ -134,6 +170,23 @@ export function buildQuizJsonLd({
         ],
       },
     ],
+  };
+}
+
+export function buildFaqJsonLd(
+  items: Array<{ question: string; answer: string }>,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 }
 

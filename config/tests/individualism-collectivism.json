@@ -1,0 +1,398 @@
+{
+  "id": "individualism-collectivism",
+  "version": 1,
+  "title_key": "test.individualism-collectivism.title",
+  "summary_key": "test.individualism-collectivism.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "identity_primacy",
+      "name_key": "axis.identity_primacy.name",
+      "negative_label_key": "axis.identity_primacy.negative",
+      "positive_label_key": "axis.identity_primacy.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "social_hierarchy",
+      "name_key": "axis.social_hierarchy.name",
+      "negative_label_key": "axis.social_hierarchy.negative",
+      "positive_label_key": "axis.social_hierarchy.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "communal_cooperative",
+      "name_key": "sector.individualism-collectivism.communal_cooperative",
+      "label_key": "cell.individualism-collectivism.communal_cooperative",
+      "description_key": "description.individualism-collectivism.communal_cooperative"
+    },
+    {
+      "id": "civic_solidarist",
+      "name_key": "sector.individualism-collectivism.civic_solidarist",
+      "label_key": "cell.individualism-collectivism.civic_solidarist",
+      "description_key": "description.individualism-collectivism.civic_solidarist"
+    },
+    {
+      "id": "hierarchical_traditionalist",
+      "name_key": "sector.individualism-collectivism.hierarchical_traditionalist",
+      "label_key": "cell.individualism-collectivism.hierarchical_traditionalist",
+      "description_key": "description.individualism-collectivism.hierarchical_traditionalist"
+    },
+    {
+      "id": "horizontal_libertarian",
+      "name_key": "sector.individualism-collectivism.horizontal_libertarian",
+      "label_key": "cell.individualism-collectivism.horizontal_libertarian",
+      "description_key": "description.individualism-collectivism.horizontal_libertarian"
+    },
+    {
+      "id": "reciprocal_synthesizer",
+      "name_key": "sector.individualism-collectivism.reciprocal_synthesizer",
+      "label_key": "cell.individualism-collectivism.reciprocal_synthesizer",
+      "description_key": "description.individualism-collectivism.reciprocal_synthesizer"
+    },
+    {
+      "id": "competitive_meritocrat",
+      "name_key": "sector.individualism-collectivism.competitive_meritocrat",
+      "label_key": "cell.individualism-collectivism.competitive_meritocrat",
+      "description_key": "description.individualism-collectivism.competitive_meritocrat"
+    },
+    {
+      "id": "anarcho_individualist",
+      "name_key": "sector.individualism-collectivism.anarcho_individualist",
+      "label_key": "cell.individualism-collectivism.anarcho_individualist",
+      "description_key": "description.individualism-collectivism.anarcho_individualist"
+    },
+    {
+      "id": "autonomous_equalizer",
+      "name_key": "sector.individualism-collectivism.autonomous_equalizer",
+      "label_key": "cell.individualism-collectivism.autonomous_equalizer",
+      "description_key": "description.individualism-collectivism.autonomous_equalizer"
+    },
+    {
+      "id": "sovereign_pioneer",
+      "name_key": "sector.individualism-collectivism.sovereign_pioneer",
+      "label_key": "cell.individualism-collectivism.sovereign_pioneer",
+      "description_key": "description.individualism-collectivism.sovereign_pioneer"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ic01",
+      "text_key": "q.individualism-collectivism.ic01",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic02",
+      "text_key": "q.individualism-collectivism.ic02",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic03",
+      "text_key": "q.individualism-collectivism.ic03",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic04",
+      "text_key": "q.individualism-collectivism.ic04",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic05",
+      "text_key": "q.individualism-collectivism.ic05",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic06",
+      "text_key": "q.individualism-collectivism.ic06",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic07",
+      "text_key": "q.individualism-collectivism.ic07",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 2
+      }
+    },
+    {
+      "id": "ic08",
+      "text_key": "q.individualism-collectivism.ic08",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 2
+      }
+    },
+    {
+      "id": "ic09",
+      "text_key": "q.individualism-collectivism.ic09",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": -2
+      }
+    },
+    {
+      "id": "ic10",
+      "text_key": "q.individualism-collectivism.ic10",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": -2
+      }
+    },
+    {
+      "id": "ic11",
+      "text_key": "q.individualism-collectivism.ic11",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic12",
+      "text_key": "q.individualism-collectivism.ic12",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic13",
+      "text_key": "q.individualism-collectivism.ic13",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic14",
+      "text_key": "q.individualism-collectivism.ic14",
+      "w": {
+        "identity_primacy": 2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic15",
+      "text_key": "q.individualism-collectivism.ic15",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic16",
+      "text_key": "q.individualism-collectivism.ic16",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic17",
+      "text_key": "q.individualism-collectivism.ic17",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic18",
+      "text_key": "q.individualism-collectivism.ic18",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic19",
+      "text_key": "q.individualism-collectivism.ic19",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic20",
+      "text_key": "q.individualism-collectivism.ic20",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic21",
+      "text_key": "q.individualism-collectivism.ic21",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 2
+      }
+    },
+    {
+      "id": "ic22",
+      "text_key": "q.individualism-collectivism.ic22",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 2
+      }
+    },
+    {
+      "id": "ic23",
+      "text_key": "q.individualism-collectivism.ic23",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": -2
+      }
+    },
+    {
+      "id": "ic24",
+      "text_key": "q.individualism-collectivism.ic24",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": -2
+      }
+    },
+    {
+      "id": "ic25",
+      "text_key": "q.individualism-collectivism.ic25",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic26",
+      "text_key": "q.individualism-collectivism.ic26",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic27",
+      "text_key": "q.individualism-collectivism.ic27",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic28",
+      "text_key": "q.individualism-collectivism.ic28",
+      "w": {
+        "identity_primacy": -2,
+        "social_hierarchy": 0
+      }
+    },
+    {
+      "id": "ic29",
+      "text_key": "q.individualism-collectivism.ic29",
+      "w": {
+        "identity_primacy": 0,
+        "social_hierarchy": 2
+      }
+    },
+    {
+      "id": "ic30",
+      "text_key": "q.individualism-collectivism.ic30",
+      "w": {
+        "identity_primacy": 0,
+        "social_hierarchy": 2
+      }
+    },
+    {
+      "id": "ic31",
+      "text_key": "q.individualism-collectivism.ic31",
+      "w": {
+        "identity_primacy": 0,
+        "social_hierarchy": 2
+      }
+    },
+    {
+      "id": "ic32",
+      "text_key": "q.individualism-collectivism.ic32",
+      "w": {
+        "identity_primacy": 0,
+        "social_hierarchy": 2
+      }
+    },
+    {
+      "id": "ic33",
+      "text_key": "q.individualism-collectivism.ic33",
+      "w": {
+        "identity_primacy": 0,
+        "social_hierarchy": -2
+      }
+    },
+    {
+      "id": "ic34",
+      "text_key": "q.individualism-collectivism.ic34",
+      "w": {
+        "identity_primacy": 0,
+        "social_hierarchy": -2
+      }
+    },
+    {
+      "id": "ic35",
+      "text_key": "q.individualism-collectivism.ic35",
+      "w": {
+        "identity_primacy": 0,
+        "social_hierarchy": -2
+      }
+    },
+    {
+      "id": "ic36",
+      "text_key": "q.individualism-collectivism.ic36",
+      "w": {
+        "identity_primacy": 0,
+        "social_hierarchy": -2
+      }
+    }
+  ]
+}

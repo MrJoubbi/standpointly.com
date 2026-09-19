@@ -1,0 +1,398 @@
+{
+  "id": "resilience",
+  "version": 1,
+  "title_key": "test.resilience.title",
+  "summary_key": "test.resilience.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "tenacity",
+      "name_key": "axis.tenacity.name",
+      "negative_label_key": "axis.tenacity.negative",
+      "positive_label_key": "axis.tenacity.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "adaptability",
+      "name_key": "axis.adaptability.name",
+      "negative_label_key": "axis.adaptability.negative",
+      "positive_label_key": "axis.adaptability.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "steady_endurer",
+      "name_key": "sector.resilience.steady_endurer",
+      "label_key": "cell.resilience.steady_endurer",
+      "description_key": "description.resilience.steady_endurer"
+    },
+    {
+      "id": "resolute_anchor",
+      "name_key": "sector.resilience.resolute_anchor",
+      "label_key": "cell.resilience.resolute_anchor",
+      "description_key": "description.resilience.resolute_anchor"
+    },
+    {
+      "id": "indomitable_champion",
+      "name_key": "sector.resilience.indomitable_champion",
+      "label_key": "cell.resilience.indomitable_champion",
+      "description_key": "description.resilience.indomitable_champion"
+    },
+    {
+      "id": "cautious_stabilizer",
+      "name_key": "sector.resilience.cautious_stabilizer",
+      "label_key": "cell.resilience.cautious_stabilizer",
+      "description_key": "description.resilience.cautious_stabilizer"
+    },
+    {
+      "id": "balanced_navigator",
+      "name_key": "sector.resilience.balanced_navigator",
+      "label_key": "cell.resilience.balanced_navigator",
+      "description_key": "description.resilience.balanced_navigator"
+    },
+    {
+      "id": "agile_pioneer",
+      "name_key": "sector.resilience.agile_pioneer",
+      "label_key": "cell.resilience.agile_pioneer",
+      "description_key": "description.resilience.agile_pioneer"
+    },
+    {
+      "id": "fragile_hesitator",
+      "name_key": "sector.resilience.fragile_hesitator",
+      "label_key": "cell.resilience.fragile_hesitator",
+      "description_key": "description.resilience.fragile_hesitator"
+    },
+    {
+      "id": "fluid_adapter",
+      "name_key": "sector.resilience.fluid_adapter",
+      "label_key": "cell.resilience.fluid_adapter",
+      "description_key": "description.resilience.fluid_adapter"
+    },
+    {
+      "id": "dynamic_restorer",
+      "name_key": "sector.resilience.dynamic_restorer",
+      "label_key": "cell.resilience.dynamic_restorer",
+      "description_key": "description.resilience.dynamic_restorer"
+    }
+  ],
+  "questions": [
+    {
+      "id": "r01",
+      "text_key": "q.resilience.r01",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r02",
+      "text_key": "q.resilience.r02",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r03",
+      "text_key": "q.resilience.r03",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r04",
+      "text_key": "q.resilience.r04",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r05",
+      "text_key": "q.resilience.r05",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r06",
+      "text_key": "q.resilience.r06",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r07",
+      "text_key": "q.resilience.r07",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 2
+      }
+    },
+    {
+      "id": "r08",
+      "text_key": "q.resilience.r08",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 2
+      }
+    },
+    {
+      "id": "r09",
+      "text_key": "q.resilience.r09",
+      "w": {
+        "tenacity": 2,
+        "adaptability": -2
+      }
+    },
+    {
+      "id": "r10",
+      "text_key": "q.resilience.r10",
+      "w": {
+        "tenacity": 2,
+        "adaptability": -2
+      }
+    },
+    {
+      "id": "r11",
+      "text_key": "q.resilience.r11",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r12",
+      "text_key": "q.resilience.r12",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r13",
+      "text_key": "q.resilience.r13",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r14",
+      "text_key": "q.resilience.r14",
+      "w": {
+        "tenacity": 2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r15",
+      "text_key": "q.resilience.r15",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r16",
+      "text_key": "q.resilience.r16",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r17",
+      "text_key": "q.resilience.r17",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r18",
+      "text_key": "q.resilience.r18",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r19",
+      "text_key": "q.resilience.r19",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r20",
+      "text_key": "q.resilience.r20",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r21",
+      "text_key": "q.resilience.r21",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 2
+      }
+    },
+    {
+      "id": "r22",
+      "text_key": "q.resilience.r22",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 2
+      }
+    },
+    {
+      "id": "r23",
+      "text_key": "q.resilience.r23",
+      "w": {
+        "tenacity": -2,
+        "adaptability": -2
+      }
+    },
+    {
+      "id": "r24",
+      "text_key": "q.resilience.r24",
+      "w": {
+        "tenacity": -2,
+        "adaptability": -2
+      }
+    },
+    {
+      "id": "r25",
+      "text_key": "q.resilience.r25",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r26",
+      "text_key": "q.resilience.r26",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r27",
+      "text_key": "q.resilience.r27",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r28",
+      "text_key": "q.resilience.r28",
+      "w": {
+        "tenacity": -2,
+        "adaptability": 0
+      }
+    },
+    {
+      "id": "r29",
+      "text_key": "q.resilience.r29",
+      "w": {
+        "tenacity": 0,
+        "adaptability": 2
+      }
+    },
+    {
+      "id": "r30",
+      "text_key": "q.resilience.r30",
+      "w": {
+        "tenacity": 0,
+        "adaptability": 2
+      }
+    },
+    {
+      "id": "r31",
+      "text_key": "q.resilience.r31",
+      "w": {
+        "tenacity": 0,
+        "adaptability": 2
+      }
+    },
+    {
+      "id": "r32",
+      "text_key": "q.resilience.r32",
+      "w": {
+        "tenacity": 0,
+        "adaptability": 2
+      }
+    },
+    {
+      "id": "r33",
+      "text_key": "q.resilience.r33",
+      "w": {
+        "tenacity": 0,
+        "adaptability": -2
+      }
+    },
+    {
+      "id": "r34",
+      "text_key": "q.resilience.r34",
+      "w": {
+        "tenacity": 0,
+        "adaptability": -2
+      }
+    },
+    {
+      "id": "r35",
+      "text_key": "q.resilience.r35",
+      "w": {
+        "tenacity": 0,
+        "adaptability": -2
+      }
+    },
+    {
+      "id": "r36",
+      "text_key": "q.resilience.r36",
+      "w": {
+        "tenacity": 0,
+        "adaptability": -2
+      }
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "id": "procrastination",
+  "version": 1,
+  "title_key": "test.procrastination.title",
+  "summary_key": "test.procrastination.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "task_aversion",
+      "name_key": "axis.task_aversion.name",
+      "negative_label_key": "axis.task_aversion.negative",
+      "positive_label_key": "axis.task_aversion.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "impulsive_delay",
+      "name_key": "axis.impulsive_delay.name",
+      "negative_label_key": "axis.impulsive_delay.negative",
+      "positive_label_key": "axis.impulsive_delay.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "disciplined_executor",
+      "name_key": "sector.procrastination.disciplined_executor",
+      "label_key": "cell.procrastination.disciplined_executor",
+      "description_key": "description.procrastination.disciplined_executor"
+    },
+    {
+      "id": "methodical_finisher",
+      "name_key": "sector.procrastination.methodical_finisher",
+      "label_key": "cell.procrastination.methodical_finisher",
+      "description_key": "description.procrastination.methodical_finisher"
+    },
+    {
+      "id": "paralyzed_perfectionist",
+      "name_key": "sector.procrastination.paralyzed_perfectionist",
+      "label_key": "cell.procrastination.paralyzed_perfectionist",
+      "description_key": "description.procrastination.paralyzed_perfectionist"
+    },
+    {
+      "id": "steady_pacer",
+      "name_key": "sector.procrastination.steady_pacer",
+      "label_key": "cell.procrastination.steady_pacer",
+      "description_key": "description.procrastination.steady_pacer"
+    },
+    {
+      "id": "reactive_balancer",
+      "name_key": "sector.procrastination.reactive_balancer",
+      "label_key": "cell.procrastination.reactive_balancer",
+      "description_key": "description.procrastination.reactive_balancer"
+    },
+    {
+      "id": "pressure_prompted",
+      "name_key": "sector.procrastination.pressure_prompted",
+      "label_key": "cell.procrastination.pressure_prompted",
+      "description_key": "description.procrastination.pressure_prompted"
+    },
+    {
+      "id": "focused_opportunist",
+      "name_key": "sector.procrastination.focused_opportunist",
+      "label_key": "cell.procrastination.focused_opportunist",
+      "description_key": "description.procrastination.focused_opportunist"
+    },
+    {
+      "id": "spontaneous_dabbler",
+      "name_key": "sector.procrastination.spontaneous_dabbler",
+      "label_key": "cell.procrastination.spontaneous_dabbler",
+      "description_key": "description.procrastination.spontaneous_dabbler"
+    },
+    {
+      "id": "chronic_delayer",
+      "name_key": "sector.procrastination.chronic_delayer",
+      "label_key": "cell.procrastination.chronic_delayer",
+      "description_key": "description.procrastination.chronic_delayer"
+    }
+  ],
+  "questions": [
+    {
+      "id": "p01",
+      "text_key": "q.procrastination.p01",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p02",
+      "text_key": "q.procrastination.p02",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p03",
+      "text_key": "q.procrastination.p03",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p04",
+      "text_key": "q.procrastination.p04",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p05",
+      "text_key": "q.procrastination.p05",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p06",
+      "text_key": "q.procrastination.p06",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p07",
+      "text_key": "q.procrastination.p07",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 2
+      }
+    },
+    {
+      "id": "p08",
+      "text_key": "q.procrastination.p08",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 2
+      }
+    },
+    {
+      "id": "p09",
+      "text_key": "q.procrastination.p09",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": -2
+      }
+    },
+    {
+      "id": "p10",
+      "text_key": "q.procrastination.p10",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": -2
+      }
+    },
+    {
+      "id": "p11",
+      "text_key": "q.procrastination.p11",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p12",
+      "text_key": "q.procrastination.p12",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p13",
+      "text_key": "q.procrastination.p13",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p14",
+      "text_key": "q.procrastination.p14",
+      "w": {
+        "task_aversion": 2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p15",
+      "text_key": "q.procrastination.p15",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p16",
+      "text_key": "q.procrastination.p16",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p17",
+      "text_key": "q.procrastination.p17",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p18",
+      "text_key": "q.procrastination.p18",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p19",
+      "text_key": "q.procrastination.p19",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p20",
+      "text_key": "q.procrastination.p20",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p21",
+      "text_key": "q.procrastination.p21",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 2
+      }
+    },
+    {
+      "id": "p22",
+      "text_key": "q.procrastination.p22",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 2
+      }
+    },
+    {
+      "id": "p23",
+      "text_key": "q.procrastination.p23",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": -2
+      }
+    },
+    {
+      "id": "p24",
+      "text_key": "q.procrastination.p24",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": -2
+      }
+    },
+    {
+      "id": "p25",
+      "text_key": "q.procrastination.p25",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p26",
+      "text_key": "q.procrastination.p26",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p27",
+      "text_key": "q.procrastination.p27",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p28",
+      "text_key": "q.procrastination.p28",
+      "w": {
+        "task_aversion": -2,
+        "impulsive_delay": 0
+      }
+    },
+    {
+      "id": "p29",
+      "text_key": "q.procrastination.p29",
+      "w": {
+        "task_aversion": 0,
+        "impulsive_delay": 2
+      }
+    },
+    {
+      "id": "p30",
+      "text_key": "q.procrastination.p30",
+      "w": {
+        "task_aversion": 0,
+        "impulsive_delay": 2
+      }
+    },
+    {
+      "id": "p31",
+      "text_key": "q.procrastination.p31",
+      "w": {
+        "task_aversion": 0,
+        "impulsive_delay": 2
+      }
+    },
+    {
+      "id": "p32",
+      "text_key": "q.procrastination.p32",
+      "w": {
+        "task_aversion": 0,
+        "impulsive_delay": 2
+      }
+    },
+    {
+      "id": "p33",
+      "text_key": "q.procrastination.p33",
+      "w": {
+        "task_aversion": 0,
+        "impulsive_delay": -2
+      }
+    },
+    {
+      "id": "p34",
+      "text_key": "q.procrastination.p34",
+      "w": {
+        "task_aversion": 0,
+        "impulsive_delay": -2
+      }
+    },
+    {
+      "id": "p35",
+      "text_key": "q.procrastination.p35",
+      "w": {
+        "task_aversion": 0,
+        "impulsive_delay": -2
+      }
+    },
+    {
+      "id": "p36",
+      "text_key": "q.procrastination.p36",
+      "w": {
+        "task_aversion": 0,
+        "impulsive_delay": -2
+      }
+    }
+  ]
+}

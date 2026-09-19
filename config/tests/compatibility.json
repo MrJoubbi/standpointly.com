@@ -1,0 +1,398 @@
+{
+  "id": "compatibility",
+  "version": 1,
+  "title_key": "test.compatibility.title",
+  "summary_key": "test.compatibility.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "interdependence",
+      "name_key": "axis.interdependence.name",
+      "negative_label_key": "axis.interdependence.negative",
+      "positive_label_key": "axis.interdependence.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "temperament_harmony",
+      "name_key": "axis.temperament_harmony.name",
+      "negative_label_key": "axis.temperament_harmony.negative",
+      "positive_label_key": "axis.temperament_harmony.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "parallel_anchors",
+      "name_key": "sector.compatibility.parallel_anchors",
+      "label_key": "cell.compatibility.parallel_anchors",
+      "description_key": "description.compatibility.parallel_anchors"
+    },
+    {
+      "id": "harmonious_duo",
+      "name_key": "sector.compatibility.harmonious_duo",
+      "label_key": "cell.compatibility.harmonious_duo",
+      "description_key": "description.compatibility.harmonious_duo"
+    },
+    {
+      "id": "fused_partners",
+      "name_key": "sector.compatibility.fused_partners",
+      "label_key": "cell.compatibility.fused_partners",
+      "description_key": "description.compatibility.fused_partners"
+    },
+    {
+      "id": "independent_allies",
+      "name_key": "sector.compatibility.independent_allies",
+      "label_key": "cell.compatibility.independent_allies",
+      "description_key": "description.compatibility.independent_allies"
+    },
+    {
+      "id": "balanced_mates",
+      "name_key": "sector.compatibility.balanced_mates",
+      "label_key": "cell.compatibility.balanced_mates",
+      "description_key": "description.compatibility.balanced_mates"
+    },
+    {
+      "id": "collaborative_explorers",
+      "name_key": "sector.compatibility.collaborative_explorers",
+      "label_key": "cell.compatibility.collaborative_explorers",
+      "description_key": "description.compatibility.collaborative_explorers"
+    },
+    {
+      "id": "free_spirits",
+      "name_key": "sector.compatibility.free_spirits",
+      "label_key": "cell.compatibility.free_spirits",
+      "description_key": "description.compatibility.free_spirits"
+    },
+    {
+      "id": "adventurous_seekers",
+      "name_key": "sector.compatibility.adventurous_seekers",
+      "label_key": "cell.compatibility.adventurous_seekers",
+      "description_key": "description.compatibility.adventurous_seekers"
+    },
+    {
+      "id": "kaleidoscopic_lovers",
+      "name_key": "sector.compatibility.kaleidoscopic_lovers",
+      "label_key": "cell.compatibility.kaleidoscopic_lovers",
+      "description_key": "description.compatibility.kaleidoscopic_lovers"
+    }
+  ],
+  "questions": [
+    {
+      "id": "c01",
+      "text_key": "q.compatibility.c01",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c02",
+      "text_key": "q.compatibility.c02",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c03",
+      "text_key": "q.compatibility.c03",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c04",
+      "text_key": "q.compatibility.c04",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c05",
+      "text_key": "q.compatibility.c05",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c06",
+      "text_key": "q.compatibility.c06",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c07",
+      "text_key": "q.compatibility.c07",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 2
+      }
+    },
+    {
+      "id": "c08",
+      "text_key": "q.compatibility.c08",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 2
+      }
+    },
+    {
+      "id": "c09",
+      "text_key": "q.compatibility.c09",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": -2
+      }
+    },
+    {
+      "id": "c10",
+      "text_key": "q.compatibility.c10",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": -2
+      }
+    },
+    {
+      "id": "c11",
+      "text_key": "q.compatibility.c11",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c12",
+      "text_key": "q.compatibility.c12",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c13",
+      "text_key": "q.compatibility.c13",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c14",
+      "text_key": "q.compatibility.c14",
+      "w": {
+        "interdependence": 2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c15",
+      "text_key": "q.compatibility.c15",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c16",
+      "text_key": "q.compatibility.c16",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c17",
+      "text_key": "q.compatibility.c17",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c18",
+      "text_key": "q.compatibility.c18",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c19",
+      "text_key": "q.compatibility.c19",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c20",
+      "text_key": "q.compatibility.c20",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c21",
+      "text_key": "q.compatibility.c21",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 2
+      }
+    },
+    {
+      "id": "c22",
+      "text_key": "q.compatibility.c22",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 2
+      }
+    },
+    {
+      "id": "c23",
+      "text_key": "q.compatibility.c23",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": -2
+      }
+    },
+    {
+      "id": "c24",
+      "text_key": "q.compatibility.c24",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": -2
+      }
+    },
+    {
+      "id": "c25",
+      "text_key": "q.compatibility.c25",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c26",
+      "text_key": "q.compatibility.c26",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c27",
+      "text_key": "q.compatibility.c27",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c28",
+      "text_key": "q.compatibility.c28",
+      "w": {
+        "interdependence": -2,
+        "temperament_harmony": 0
+      }
+    },
+    {
+      "id": "c29",
+      "text_key": "q.compatibility.c29",
+      "w": {
+        "interdependence": 0,
+        "temperament_harmony": 2
+      }
+    },
+    {
+      "id": "c30",
+      "text_key": "q.compatibility.c30",
+      "w": {
+        "interdependence": 0,
+        "temperament_harmony": 2
+      }
+    },
+    {
+      "id": "c31",
+      "text_key": "q.compatibility.c31",
+      "w": {
+        "interdependence": 0,
+        "temperament_harmony": 2
+      }
+    },
+    {
+      "id": "c32",
+      "text_key": "q.compatibility.c32",
+      "w": {
+        "interdependence": 0,
+        "temperament_harmony": 2
+      }
+    },
+    {
+      "id": "c33",
+      "text_key": "q.compatibility.c33",
+      "w": {
+        "interdependence": 0,
+        "temperament_harmony": -2
+      }
+    },
+    {
+      "id": "c34",
+      "text_key": "q.compatibility.c34",
+      "w": {
+        "interdependence": 0,
+        "temperament_harmony": -2
+      }
+    },
+    {
+      "id": "c35",
+      "text_key": "q.compatibility.c35",
+      "w": {
+        "interdependence": 0,
+        "temperament_harmony": -2
+      }
+    },
+    {
+      "id": "c36",
+      "text_key": "q.compatibility.c36",
+      "w": {
+        "interdependence": 0,
+        "temperament_harmony": -2
+      }
+    }
+  ]
+}

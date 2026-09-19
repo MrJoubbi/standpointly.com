@@ -1,0 +1,398 @@
+{
+  "id": "gender-equality",
+  "version": 1,
+  "title_key": "test.gender-equality.title",
+  "summary_key": "test.gender-equality.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "economic_parity",
+      "name_key": "axis.economic_parity.name",
+      "negative_label_key": "axis.economic_parity.negative",
+      "positive_label_key": "axis.economic_parity.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "role_symmetry",
+      "name_key": "axis.role_symmetry.name",
+      "negative_label_key": "axis.role_symmetry.negative",
+      "positive_label_key": "axis.role_symmetry.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "complementary_steward",
+      "name_key": "sector.gender-equality.complementary_steward",
+      "label_key": "cell.gender-equality.complementary_steward",
+      "description_key": "description.gender-equality.complementary_steward"
+    },
+    {
+      "id": "measured_reformist",
+      "name_key": "sector.gender-equality.measured_reformist",
+      "label_key": "cell.gender-equality.measured_reformist",
+      "description_key": "description.gender-equality.measured_reformist"
+    },
+    {
+      "id": "systemic_equalizer",
+      "name_key": "sector.gender-equality.systemic_equalizer",
+      "label_key": "cell.gender-equality.systemic_equalizer",
+      "description_key": "description.gender-equality.systemic_equalizer"
+    },
+    {
+      "id": "pragmatic_neutral",
+      "name_key": "sector.gender-equality.pragmatic_neutral",
+      "label_key": "cell.gender-equality.pragmatic_neutral",
+      "description_key": "description.gender-equality.pragmatic_neutral"
+    },
+    {
+      "id": "balanced_egalitarian",
+      "name_key": "sector.gender-equality.balanced_egalitarian",
+      "label_key": "cell.gender-equality.balanced_egalitarian",
+      "description_key": "description.gender-equality.balanced_egalitarian"
+    },
+    {
+      "id": "progressive_parity_champion",
+      "name_key": "sector.gender-equality.progressive_parity_champion",
+      "label_key": "cell.gender-equality.progressive_parity_champion",
+      "description_key": "description.gender-equality.progressive_parity_champion"
+    },
+    {
+      "id": "libertarian_individualist",
+      "name_key": "sector.gender-equality.libertarian_individualist",
+      "label_key": "cell.gender-equality.libertarian_individualist",
+      "description_key": "description.gender-equality.libertarian_individualist"
+    },
+    {
+      "id": "civic_modernizer",
+      "name_key": "sector.gender-equality.civic_modernizer",
+      "label_key": "cell.gender-equality.civic_modernizer",
+      "description_key": "description.gender-equality.civic_modernizer"
+    },
+    {
+      "id": "radical_symmetry_advocate",
+      "name_key": "sector.gender-equality.radical_symmetry_advocate",
+      "label_key": "cell.gender-equality.radical_symmetry_advocate",
+      "description_key": "description.gender-equality.radical_symmetry_advocate"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ge01",
+      "text_key": "q.gender-equality.ge01",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge02",
+      "text_key": "q.gender-equality.ge02",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge03",
+      "text_key": "q.gender-equality.ge03",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge04",
+      "text_key": "q.gender-equality.ge04",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge05",
+      "text_key": "q.gender-equality.ge05",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge06",
+      "text_key": "q.gender-equality.ge06",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge07",
+      "text_key": "q.gender-equality.ge07",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 2
+      }
+    },
+    {
+      "id": "ge08",
+      "text_key": "q.gender-equality.ge08",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 2
+      }
+    },
+    {
+      "id": "ge09",
+      "text_key": "q.gender-equality.ge09",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": -2
+      }
+    },
+    {
+      "id": "ge10",
+      "text_key": "q.gender-equality.ge10",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": -2
+      }
+    },
+    {
+      "id": "ge11",
+      "text_key": "q.gender-equality.ge11",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge12",
+      "text_key": "q.gender-equality.ge12",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge13",
+      "text_key": "q.gender-equality.ge13",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge14",
+      "text_key": "q.gender-equality.ge14",
+      "w": {
+        "economic_parity": 2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge15",
+      "text_key": "q.gender-equality.ge15",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge16",
+      "text_key": "q.gender-equality.ge16",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge17",
+      "text_key": "q.gender-equality.ge17",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge18",
+      "text_key": "q.gender-equality.ge18",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge19",
+      "text_key": "q.gender-equality.ge19",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge20",
+      "text_key": "q.gender-equality.ge20",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge21",
+      "text_key": "q.gender-equality.ge21",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 2
+      }
+    },
+    {
+      "id": "ge22",
+      "text_key": "q.gender-equality.ge22",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 2
+      }
+    },
+    {
+      "id": "ge23",
+      "text_key": "q.gender-equality.ge23",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": -2
+      }
+    },
+    {
+      "id": "ge24",
+      "text_key": "q.gender-equality.ge24",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": -2
+      }
+    },
+    {
+      "id": "ge25",
+      "text_key": "q.gender-equality.ge25",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge26",
+      "text_key": "q.gender-equality.ge26",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge27",
+      "text_key": "q.gender-equality.ge27",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge28",
+      "text_key": "q.gender-equality.ge28",
+      "w": {
+        "economic_parity": -2,
+        "role_symmetry": 0
+      }
+    },
+    {
+      "id": "ge29",
+      "text_key": "q.gender-equality.ge29",
+      "w": {
+        "economic_parity": 0,
+        "role_symmetry": 2
+      }
+    },
+    {
+      "id": "ge30",
+      "text_key": "q.gender-equality.ge30",
+      "w": {
+        "economic_parity": 0,
+        "role_symmetry": 2
+      }
+    },
+    {
+      "id": "ge31",
+      "text_key": "q.gender-equality.ge31",
+      "w": {
+        "economic_parity": 0,
+        "role_symmetry": 2
+      }
+    },
+    {
+      "id": "ge32",
+      "text_key": "q.gender-equality.ge32",
+      "w": {
+        "economic_parity": 0,
+        "role_symmetry": 2
+      }
+    },
+    {
+      "id": "ge33",
+      "text_key": "q.gender-equality.ge33",
+      "w": {
+        "economic_parity": 0,
+        "role_symmetry": -2
+      }
+    },
+    {
+      "id": "ge34",
+      "text_key": "q.gender-equality.ge34",
+      "w": {
+        "economic_parity": 0,
+        "role_symmetry": -2
+      }
+    },
+    {
+      "id": "ge35",
+      "text_key": "q.gender-equality.ge35",
+      "w": {
+        "economic_parity": 0,
+        "role_symmetry": -2
+      }
+    },
+    {
+      "id": "ge36",
+      "text_key": "q.gender-equality.ge36",
+      "w": {
+        "economic_parity": 0,
+        "role_symmetry": -2
+      }
+    }
+  ]
+}

@@ -161,16 +161,24 @@ describe("Standpointly Field Architecture & Catalogue Specification", () => {
     expect(totalTests).toBe(25);
 
     const relationships = clusters.find((c) => c.id === "relationships")!;
-    expect(relationships.availableCount).toBe(1);
-    expect(relationships.plannedCount).toBe(4);
+    expect(relationships.availableCount).toBe(5);
+    expect(relationships.plannedCount).toBe(0);
 
     const beliefs = clusters.find((c) => c.id === "beliefs")!;
-    expect(beliefs.availableCount).toBe(1);
-    expect(beliefs.plannedCount).toBe(4);
+    expect(beliefs.availableCount).toBe(5);
+    expect(beliefs.plannedCount).toBe(0);
 
     const personality = clusters.find((c) => c.id === "personality")!;
-    expect(personality.availableCount).toBe(0);
-    expect(personality.plannedCount).toBe(5);
+    expect(personality.availableCount).toBe(5);
+    expect(personality.plannedCount).toBe(0);
+
+    const wellbeing = clusters.find((c) => c.id === "wellbeing")!;
+    expect(wellbeing.availableCount).toBe(5);
+    expect(wellbeing.plannedCount).toBe(0);
+
+    const career = clusters.find((c) => c.id === "career")!;
+    expect(career.availableCount).toBe(5);
+    expect(career.plannedCount).toBe(0);
   });
 
   it("supports internal linking lookups for related instruments", () => {

@@ -1,0 +1,398 @@
+{
+  "id": "leadership-style",
+  "version": 1,
+  "title_key": "test.leadership-style.title",
+  "summary_key": "test.leadership-style.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "empowerment",
+      "name_key": "axis.empowerment.name",
+      "negative_label_key": "axis.empowerment.directive",
+      "positive_label_key": "axis.empowerment.collaborative",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "vision",
+      "name_key": "axis.vision.name",
+      "negative_label_key": "axis.vision.operational",
+      "positive_label_key": "axis.vision.strategic",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "commander",
+      "name_key": "sector.leadership-style.commander",
+      "label_key": "cell.leadership-style.commander",
+      "description_key": "description.leadership-style.commander"
+    },
+    {
+      "id": "strategist",
+      "name_key": "sector.leadership-style.strategist",
+      "label_key": "cell.leadership-style.strategist",
+      "description_key": "description.leadership-style.strategist"
+    },
+    {
+      "id": "architect",
+      "name_key": "sector.leadership-style.architect",
+      "label_key": "cell.leadership-style.architect",
+      "description_key": "description.leadership-style.architect"
+    },
+    {
+      "id": "operator",
+      "name_key": "sector.leadership-style.operator",
+      "label_key": "cell.leadership-style.operator",
+      "description_key": "description.leadership-style.operator"
+    },
+    {
+      "id": "integrator",
+      "name_key": "sector.leadership-style.integrator",
+      "label_key": "cell.leadership-style.integrator",
+      "description_key": "description.leadership-style.integrator"
+    },
+    {
+      "id": "catalyst",
+      "name_key": "sector.leadership-style.catalyst",
+      "label_key": "cell.leadership-style.catalyst",
+      "description_key": "description.leadership-style.catalyst"
+    },
+    {
+      "id": "specialist",
+      "name_key": "sector.leadership-style.specialist",
+      "label_key": "cell.leadership-style.specialist",
+      "description_key": "description.leadership-style.specialist"
+    },
+    {
+      "id": "empowerer",
+      "name_key": "sector.leadership-style.empowerer",
+      "label_key": "cell.leadership-style.empowerer",
+      "description_key": "description.leadership-style.empowerer"
+    },
+    {
+      "id": "pioneer",
+      "name_key": "sector.leadership-style.pioneer",
+      "label_key": "cell.leadership-style.pioneer",
+      "description_key": "description.leadership-style.pioneer"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ls01",
+      "text_key": "q.leadership-style.ls01",
+      "w": {
+        "empowerment": 2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls02",
+      "text_key": "q.leadership-style.ls02",
+      "w": {
+        "empowerment": 2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls03",
+      "text_key": "q.leadership-style.ls03",
+      "w": {
+        "empowerment": 2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls04",
+      "text_key": "q.leadership-style.ls04",
+      "w": {
+        "empowerment": 2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls05",
+      "text_key": "q.leadership-style.ls05",
+      "w": {
+        "empowerment": 2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls06",
+      "text_key": "q.leadership-style.ls06",
+      "w": {
+        "empowerment": 2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls07",
+      "text_key": "q.leadership-style.ls07",
+      "w": {
+        "empowerment": 2,
+        "vision": 2
+      }
+    },
+    {
+      "id": "ls08",
+      "text_key": "q.leadership-style.ls08",
+      "w": {
+        "empowerment": 2,
+        "vision": 2
+      }
+    },
+    {
+      "id": "ls09",
+      "text_key": "q.leadership-style.ls09",
+      "w": {
+        "empowerment": 2,
+        "vision": -2
+      }
+    },
+    {
+      "id": "ls10",
+      "text_key": "q.leadership-style.ls10",
+      "w": {
+        "empowerment": 2,
+        "vision": -2
+      }
+    },
+    {
+      "id": "ls11",
+      "text_key": "q.leadership-style.ls11",
+      "w": {
+        "empowerment": 2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls12",
+      "text_key": "q.leadership-style.ls12",
+      "w": {
+        "empowerment": 2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls13",
+      "text_key": "q.leadership-style.ls13",
+      "w": {
+        "empowerment": 2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls14",
+      "text_key": "q.leadership-style.ls14",
+      "w": {
+        "empowerment": 2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls15",
+      "text_key": "q.leadership-style.ls15",
+      "w": {
+        "empowerment": -2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls16",
+      "text_key": "q.leadership-style.ls16",
+      "w": {
+        "empowerment": -2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls17",
+      "text_key": "q.leadership-style.ls17",
+      "w": {
+        "empowerment": -2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls18",
+      "text_key": "q.leadership-style.ls18",
+      "w": {
+        "empowerment": -2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls19",
+      "text_key": "q.leadership-style.ls19",
+      "w": {
+        "empowerment": -2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls20",
+      "text_key": "q.leadership-style.ls20",
+      "w": {
+        "empowerment": -2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls21",
+      "text_key": "q.leadership-style.ls21",
+      "w": {
+        "empowerment": -2,
+        "vision": 2
+      }
+    },
+    {
+      "id": "ls22",
+      "text_key": "q.leadership-style.ls22",
+      "w": {
+        "empowerment": -2,
+        "vision": 2
+      }
+    },
+    {
+      "id": "ls23",
+      "text_key": "q.leadership-style.ls23",
+      "w": {
+        "empowerment": -2,
+        "vision": -2
+      }
+    },
+    {
+      "id": "ls24",
+      "text_key": "q.leadership-style.ls24",
+      "w": {
+        "empowerment": -2,
+        "vision": -2
+      }
+    },
+    {
+      "id": "ls25",
+      "text_key": "q.leadership-style.ls25",
+      "w": {
+        "empowerment": -2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls26",
+      "text_key": "q.leadership-style.ls26",
+      "w": {
+        "empowerment": -2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls27",
+      "text_key": "q.leadership-style.ls27",
+      "w": {
+        "empowerment": -2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls28",
+      "text_key": "q.leadership-style.ls28",
+      "w": {
+        "empowerment": -2,
+        "vision": 0
+      }
+    },
+    {
+      "id": "ls29",
+      "text_key": "q.leadership-style.ls29",
+      "w": {
+        "empowerment": 0,
+        "vision": 2
+      }
+    },
+    {
+      "id": "ls30",
+      "text_key": "q.leadership-style.ls30",
+      "w": {
+        "empowerment": 0,
+        "vision": 2
+      }
+    },
+    {
+      "id": "ls31",
+      "text_key": "q.leadership-style.ls31",
+      "w": {
+        "empowerment": 0,
+        "vision": 2
+      }
+    },
+    {
+      "id": "ls32",
+      "text_key": "q.leadership-style.ls32",
+      "w": {
+        "empowerment": 0,
+        "vision": 2
+      }
+    },
+    {
+      "id": "ls33",
+      "text_key": "q.leadership-style.ls33",
+      "w": {
+        "empowerment": 0,
+        "vision": -2
+      }
+    },
+    {
+      "id": "ls34",
+      "text_key": "q.leadership-style.ls34",
+      "w": {
+        "empowerment": 0,
+        "vision": -2
+      }
+    },
+    {
+      "id": "ls35",
+      "text_key": "q.leadership-style.ls35",
+      "w": {
+        "empowerment": 0,
+        "vision": -2
+      }
+    },
+    {
+      "id": "ls36",
+      "text_key": "q.leadership-style.ls36",
+      "w": {
+        "empowerment": 0,
+        "vision": -2
+      }
+    }
+  ]
+}

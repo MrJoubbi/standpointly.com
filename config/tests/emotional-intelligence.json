@@ -1,0 +1,398 @@
+{
+  "id": "emotional-intelligence",
+  "version": 1,
+  "title_key": "test.emotional-intelligence.title",
+  "summary_key": "test.emotional-intelligence.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "emotional_awareness",
+      "name_key": "axis.emotional_awareness.name",
+      "negative_label_key": "axis.emotional_awareness.negative",
+      "positive_label_key": "axis.emotional_awareness.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "emotional_modulation",
+      "name_key": "axis.emotional_modulation.name",
+      "negative_label_key": "axis.emotional_modulation.negative",
+      "positive_label_key": "axis.emotional_modulation.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "stoic_anchor",
+      "name_key": "sector.emotional-intelligence.stoic_anchor",
+      "label_key": "cell.emotional-intelligence.stoic_anchor",
+      "description_key": "description.emotional-intelligence.stoic_anchor"
+    },
+    {
+      "id": "grounded_harmonizer",
+      "name_key": "sector.emotional-intelligence.grounded_harmonizer",
+      "label_key": "cell.emotional-intelligence.grounded_harmonizer",
+      "description_key": "description.emotional-intelligence.grounded_harmonizer"
+    },
+    {
+      "id": "mindful_master",
+      "name_key": "sector.emotional-intelligence.mindful_master",
+      "label_key": "cell.emotional-intelligence.mindful_master",
+      "description_key": "description.emotional-intelligence.mindful_master"
+    },
+    {
+      "id": "quiet_observer",
+      "name_key": "sector.emotional-intelligence.quiet_observer",
+      "label_key": "cell.emotional-intelligence.quiet_observer",
+      "description_key": "description.emotional-intelligence.quiet_observer"
+    },
+    {
+      "id": "adaptive_synthesizer",
+      "name_key": "sector.emotional-intelligence.adaptive_synthesizer",
+      "label_key": "cell.emotional-intelligence.adaptive_synthesizer",
+      "description_key": "description.emotional-intelligence.adaptive_synthesizer"
+    },
+    {
+      "id": "dynamic_coach",
+      "name_key": "sector.emotional-intelligence.dynamic_coach",
+      "label_key": "cell.emotional-intelligence.dynamic_coach",
+      "description_key": "description.emotional-intelligence.dynamic_coach"
+    },
+    {
+      "id": "raw_expressive",
+      "name_key": "sector.emotional-intelligence.raw_expressive",
+      "label_key": "cell.emotional-intelligence.raw_expressive",
+      "description_key": "description.emotional-intelligence.raw_expressive"
+    },
+    {
+      "id": "reactive_sensor",
+      "name_key": "sector.emotional-intelligence.reactive_sensor",
+      "label_key": "cell.emotional-intelligence.reactive_sensor",
+      "description_key": "description.emotional-intelligence.reactive_sensor"
+    },
+    {
+      "id": "charismatic_spark",
+      "name_key": "sector.emotional-intelligence.charismatic_spark",
+      "label_key": "cell.emotional-intelligence.charismatic_spark",
+      "description_key": "description.emotional-intelligence.charismatic_spark"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ei01",
+      "text_key": "q.emotional-intelligence.ei01",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei02",
+      "text_key": "q.emotional-intelligence.ei02",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei03",
+      "text_key": "q.emotional-intelligence.ei03",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei04",
+      "text_key": "q.emotional-intelligence.ei04",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei05",
+      "text_key": "q.emotional-intelligence.ei05",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei06",
+      "text_key": "q.emotional-intelligence.ei06",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei07",
+      "text_key": "q.emotional-intelligence.ei07",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 2
+      }
+    },
+    {
+      "id": "ei08",
+      "text_key": "q.emotional-intelligence.ei08",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 2
+      }
+    },
+    {
+      "id": "ei09",
+      "text_key": "q.emotional-intelligence.ei09",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": -2
+      }
+    },
+    {
+      "id": "ei10",
+      "text_key": "q.emotional-intelligence.ei10",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": -2
+      }
+    },
+    {
+      "id": "ei11",
+      "text_key": "q.emotional-intelligence.ei11",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei12",
+      "text_key": "q.emotional-intelligence.ei12",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei13",
+      "text_key": "q.emotional-intelligence.ei13",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei14",
+      "text_key": "q.emotional-intelligence.ei14",
+      "w": {
+        "emotional_awareness": 2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei15",
+      "text_key": "q.emotional-intelligence.ei15",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei16",
+      "text_key": "q.emotional-intelligence.ei16",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei17",
+      "text_key": "q.emotional-intelligence.ei17",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei18",
+      "text_key": "q.emotional-intelligence.ei18",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei19",
+      "text_key": "q.emotional-intelligence.ei19",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei20",
+      "text_key": "q.emotional-intelligence.ei20",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei21",
+      "text_key": "q.emotional-intelligence.ei21",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 2
+      }
+    },
+    {
+      "id": "ei22",
+      "text_key": "q.emotional-intelligence.ei22",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 2
+      }
+    },
+    {
+      "id": "ei23",
+      "text_key": "q.emotional-intelligence.ei23",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": -2
+      }
+    },
+    {
+      "id": "ei24",
+      "text_key": "q.emotional-intelligence.ei24",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": -2
+      }
+    },
+    {
+      "id": "ei25",
+      "text_key": "q.emotional-intelligence.ei25",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei26",
+      "text_key": "q.emotional-intelligence.ei26",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei27",
+      "text_key": "q.emotional-intelligence.ei27",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei28",
+      "text_key": "q.emotional-intelligence.ei28",
+      "w": {
+        "emotional_awareness": -2,
+        "emotional_modulation": 0
+      }
+    },
+    {
+      "id": "ei29",
+      "text_key": "q.emotional-intelligence.ei29",
+      "w": {
+        "emotional_awareness": 0,
+        "emotional_modulation": 2
+      }
+    },
+    {
+      "id": "ei30",
+      "text_key": "q.emotional-intelligence.ei30",
+      "w": {
+        "emotional_awareness": 0,
+        "emotional_modulation": 2
+      }
+    },
+    {
+      "id": "ei31",
+      "text_key": "q.emotional-intelligence.ei31",
+      "w": {
+        "emotional_awareness": 0,
+        "emotional_modulation": 2
+      }
+    },
+    {
+      "id": "ei32",
+      "text_key": "q.emotional-intelligence.ei32",
+      "w": {
+        "emotional_awareness": 0,
+        "emotional_modulation": 2
+      }
+    },
+    {
+      "id": "ei33",
+      "text_key": "q.emotional-intelligence.ei33",
+      "w": {
+        "emotional_awareness": 0,
+        "emotional_modulation": -2
+      }
+    },
+    {
+      "id": "ei34",
+      "text_key": "q.emotional-intelligence.ei34",
+      "w": {
+        "emotional_awareness": 0,
+        "emotional_modulation": -2
+      }
+    },
+    {
+      "id": "ei35",
+      "text_key": "q.emotional-intelligence.ei35",
+      "w": {
+        "emotional_awareness": 0,
+        "emotional_modulation": -2
+      }
+    },
+    {
+      "id": "ei36",
+      "text_key": "q.emotional-intelligence.ei36",
+      "w": {
+        "emotional_awareness": 0,
+        "emotional_modulation": -2
+      }
+    }
+  ]
+}

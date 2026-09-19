@@ -17,7 +17,7 @@ let browserInstance: Browser | null = null;
 let browserPromise: Promise<Browser> | null = null;
 
 function getExecutablePath(): string | undefined {
-  if (process.env.CHROMIUM_PATH && fs.existsSync(process.env.CHROMIUM_PATH)) {
+  if (process.env.CHROMIUM_PATH && fs.existsSync(/*turbopackIgnore: true*/ process.env.CHROMIUM_PATH)) {
     return process.env.CHROMIUM_PATH;
   }
   const knownPaths = [
@@ -28,7 +28,7 @@ function getExecutablePath(): string | undefined {
     "/snap/bin/chromium",
   ];
   for (const p of knownPaths) {
-    if (fs.existsSync(p)) return p;
+    if (fs.existsSync(/*turbopackIgnore: true*/ p)) return p;
   }
   return undefined;
 }

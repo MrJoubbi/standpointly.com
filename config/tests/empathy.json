@@ -1,0 +1,398 @@
+{
+  "id": "empathy",
+  "version": 1,
+  "title_key": "test.empathy.title",
+  "summary_key": "test.empathy.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "cognitive_empathy",
+      "name_key": "axis.cognitive_empathy.name",
+      "negative_label_key": "axis.cognitive_empathy.negative",
+      "positive_label_key": "axis.cognitive_empathy.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "affective_empathy",
+      "name_key": "axis.affective_empathy.name",
+      "negative_label_key": "axis.affective_empathy.negative",
+      "positive_label_key": "axis.affective_empathy.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "compassionate_sage",
+      "name_key": "sector.empathy.compassionate_sage",
+      "label_key": "cell.empathy.compassionate_sage",
+      "description_key": "description.empathy.compassionate_sage"
+    },
+    {
+      "id": "attuned_counselor",
+      "name_key": "sector.empathy.attuned_counselor",
+      "label_key": "cell.empathy.attuned_counselor",
+      "description_key": "description.empathy.attuned_counselor"
+    },
+    {
+      "id": "resonant_feeler",
+      "name_key": "sector.empathy.resonant_feeler",
+      "label_key": "cell.empathy.resonant_feeler",
+      "description_key": "description.empathy.resonant_feeler"
+    },
+    {
+      "id": "objective_analyst",
+      "name_key": "sector.empathy.objective_analyst",
+      "label_key": "cell.empathy.objective_analyst",
+      "description_key": "description.empathy.objective_analyst"
+    },
+    {
+      "id": "integrated_empath",
+      "name_key": "sector.empathy.integrated_empath",
+      "label_key": "cell.empathy.integrated_empath",
+      "description_key": "description.empathy.integrated_empath"
+    },
+    {
+      "id": "intuitive_connector",
+      "name_key": "sector.empathy.intuitive_connector",
+      "label_key": "cell.empathy.intuitive_connector",
+      "description_key": "description.empathy.intuitive_connector"
+    },
+    {
+      "id": "stoic_observer",
+      "name_key": "sector.empathy.stoic_observer",
+      "label_key": "cell.empathy.stoic_observer",
+      "description_key": "description.empathy.stoic_observer"
+    },
+    {
+      "id": "pragmatic_supporter",
+      "name_key": "sector.empathy.pragmatic_supporter",
+      "label_key": "cell.empathy.pragmatic_supporter",
+      "description_key": "description.empathy.pragmatic_supporter"
+    },
+    {
+      "id": "unfiltered_sponge",
+      "name_key": "sector.empathy.unfiltered_sponge",
+      "label_key": "cell.empathy.unfiltered_sponge",
+      "description_key": "description.empathy.unfiltered_sponge"
+    }
+  ],
+  "questions": [
+    {
+      "id": "e01",
+      "text_key": "q.empathy.e01",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e02",
+      "text_key": "q.empathy.e02",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e03",
+      "text_key": "q.empathy.e03",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e04",
+      "text_key": "q.empathy.e04",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e05",
+      "text_key": "q.empathy.e05",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e06",
+      "text_key": "q.empathy.e06",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e07",
+      "text_key": "q.empathy.e07",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 2
+      }
+    },
+    {
+      "id": "e08",
+      "text_key": "q.empathy.e08",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 2
+      }
+    },
+    {
+      "id": "e09",
+      "text_key": "q.empathy.e09",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": -2
+      }
+    },
+    {
+      "id": "e10",
+      "text_key": "q.empathy.e10",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": -2
+      }
+    },
+    {
+      "id": "e11",
+      "text_key": "q.empathy.e11",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e12",
+      "text_key": "q.empathy.e12",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e13",
+      "text_key": "q.empathy.e13",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e14",
+      "text_key": "q.empathy.e14",
+      "w": {
+        "cognitive_empathy": 2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e15",
+      "text_key": "q.empathy.e15",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e16",
+      "text_key": "q.empathy.e16",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e17",
+      "text_key": "q.empathy.e17",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e18",
+      "text_key": "q.empathy.e18",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e19",
+      "text_key": "q.empathy.e19",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e20",
+      "text_key": "q.empathy.e20",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e21",
+      "text_key": "q.empathy.e21",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 2
+      }
+    },
+    {
+      "id": "e22",
+      "text_key": "q.empathy.e22",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 2
+      }
+    },
+    {
+      "id": "e23",
+      "text_key": "q.empathy.e23",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": -2
+      }
+    },
+    {
+      "id": "e24",
+      "text_key": "q.empathy.e24",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": -2
+      }
+    },
+    {
+      "id": "e25",
+      "text_key": "q.empathy.e25",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e26",
+      "text_key": "q.empathy.e26",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e27",
+      "text_key": "q.empathy.e27",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e28",
+      "text_key": "q.empathy.e28",
+      "w": {
+        "cognitive_empathy": -2,
+        "affective_empathy": 0
+      }
+    },
+    {
+      "id": "e29",
+      "text_key": "q.empathy.e29",
+      "w": {
+        "cognitive_empathy": 0,
+        "affective_empathy": 2
+      }
+    },
+    {
+      "id": "e30",
+      "text_key": "q.empathy.e30",
+      "w": {
+        "cognitive_empathy": 0,
+        "affective_empathy": 2
+      }
+    },
+    {
+      "id": "e31",
+      "text_key": "q.empathy.e31",
+      "w": {
+        "cognitive_empathy": 0,
+        "affective_empathy": 2
+      }
+    },
+    {
+      "id": "e32",
+      "text_key": "q.empathy.e32",
+      "w": {
+        "cognitive_empathy": 0,
+        "affective_empathy": 2
+      }
+    },
+    {
+      "id": "e33",
+      "text_key": "q.empathy.e33",
+      "w": {
+        "cognitive_empathy": 0,
+        "affective_empathy": -2
+      }
+    },
+    {
+      "id": "e34",
+      "text_key": "q.empathy.e34",
+      "w": {
+        "cognitive_empathy": 0,
+        "affective_empathy": -2
+      }
+    },
+    {
+      "id": "e35",
+      "text_key": "q.empathy.e35",
+      "w": {
+        "cognitive_empathy": 0,
+        "affective_empathy": -2
+      }
+    },
+    {
+      "id": "e36",
+      "text_key": "q.empathy.e36",
+      "w": {
+        "cognitive_empathy": 0,
+        "affective_empathy": -2
+      }
+    }
+  ]
+}

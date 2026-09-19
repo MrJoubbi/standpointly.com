@@ -14,6 +14,9 @@ const SITE_URL = process.env.SITE_URL ?? "https://standpointly.com";
 const TEST_ID_ALIASES: Record<string, string> = {
   "political-ideology": "political",
   "attachment-style": "attachment",
+  "relationship-compatibility": "compatibility",
+  "relationship-boundaries": "boundaries",
+  leadership: "leadership-style",
 };
 
 function resolveTestId(id: string): string {
@@ -45,17 +48,24 @@ export async function generateMetadata({
   const title = t(config.title_key);
   const description = t(config.summary_key);
   const canonical = `/${locale}/test/${testId}`;
+  const xAxisName = t(config.axes.x.name_key);
+  const yAxisName = t(config.axes.y.name_key);
+
+  const testKeywords = [
+    title.toLowerCase(),
+    `${title.toLowerCase()} test`,
+    `${title.toLowerCase()} assessment`,
+    `${xAxisName.toLowerCase()} vs ${yAxisName.toLowerCase()}`,
+    "standpoint mapping",
+    "2d coordinate psychometrics",
+    "free scientific assessment",
+    "privacy-first personality test",
+  ];
 
   return {
-    title,
+    title: `${title} — Take Free Assessment | Standpointly`,
     description,
-    keywords: [
-      title.toLowerCase(),
-      testId === "political" ? "political compass test" : "attachment style quiz",
-      "standpoint mapping",
-      "2d psychometrics",
-      "free personality test",
-    ],
+    keywords: testKeywords,
     alternates: {
       canonical,
       languages: Object.fromEntries(
@@ -63,15 +73,17 @@ export async function generateMetadata({
       ),
     },
     openGraph: {
-      title: `${title} — Standpointly`,
+      title: `${title} — Free 2D Psychometric Assessment | Standpointly`,
       description,
       url: `${SITE_URL}${canonical}`,
+      siteName: "Standpointly",
+      type: "website",
       images: [
         {
           url: `/api/og/${testId}?x=0.00&y=0.00&format=og`,
           width: 1200,
           height: 630,
-          alt: `${title} Overview Grid`,
+          alt: `${title} 2D Coordinate Grid`,
         },
       ],
     },

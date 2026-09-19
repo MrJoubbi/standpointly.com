@@ -1,0 +1,398 @@
+{
+  "id": "boundaries",
+  "version": 1,
+  "title_key": "test.boundaries.title",
+  "summary_key": "test.boundaries.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "differentiation",
+      "name_key": "axis.differentiation.name",
+      "negative_label_key": "axis.differentiation.negative",
+      "positive_label_key": "axis.differentiation.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "boundary_flexibility",
+      "name_key": "axis.boundary_flexibility.name",
+      "negative_label_key": "axis.boundary_flexibility.negative",
+      "positive_label_key": "axis.boundary_flexibility.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "protective_fortress",
+      "name_key": "sector.boundaries.protective_fortress",
+      "label_key": "cell.boundaries.protective_fortress",
+      "description_key": "description.boundaries.protective_fortress"
+    },
+    {
+      "id": "selective_sanctuary",
+      "name_key": "sector.boundaries.selective_sanctuary",
+      "label_key": "cell.boundaries.selective_sanctuary",
+      "description_key": "description.boundaries.selective_sanctuary"
+    },
+    {
+      "id": "sovereign_haven",
+      "name_key": "sector.boundaries.sovereign_haven",
+      "label_key": "cell.boundaries.sovereign_haven",
+      "description_key": "description.boundaries.sovereign_haven"
+    },
+    {
+      "id": "closed_sentinel",
+      "name_key": "sector.boundaries.closed_sentinel",
+      "label_key": "cell.boundaries.closed_sentinel",
+      "description_key": "description.boundaries.closed_sentinel"
+    },
+    {
+      "id": "balanced_guardian",
+      "name_key": "sector.boundaries.balanced_guardian",
+      "label_key": "cell.boundaries.balanced_guardian",
+      "description_key": "description.boundaries.balanced_guardian"
+    },
+    {
+      "id": "flexible_diplomat",
+      "name_key": "sector.boundaries.flexible_diplomat",
+      "label_key": "cell.boundaries.flexible_diplomat",
+      "description_key": "description.boundaries.flexible_diplomat"
+    },
+    {
+      "id": "permeable_giver",
+      "name_key": "sector.boundaries.permeable_giver",
+      "label_key": "cell.boundaries.permeable_giver",
+      "description_key": "description.boundaries.permeable_giver"
+    },
+    {
+      "id": "fluid_accommodator",
+      "name_key": "sector.boundaries.fluid_accommodator",
+      "label_key": "cell.boundaries.fluid_accommodator",
+      "description_key": "description.boundaries.fluid_accommodator"
+    },
+    {
+      "id": "open_conduit",
+      "name_key": "sector.boundaries.open_conduit",
+      "label_key": "cell.boundaries.open_conduit",
+      "description_key": "description.boundaries.open_conduit"
+    }
+  ],
+  "questions": [
+    {
+      "id": "b01",
+      "text_key": "q.boundaries.b01",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b02",
+      "text_key": "q.boundaries.b02",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b03",
+      "text_key": "q.boundaries.b03",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b04",
+      "text_key": "q.boundaries.b04",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b05",
+      "text_key": "q.boundaries.b05",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b06",
+      "text_key": "q.boundaries.b06",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b07",
+      "text_key": "q.boundaries.b07",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 2
+      }
+    },
+    {
+      "id": "b08",
+      "text_key": "q.boundaries.b08",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 2
+      }
+    },
+    {
+      "id": "b09",
+      "text_key": "q.boundaries.b09",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": -2
+      }
+    },
+    {
+      "id": "b10",
+      "text_key": "q.boundaries.b10",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": -2
+      }
+    },
+    {
+      "id": "b11",
+      "text_key": "q.boundaries.b11",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b12",
+      "text_key": "q.boundaries.b12",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b13",
+      "text_key": "q.boundaries.b13",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b14",
+      "text_key": "q.boundaries.b14",
+      "w": {
+        "differentiation": 2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b15",
+      "text_key": "q.boundaries.b15",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b16",
+      "text_key": "q.boundaries.b16",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b17",
+      "text_key": "q.boundaries.b17",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b18",
+      "text_key": "q.boundaries.b18",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b19",
+      "text_key": "q.boundaries.b19",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b20",
+      "text_key": "q.boundaries.b20",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b21",
+      "text_key": "q.boundaries.b21",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 2
+      }
+    },
+    {
+      "id": "b22",
+      "text_key": "q.boundaries.b22",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 2
+      }
+    },
+    {
+      "id": "b23",
+      "text_key": "q.boundaries.b23",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": -2
+      }
+    },
+    {
+      "id": "b24",
+      "text_key": "q.boundaries.b24",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": -2
+      }
+    },
+    {
+      "id": "b25",
+      "text_key": "q.boundaries.b25",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b26",
+      "text_key": "q.boundaries.b26",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b27",
+      "text_key": "q.boundaries.b27",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b28",
+      "text_key": "q.boundaries.b28",
+      "w": {
+        "differentiation": -2,
+        "boundary_flexibility": 0
+      }
+    },
+    {
+      "id": "b29",
+      "text_key": "q.boundaries.b29",
+      "w": {
+        "differentiation": 0,
+        "boundary_flexibility": 2
+      }
+    },
+    {
+      "id": "b30",
+      "text_key": "q.boundaries.b30",
+      "w": {
+        "differentiation": 0,
+        "boundary_flexibility": 2
+      }
+    },
+    {
+      "id": "b31",
+      "text_key": "q.boundaries.b31",
+      "w": {
+        "differentiation": 0,
+        "boundary_flexibility": 2
+      }
+    },
+    {
+      "id": "b32",
+      "text_key": "q.boundaries.b32",
+      "w": {
+        "differentiation": 0,
+        "boundary_flexibility": 2
+      }
+    },
+    {
+      "id": "b33",
+      "text_key": "q.boundaries.b33",
+      "w": {
+        "differentiation": 0,
+        "boundary_flexibility": -2
+      }
+    },
+    {
+      "id": "b34",
+      "text_key": "q.boundaries.b34",
+      "w": {
+        "differentiation": 0,
+        "boundary_flexibility": -2
+      }
+    },
+    {
+      "id": "b35",
+      "text_key": "q.boundaries.b35",
+      "w": {
+        "differentiation": 0,
+        "boundary_flexibility": -2
+      }
+    },
+    {
+      "id": "b36",
+      "text_key": "q.boundaries.b36",
+      "w": {
+        "differentiation": 0,
+        "boundary_flexibility": -2
+      }
+    }
+  ]
+}

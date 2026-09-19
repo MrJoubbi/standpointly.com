@@ -1,0 +1,398 @@
+{
+  "id": "dark-triad",
+  "version": 1,
+  "title_key": "test.dark-triad.title",
+  "summary_key": "test.dark-triad.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "manipulation",
+      "name_key": "axis.manipulation.name",
+      "negative_label_key": "axis.manipulation.negative",
+      "positive_label_key": "axis.manipulation.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "grandiosity",
+      "name_key": "axis.grandiosity.name",
+      "negative_label_key": "axis.grandiosity.negative",
+      "positive_label_key": "axis.grandiosity.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "humble_empath",
+      "name_key": "sector.dark-triad.humble_empath",
+      "label_key": "cell.dark-triad.humble_empath",
+      "description_key": "description.dark-triad.humble_empath"
+    },
+    {
+      "id": "grounded_realist",
+      "name_key": "sector.dark-triad.grounded_realist",
+      "label_key": "cell.dark-triad.grounded_realist",
+      "description_key": "description.dark-triad.grounded_realist"
+    },
+    {
+      "id": "dominant_visionary",
+      "name_key": "sector.dark-triad.dominant_visionary",
+      "label_key": "cell.dark-triad.dominant_visionary",
+      "description_key": "description.dark-triad.dominant_visionary"
+    },
+    {
+      "id": "honest_collaborator",
+      "name_key": "sector.dark-triad.honest_collaborator",
+      "label_key": "cell.dark-triad.honest_collaborator",
+      "description_key": "description.dark-triad.honest_collaborator"
+    },
+    {
+      "id": "tempered_pragmatist",
+      "name_key": "sector.dark-triad.tempered_pragmatist",
+      "label_key": "cell.dark-triad.tempered_pragmatist",
+      "description_key": "description.dark-triad.tempered_pragmatist"
+    },
+    {
+      "id": "shrewd_operator",
+      "name_key": "sector.dark-triad.shrewd_operator",
+      "label_key": "cell.dark-triad.shrewd_operator",
+      "description_key": "description.dark-triad.shrewd_operator"
+    },
+    {
+      "id": "detached_cynic",
+      "name_key": "sector.dark-triad.detached_cynic",
+      "label_key": "cell.dark-triad.detached_cynic",
+      "description_key": "description.dark-triad.detached_cynic"
+    },
+    {
+      "id": "opportunistic_tactician",
+      "name_key": "sector.dark-triad.opportunistic_tactician",
+      "label_key": "cell.dark-triad.opportunistic_tactician",
+      "description_key": "description.dark-triad.opportunistic_tactician"
+    },
+    {
+      "id": "machiavellian_maverick",
+      "name_key": "sector.dark-triad.machiavellian_maverick",
+      "label_key": "cell.dark-triad.machiavellian_maverick",
+      "description_key": "description.dark-triad.machiavellian_maverick"
+    }
+  ],
+  "questions": [
+    {
+      "id": "dt01",
+      "text_key": "q.dark-triad.dt01",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt02",
+      "text_key": "q.dark-triad.dt02",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt03",
+      "text_key": "q.dark-triad.dt03",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt04",
+      "text_key": "q.dark-triad.dt04",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt05",
+      "text_key": "q.dark-triad.dt05",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt06",
+      "text_key": "q.dark-triad.dt06",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt07",
+      "text_key": "q.dark-triad.dt07",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 2
+      }
+    },
+    {
+      "id": "dt08",
+      "text_key": "q.dark-triad.dt08",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 2
+      }
+    },
+    {
+      "id": "dt09",
+      "text_key": "q.dark-triad.dt09",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": -2
+      }
+    },
+    {
+      "id": "dt10",
+      "text_key": "q.dark-triad.dt10",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": -2
+      }
+    },
+    {
+      "id": "dt11",
+      "text_key": "q.dark-triad.dt11",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt12",
+      "text_key": "q.dark-triad.dt12",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt13",
+      "text_key": "q.dark-triad.dt13",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt14",
+      "text_key": "q.dark-triad.dt14",
+      "w": {
+        "manipulation": 2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt15",
+      "text_key": "q.dark-triad.dt15",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt16",
+      "text_key": "q.dark-triad.dt16",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt17",
+      "text_key": "q.dark-triad.dt17",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt18",
+      "text_key": "q.dark-triad.dt18",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt19",
+      "text_key": "q.dark-triad.dt19",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt20",
+      "text_key": "q.dark-triad.dt20",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt21",
+      "text_key": "q.dark-triad.dt21",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 2
+      }
+    },
+    {
+      "id": "dt22",
+      "text_key": "q.dark-triad.dt22",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 2
+      }
+    },
+    {
+      "id": "dt23",
+      "text_key": "q.dark-triad.dt23",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": -2
+      }
+    },
+    {
+      "id": "dt24",
+      "text_key": "q.dark-triad.dt24",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": -2
+      }
+    },
+    {
+      "id": "dt25",
+      "text_key": "q.dark-triad.dt25",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt26",
+      "text_key": "q.dark-triad.dt26",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt27",
+      "text_key": "q.dark-triad.dt27",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt28",
+      "text_key": "q.dark-triad.dt28",
+      "w": {
+        "manipulation": -2,
+        "grandiosity": 0
+      }
+    },
+    {
+      "id": "dt29",
+      "text_key": "q.dark-triad.dt29",
+      "w": {
+        "manipulation": 0,
+        "grandiosity": 2
+      }
+    },
+    {
+      "id": "dt30",
+      "text_key": "q.dark-triad.dt30",
+      "w": {
+        "manipulation": 0,
+        "grandiosity": 2
+      }
+    },
+    {
+      "id": "dt31",
+      "text_key": "q.dark-triad.dt31",
+      "w": {
+        "manipulation": 0,
+        "grandiosity": 2
+      }
+    },
+    {
+      "id": "dt32",
+      "text_key": "q.dark-triad.dt32",
+      "w": {
+        "manipulation": 0,
+        "grandiosity": 2
+      }
+    },
+    {
+      "id": "dt33",
+      "text_key": "q.dark-triad.dt33",
+      "w": {
+        "manipulation": 0,
+        "grandiosity": -2
+      }
+    },
+    {
+      "id": "dt34",
+      "text_key": "q.dark-triad.dt34",
+      "w": {
+        "manipulation": 0,
+        "grandiosity": -2
+      }
+    },
+    {
+      "id": "dt35",
+      "text_key": "q.dark-triad.dt35",
+      "w": {
+        "manipulation": 0,
+        "grandiosity": -2
+      }
+    },
+    {
+      "id": "dt36",
+      "text_key": "q.dark-triad.dt36",
+      "w": {
+        "manipulation": 0,
+        "grandiosity": -2
+      }
+    }
+  ]
+}

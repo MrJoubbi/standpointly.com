@@ -59,6 +59,24 @@ export async function generateMetadata({
       title: `${title} | Standpointly`,
       description,
       url: `${SITE_URL}${canonical}`,
+      siteName: "Standpointly",
+      type: "website",
+      images: [
+        {
+          url: `/api/og/${fieldDef.instruments[0]?.id ?? "big-five"}?x=0.00&y=0.00&format=og`,
+          width: 1200,
+          height: 630,
+          alt: `Field ${fieldDef.code}: ${fieldDef.name} Overview`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | Standpointly`,
+      description,
+      images: [
+        `/api/og/${fieldDef.instruments[0]?.id ?? "big-five"}?x=0.00&y=0.00&format=og`,
+      ],
     },
   };
 }
@@ -81,17 +99,38 @@ export default async function FieldPage({
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: `Field ${fieldDef.code}: ${fieldDef.name} — Standpointly`,
-    description: t(fieldDef.descriptionKey),
-    url: `${SITE_URL}/${locale}/tests/${fieldDef.slug}`,
-    hasPart: fieldDef.instruments.map((inst) => ({
-      "@type": "CreativeWork",
-      name: t(inst.titleKey),
-      description: t(inst.summaryKey),
-      identifier: inst.code,
-      url: `${SITE_URL}/${locale}/tests/${fieldDef.slug}/${inst.slug}`,
-    })),
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        name: `Field ${fieldDef.code}: ${fieldDef.name} — Standpointly`,
+        description: t(fieldDef.descriptionKey),
+        url: `${SITE_URL}/${locale}/tests/${fieldDef.slug}`,
+        hasPart: fieldDef.instruments.map((inst) => ({
+          "@type": "Assessment",
+          name: t(inst.titleKey),
+          description: t(inst.summaryKey),
+          identifier: inst.code,
+          url: `${SITE_URL}/${locale}/tests/${fieldDef.slug}/${inst.slug}`,
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `${SITE_URL}/${locale}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: `Field ${fieldDef.code}: ${fieldDef.name}`,
+            item: `${SITE_URL}/${locale}/tests/${fieldDef.slug}`,
+          },
+        ],
+      },
+    ],
   };
 
   return (

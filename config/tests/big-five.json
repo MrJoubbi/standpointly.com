@@ -1,0 +1,398 @@
+{
+  "id": "big-five",
+  "version": 1,
+  "title_key": "test.big-five.title",
+  "summary_key": "test.big-five.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "exploration",
+      "name_key": "axis.exploration.name",
+      "negative_label_key": "axis.exploration.reflective",
+      "positive_label_key": "axis.exploration.exploratory",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "stability",
+      "name_key": "axis.stability.name",
+      "negative_label_key": "axis.stability.reactive",
+      "positive_label_key": "axis.stability.grounded",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "sage",
+      "name_key": "sector.big-five.sage",
+      "label_key": "cell.big-five.sage",
+      "description_key": "description.big-five.sage"
+    },
+    {
+      "id": "anchor",
+      "name_key": "sector.big-five.anchor",
+      "label_key": "cell.big-five.anchor",
+      "description_key": "description.big-five.anchor"
+    },
+    {
+      "id": "catalyst",
+      "name_key": "sector.big-five.catalyst",
+      "label_key": "cell.big-five.catalyst",
+      "description_key": "description.big-five.catalyst"
+    },
+    {
+      "id": "deliberator",
+      "name_key": "sector.big-five.deliberator",
+      "label_key": "cell.big-five.deliberator",
+      "description_key": "description.big-five.deliberator"
+    },
+    {
+      "id": "synthesizer",
+      "name_key": "sector.big-five.synthesizer",
+      "label_key": "cell.big-five.synthesizer",
+      "description_key": "description.big-five.synthesizer"
+    },
+    {
+      "id": "dynamo",
+      "name_key": "sector.big-five.dynamo",
+      "label_key": "cell.big-five.dynamo",
+      "description_key": "description.big-five.dynamo"
+    },
+    {
+      "id": "skeptic",
+      "name_key": "sector.big-five.skeptic",
+      "label_key": "cell.big-five.skeptic",
+      "description_key": "description.big-five.skeptic"
+    },
+    {
+      "id": "sentinel",
+      "name_key": "sector.big-five.sentinel",
+      "label_key": "cell.big-five.sentinel",
+      "description_key": "description.big-five.sentinel"
+    },
+    {
+      "id": "provocateur",
+      "name_key": "sector.big-five.provocateur",
+      "label_key": "cell.big-five.provocateur",
+      "description_key": "description.big-five.provocateur"
+    }
+  ],
+  "questions": [
+    {
+      "id": "bf01",
+      "text_key": "q.big-five.bf01",
+      "w": {
+        "exploration": 2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf02",
+      "text_key": "q.big-five.bf02",
+      "w": {
+        "exploration": 2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf03",
+      "text_key": "q.big-five.bf03",
+      "w": {
+        "exploration": 2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf04",
+      "text_key": "q.big-five.bf04",
+      "w": {
+        "exploration": 2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf05",
+      "text_key": "q.big-five.bf05",
+      "w": {
+        "exploration": 2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf06",
+      "text_key": "q.big-five.bf06",
+      "w": {
+        "exploration": 2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf07",
+      "text_key": "q.big-five.bf07",
+      "w": {
+        "exploration": 2,
+        "stability": 2
+      }
+    },
+    {
+      "id": "bf08",
+      "text_key": "q.big-five.bf08",
+      "w": {
+        "exploration": 2,
+        "stability": 2
+      }
+    },
+    {
+      "id": "bf09",
+      "text_key": "q.big-five.bf09",
+      "w": {
+        "exploration": 2,
+        "stability": -2
+      }
+    },
+    {
+      "id": "bf10",
+      "text_key": "q.big-five.bf10",
+      "w": {
+        "exploration": 2,
+        "stability": -2
+      }
+    },
+    {
+      "id": "bf11",
+      "text_key": "q.big-five.bf11",
+      "w": {
+        "exploration": 2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf12",
+      "text_key": "q.big-five.bf12",
+      "w": {
+        "exploration": 2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf13",
+      "text_key": "q.big-five.bf13",
+      "w": {
+        "exploration": 2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf14",
+      "text_key": "q.big-five.bf14",
+      "w": {
+        "exploration": 2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf15",
+      "text_key": "q.big-five.bf15",
+      "w": {
+        "exploration": -2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf16",
+      "text_key": "q.big-five.bf16",
+      "w": {
+        "exploration": -2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf17",
+      "text_key": "q.big-five.bf17",
+      "w": {
+        "exploration": -2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf18",
+      "text_key": "q.big-five.bf18",
+      "w": {
+        "exploration": -2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf19",
+      "text_key": "q.big-five.bf19",
+      "w": {
+        "exploration": -2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf20",
+      "text_key": "q.big-five.bf20",
+      "w": {
+        "exploration": -2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf21",
+      "text_key": "q.big-five.bf21",
+      "w": {
+        "exploration": -2,
+        "stability": 2
+      }
+    },
+    {
+      "id": "bf22",
+      "text_key": "q.big-five.bf22",
+      "w": {
+        "exploration": -2,
+        "stability": 2
+      }
+    },
+    {
+      "id": "bf23",
+      "text_key": "q.big-five.bf23",
+      "w": {
+        "exploration": -2,
+        "stability": -2
+      }
+    },
+    {
+      "id": "bf24",
+      "text_key": "q.big-five.bf24",
+      "w": {
+        "exploration": -2,
+        "stability": -2
+      }
+    },
+    {
+      "id": "bf25",
+      "text_key": "q.big-five.bf25",
+      "w": {
+        "exploration": -2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf26",
+      "text_key": "q.big-five.bf26",
+      "w": {
+        "exploration": -2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf27",
+      "text_key": "q.big-five.bf27",
+      "w": {
+        "exploration": -2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf28",
+      "text_key": "q.big-five.bf28",
+      "w": {
+        "exploration": -2,
+        "stability": 0
+      }
+    },
+    {
+      "id": "bf29",
+      "text_key": "q.big-five.bf29",
+      "w": {
+        "exploration": 0,
+        "stability": 2
+      }
+    },
+    {
+      "id": "bf30",
+      "text_key": "q.big-five.bf30",
+      "w": {
+        "exploration": 0,
+        "stability": 2
+      }
+    },
+    {
+      "id": "bf31",
+      "text_key": "q.big-five.bf31",
+      "w": {
+        "exploration": 0,
+        "stability": 2
+      }
+    },
+    {
+      "id": "bf32",
+      "text_key": "q.big-five.bf32",
+      "w": {
+        "exploration": 0,
+        "stability": 2
+      }
+    },
+    {
+      "id": "bf33",
+      "text_key": "q.big-five.bf33",
+      "w": {
+        "exploration": 0,
+        "stability": -2
+      }
+    },
+    {
+      "id": "bf34",
+      "text_key": "q.big-five.bf34",
+      "w": {
+        "exploration": 0,
+        "stability": -2
+      }
+    },
+    {
+      "id": "bf35",
+      "text_key": "q.big-five.bf35",
+      "w": {
+        "exploration": 0,
+        "stability": -2
+      }
+    },
+    {
+      "id": "bf36",
+      "text_key": "q.big-five.bf36",
+      "w": {
+        "exploration": 0,
+        "stability": -2
+      }
+    }
+  ]
+}

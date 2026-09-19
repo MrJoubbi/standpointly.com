@@ -1,0 +1,398 @@
+{
+  "id": "moral-foundations",
+  "version": 1,
+  "title_key": "test.moral-foundations.title",
+  "summary_key": "test.moral-foundations.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "individualizing",
+      "name_key": "axis.individualizing.name",
+      "negative_label_key": "axis.individualizing.communal",
+      "positive_label_key": "axis.individualizing.universal",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "binding",
+      "name_key": "axis.binding.name",
+      "negative_label_key": "axis.binding.autonomous",
+      "positive_label_key": "axis.binding.institutional",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "communal_sentinel",
+      "name_key": "sector.moral-foundations.communal_sentinel",
+      "label_key": "cell.moral-foundations.communal_sentinel",
+      "description_key": "description.moral-foundations.communal_sentinel"
+    },
+    {
+      "id": "civic_traditionalist",
+      "name_key": "sector.moral-foundations.civic_traditionalist",
+      "label_key": "cell.moral-foundations.civic_traditionalist",
+      "description_key": "description.moral-foundations.civic_traditionalist"
+    },
+    {
+      "id": "integral_harmonist",
+      "name_key": "sector.moral-foundations.integral_harmonist",
+      "label_key": "cell.moral-foundations.integral_harmonist",
+      "description_key": "description.moral-foundations.integral_harmonist"
+    },
+    {
+      "id": "local_realist",
+      "name_key": "sector.moral-foundations.local_realist",
+      "label_key": "cell.moral-foundations.local_realist",
+      "description_key": "description.moral-foundations.local_realist"
+    },
+    {
+      "id": "moral_pluralist",
+      "name_key": "sector.moral-foundations.moral_pluralist",
+      "label_key": "cell.moral-foundations.moral_pluralist",
+      "description_key": "description.moral-foundations.moral_pluralist"
+    },
+    {
+      "id": "humanitarian_pragmatist",
+      "name_key": "sector.moral-foundations.humanitarian_pragmatist",
+      "label_key": "cell.moral-foundations.humanitarian_pragmatist",
+      "description_key": "description.moral-foundations.humanitarian_pragmatist"
+    },
+    {
+      "id": "individualist_iconoclast",
+      "name_key": "sector.moral-foundations.individualist_iconoclast",
+      "label_key": "cell.moral-foundations.individualist_iconoclast",
+      "description_key": "description.moral-foundations.individualist_iconoclast"
+    },
+    {
+      "id": "free_agent",
+      "name_key": "sector.moral-foundations.free_agent",
+      "label_key": "cell.moral-foundations.free_agent",
+      "description_key": "description.moral-foundations.free_agent"
+    },
+    {
+      "id": "liberating_egalitarian",
+      "name_key": "sector.moral-foundations.liberating_egalitarian",
+      "label_key": "cell.moral-foundations.liberating_egalitarian",
+      "description_key": "description.moral-foundations.liberating_egalitarian"
+    }
+  ],
+  "questions": [
+    {
+      "id": "mf01",
+      "text_key": "q.moral-foundations.mf01",
+      "w": {
+        "individualizing": 2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf02",
+      "text_key": "q.moral-foundations.mf02",
+      "w": {
+        "individualizing": 2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf03",
+      "text_key": "q.moral-foundations.mf03",
+      "w": {
+        "individualizing": 2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf04",
+      "text_key": "q.moral-foundations.mf04",
+      "w": {
+        "individualizing": 2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf05",
+      "text_key": "q.moral-foundations.mf05",
+      "w": {
+        "individualizing": 2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf06",
+      "text_key": "q.moral-foundations.mf06",
+      "w": {
+        "individualizing": 2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf07",
+      "text_key": "q.moral-foundations.mf07",
+      "w": {
+        "individualizing": 2,
+        "binding": 2
+      }
+    },
+    {
+      "id": "mf08",
+      "text_key": "q.moral-foundations.mf08",
+      "w": {
+        "individualizing": 2,
+        "binding": 2
+      }
+    },
+    {
+      "id": "mf09",
+      "text_key": "q.moral-foundations.mf09",
+      "w": {
+        "individualizing": 2,
+        "binding": -2
+      }
+    },
+    {
+      "id": "mf10",
+      "text_key": "q.moral-foundations.mf10",
+      "w": {
+        "individualizing": 2,
+        "binding": -2
+      }
+    },
+    {
+      "id": "mf11",
+      "text_key": "q.moral-foundations.mf11",
+      "w": {
+        "individualizing": 2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf12",
+      "text_key": "q.moral-foundations.mf12",
+      "w": {
+        "individualizing": 2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf13",
+      "text_key": "q.moral-foundations.mf13",
+      "w": {
+        "individualizing": 2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf14",
+      "text_key": "q.moral-foundations.mf14",
+      "w": {
+        "individualizing": 2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf15",
+      "text_key": "q.moral-foundations.mf15",
+      "w": {
+        "individualizing": -2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf16",
+      "text_key": "q.moral-foundations.mf16",
+      "w": {
+        "individualizing": -2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf17",
+      "text_key": "q.moral-foundations.mf17",
+      "w": {
+        "individualizing": -2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf18",
+      "text_key": "q.moral-foundations.mf18",
+      "w": {
+        "individualizing": -2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf19",
+      "text_key": "q.moral-foundations.mf19",
+      "w": {
+        "individualizing": -2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf20",
+      "text_key": "q.moral-foundations.mf20",
+      "w": {
+        "individualizing": -2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf21",
+      "text_key": "q.moral-foundations.mf21",
+      "w": {
+        "individualizing": -2,
+        "binding": 2
+      }
+    },
+    {
+      "id": "mf22",
+      "text_key": "q.moral-foundations.mf22",
+      "w": {
+        "individualizing": -2,
+        "binding": 2
+      }
+    },
+    {
+      "id": "mf23",
+      "text_key": "q.moral-foundations.mf23",
+      "w": {
+        "individualizing": -2,
+        "binding": -2
+      }
+    },
+    {
+      "id": "mf24",
+      "text_key": "q.moral-foundations.mf24",
+      "w": {
+        "individualizing": -2,
+        "binding": -2
+      }
+    },
+    {
+      "id": "mf25",
+      "text_key": "q.moral-foundations.mf25",
+      "w": {
+        "individualizing": -2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf26",
+      "text_key": "q.moral-foundations.mf26",
+      "w": {
+        "individualizing": -2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf27",
+      "text_key": "q.moral-foundations.mf27",
+      "w": {
+        "individualizing": -2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf28",
+      "text_key": "q.moral-foundations.mf28",
+      "w": {
+        "individualizing": -2,
+        "binding": 0
+      }
+    },
+    {
+      "id": "mf29",
+      "text_key": "q.moral-foundations.mf29",
+      "w": {
+        "individualizing": 0,
+        "binding": 2
+      }
+    },
+    {
+      "id": "mf30",
+      "text_key": "q.moral-foundations.mf30",
+      "w": {
+        "individualizing": 0,
+        "binding": 2
+      }
+    },
+    {
+      "id": "mf31",
+      "text_key": "q.moral-foundations.mf31",
+      "w": {
+        "individualizing": 0,
+        "binding": 2
+      }
+    },
+    {
+      "id": "mf32",
+      "text_key": "q.moral-foundations.mf32",
+      "w": {
+        "individualizing": 0,
+        "binding": 2
+      }
+    },
+    {
+      "id": "mf33",
+      "text_key": "q.moral-foundations.mf33",
+      "w": {
+        "individualizing": 0,
+        "binding": -2
+      }
+    },
+    {
+      "id": "mf34",
+      "text_key": "q.moral-foundations.mf34",
+      "w": {
+        "individualizing": 0,
+        "binding": -2
+      }
+    },
+    {
+      "id": "mf35",
+      "text_key": "q.moral-foundations.mf35",
+      "w": {
+        "individualizing": 0,
+        "binding": -2
+      }
+    },
+    {
+      "id": "mf36",
+      "text_key": "q.moral-foundations.mf36",
+      "w": {
+        "individualizing": 0,
+        "binding": -2
+      }
+    }
+  ]
+}

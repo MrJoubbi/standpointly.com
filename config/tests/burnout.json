@@ -1,0 +1,398 @@
+{
+  "id": "burnout",
+  "version": 1,
+  "title_key": "test.burnout.title",
+  "summary_key": "test.burnout.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "exhaustion",
+      "name_key": "axis.exhaustion.name",
+      "negative_label_key": "axis.exhaustion.negative",
+      "positive_label_key": "axis.exhaustion.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "cynicism",
+      "name_key": "axis.cynicism.name",
+      "negative_label_key": "axis.cynicism.negative",
+      "positive_label_key": "axis.cynicism.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "vital_thriver",
+      "name_key": "sector.burnout.vital_thriver",
+      "label_key": "cell.burnout.vital_thriver",
+      "description_key": "description.burnout.vital_thriver"
+    },
+    {
+      "id": "energized_realist",
+      "name_key": "sector.burnout.energized_realist",
+      "label_key": "cell.burnout.energized_realist",
+      "description_key": "description.burnout.energized_realist"
+    },
+    {
+      "id": "strained_idealist",
+      "name_key": "sector.burnout.strained_idealist",
+      "label_key": "cell.burnout.strained_idealist",
+      "description_key": "description.burnout.strained_idealist"
+    },
+    {
+      "id": "steady_contributor",
+      "name_key": "sector.burnout.steady_contributor",
+      "label_key": "cell.burnout.steady_contributor",
+      "description_key": "description.burnout.steady_contributor"
+    },
+    {
+      "id": "ambivalent_grinder",
+      "name_key": "sector.burnout.ambivalent_grinder",
+      "label_key": "cell.burnout.ambivalent_grinder",
+      "description_key": "description.burnout.ambivalent_grinder"
+    },
+    {
+      "id": "exhausted_striver",
+      "name_key": "sector.burnout.exhausted_striver",
+      "label_key": "cell.burnout.exhausted_striver",
+      "description_key": "description.burnout.exhausted_striver"
+    },
+    {
+      "id": "detached_skeptic",
+      "name_key": "sector.burnout.detached_skeptic",
+      "label_key": "cell.burnout.detached_skeptic",
+      "description_key": "description.burnout.detached_skeptic"
+    },
+    {
+      "id": "disillusioned_survivor",
+      "name_key": "sector.burnout.disillusioned_survivor",
+      "label_key": "cell.burnout.disillusioned_survivor",
+      "description_key": "description.burnout.disillusioned_survivor"
+    },
+    {
+      "id": "acute_burnout",
+      "name_key": "sector.burnout.acute_burnout",
+      "label_key": "cell.burnout.acute_burnout",
+      "description_key": "description.burnout.acute_burnout"
+    }
+  ],
+  "questions": [
+    {
+      "id": "b01",
+      "text_key": "q.burnout.b01",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b02",
+      "text_key": "q.burnout.b02",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b03",
+      "text_key": "q.burnout.b03",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b04",
+      "text_key": "q.burnout.b04",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b05",
+      "text_key": "q.burnout.b05",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b06",
+      "text_key": "q.burnout.b06",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b07",
+      "text_key": "q.burnout.b07",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 2
+      }
+    },
+    {
+      "id": "b08",
+      "text_key": "q.burnout.b08",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 2
+      }
+    },
+    {
+      "id": "b09",
+      "text_key": "q.burnout.b09",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": -2
+      }
+    },
+    {
+      "id": "b10",
+      "text_key": "q.burnout.b10",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": -2
+      }
+    },
+    {
+      "id": "b11",
+      "text_key": "q.burnout.b11",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b12",
+      "text_key": "q.burnout.b12",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b13",
+      "text_key": "q.burnout.b13",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b14",
+      "text_key": "q.burnout.b14",
+      "w": {
+        "exhaustion": 2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b15",
+      "text_key": "q.burnout.b15",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b16",
+      "text_key": "q.burnout.b16",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b17",
+      "text_key": "q.burnout.b17",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b18",
+      "text_key": "q.burnout.b18",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b19",
+      "text_key": "q.burnout.b19",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b20",
+      "text_key": "q.burnout.b20",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b21",
+      "text_key": "q.burnout.b21",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 2
+      }
+    },
+    {
+      "id": "b22",
+      "text_key": "q.burnout.b22",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 2
+      }
+    },
+    {
+      "id": "b23",
+      "text_key": "q.burnout.b23",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": -2
+      }
+    },
+    {
+      "id": "b24",
+      "text_key": "q.burnout.b24",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": -2
+      }
+    },
+    {
+      "id": "b25",
+      "text_key": "q.burnout.b25",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b26",
+      "text_key": "q.burnout.b26",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b27",
+      "text_key": "q.burnout.b27",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b28",
+      "text_key": "q.burnout.b28",
+      "w": {
+        "exhaustion": -2,
+        "cynicism": 0
+      }
+    },
+    {
+      "id": "b29",
+      "text_key": "q.burnout.b29",
+      "w": {
+        "exhaustion": 0,
+        "cynicism": 2
+      }
+    },
+    {
+      "id": "b30",
+      "text_key": "q.burnout.b30",
+      "w": {
+        "exhaustion": 0,
+        "cynicism": 2
+      }
+    },
+    {
+      "id": "b31",
+      "text_key": "q.burnout.b31",
+      "w": {
+        "exhaustion": 0,
+        "cynicism": 2
+      }
+    },
+    {
+      "id": "b32",
+      "text_key": "q.burnout.b32",
+      "w": {
+        "exhaustion": 0,
+        "cynicism": 2
+      }
+    },
+    {
+      "id": "b33",
+      "text_key": "q.burnout.b33",
+      "w": {
+        "exhaustion": 0,
+        "cynicism": -2
+      }
+    },
+    {
+      "id": "b34",
+      "text_key": "q.burnout.b34",
+      "w": {
+        "exhaustion": 0,
+        "cynicism": -2
+      }
+    },
+    {
+      "id": "b35",
+      "text_key": "q.burnout.b35",
+      "w": {
+        "exhaustion": 0,
+        "cynicism": -2
+      }
+    },
+    {
+      "id": "b36",
+      "text_key": "q.burnout.b36",
+      "w": {
+        "exhaustion": 0,
+        "cynicism": -2
+      }
+    }
+  ]
+}

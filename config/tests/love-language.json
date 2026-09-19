@@ -1,0 +1,398 @@
+{
+  "id": "love-language",
+  "version": 1,
+  "title_key": "test.love-language.title",
+  "summary_key": "test.love-language.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "expressive",
+      "name_key": "axis.expressive.name",
+      "negative_label_key": "axis.expressive.reserved",
+      "positive_label_key": "axis.expressive.affirmative",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "attentive",
+      "name_key": "axis.attentive.name",
+      "negative_label_key": "axis.attentive.autonomous",
+      "positive_label_key": "axis.attentive.devoted",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "quiet_caretaker",
+      "name_key": "sector.love-language.quiet_caretaker",
+      "label_key": "cell.love-language.quiet_caretaker",
+      "description_key": "description.love-language.quiet_caretaker"
+    },
+    {
+      "id": "steadfast_steward",
+      "name_key": "sector.love-language.steadfast_steward",
+      "label_key": "cell.love-language.steadfast_steward",
+      "description_key": "description.love-language.steadfast_steward"
+    },
+    {
+      "id": "wholehearted_devotee",
+      "name_key": "sector.love-language.wholehearted_devotee",
+      "label_key": "cell.love-language.wholehearted_devotee",
+      "description_key": "description.love-language.wholehearted_devotee"
+    },
+    {
+      "id": "gentle_presence",
+      "name_key": "sector.love-language.gentle_presence",
+      "label_key": "cell.love-language.gentle_presence",
+      "description_key": "description.love-language.gentle_presence"
+    },
+    {
+      "id": "balanced_partner",
+      "name_key": "sector.love-language.balanced_partner",
+      "label_key": "cell.love-language.balanced_partner",
+      "description_key": "description.love-language.balanced_partner"
+    },
+    {
+      "id": "vocal_champion",
+      "name_key": "sector.love-language.vocal_champion",
+      "label_key": "cell.love-language.vocal_champion",
+      "description_key": "description.love-language.vocal_champion"
+    },
+    {
+      "id": "autonomous_companion",
+      "name_key": "sector.love-language.autonomous_companion",
+      "label_key": "cell.love-language.autonomous_companion",
+      "description_key": "description.love-language.autonomous_companion"
+    },
+    {
+      "id": "spontaneous_expressive",
+      "name_key": "sector.love-language.spontaneous_expressive",
+      "label_key": "cell.love-language.spontaneous_expressive",
+      "description_key": "description.love-language.spontaneous_expressive"
+    },
+    {
+      "id": "ardent_sensory",
+      "name_key": "sector.love-language.ardent_sensory",
+      "label_key": "cell.love-language.ardent_sensory",
+      "description_key": "description.love-language.ardent_sensory"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ll01",
+      "text_key": "q.love-language.ll01",
+      "w": {
+        "expressive": 2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll02",
+      "text_key": "q.love-language.ll02",
+      "w": {
+        "expressive": 2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll03",
+      "text_key": "q.love-language.ll03",
+      "w": {
+        "expressive": 2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll04",
+      "text_key": "q.love-language.ll04",
+      "w": {
+        "expressive": 2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll05",
+      "text_key": "q.love-language.ll05",
+      "w": {
+        "expressive": 2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll06",
+      "text_key": "q.love-language.ll06",
+      "w": {
+        "expressive": 2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll07",
+      "text_key": "q.love-language.ll07",
+      "w": {
+        "expressive": 2,
+        "attentive": 2
+      }
+    },
+    {
+      "id": "ll08",
+      "text_key": "q.love-language.ll08",
+      "w": {
+        "expressive": 2,
+        "attentive": 2
+      }
+    },
+    {
+      "id": "ll09",
+      "text_key": "q.love-language.ll09",
+      "w": {
+        "expressive": 2,
+        "attentive": -2
+      }
+    },
+    {
+      "id": "ll10",
+      "text_key": "q.love-language.ll10",
+      "w": {
+        "expressive": 2,
+        "attentive": -2
+      }
+    },
+    {
+      "id": "ll11",
+      "text_key": "q.love-language.ll11",
+      "w": {
+        "expressive": 2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll12",
+      "text_key": "q.love-language.ll12",
+      "w": {
+        "expressive": 2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll13",
+      "text_key": "q.love-language.ll13",
+      "w": {
+        "expressive": 2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll14",
+      "text_key": "q.love-language.ll14",
+      "w": {
+        "expressive": 2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll15",
+      "text_key": "q.love-language.ll15",
+      "w": {
+        "expressive": -2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll16",
+      "text_key": "q.love-language.ll16",
+      "w": {
+        "expressive": -2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll17",
+      "text_key": "q.love-language.ll17",
+      "w": {
+        "expressive": -2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll18",
+      "text_key": "q.love-language.ll18",
+      "w": {
+        "expressive": -2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll19",
+      "text_key": "q.love-language.ll19",
+      "w": {
+        "expressive": -2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll20",
+      "text_key": "q.love-language.ll20",
+      "w": {
+        "expressive": -2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll21",
+      "text_key": "q.love-language.ll21",
+      "w": {
+        "expressive": -2,
+        "attentive": 2
+      }
+    },
+    {
+      "id": "ll22",
+      "text_key": "q.love-language.ll22",
+      "w": {
+        "expressive": -2,
+        "attentive": 2
+      }
+    },
+    {
+      "id": "ll23",
+      "text_key": "q.love-language.ll23",
+      "w": {
+        "expressive": -2,
+        "attentive": -2
+      }
+    },
+    {
+      "id": "ll24",
+      "text_key": "q.love-language.ll24",
+      "w": {
+        "expressive": -2,
+        "attentive": -2
+      }
+    },
+    {
+      "id": "ll25",
+      "text_key": "q.love-language.ll25",
+      "w": {
+        "expressive": -2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll26",
+      "text_key": "q.love-language.ll26",
+      "w": {
+        "expressive": -2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll27",
+      "text_key": "q.love-language.ll27",
+      "w": {
+        "expressive": -2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll28",
+      "text_key": "q.love-language.ll28",
+      "w": {
+        "expressive": -2,
+        "attentive": 0
+      }
+    },
+    {
+      "id": "ll29",
+      "text_key": "q.love-language.ll29",
+      "w": {
+        "expressive": 0,
+        "attentive": 2
+      }
+    },
+    {
+      "id": "ll30",
+      "text_key": "q.love-language.ll30",
+      "w": {
+        "expressive": 0,
+        "attentive": 2
+      }
+    },
+    {
+      "id": "ll31",
+      "text_key": "q.love-language.ll31",
+      "w": {
+        "expressive": 0,
+        "attentive": 2
+      }
+    },
+    {
+      "id": "ll32",
+      "text_key": "q.love-language.ll32",
+      "w": {
+        "expressive": 0,
+        "attentive": 2
+      }
+    },
+    {
+      "id": "ll33",
+      "text_key": "q.love-language.ll33",
+      "w": {
+        "expressive": 0,
+        "attentive": -2
+      }
+    },
+    {
+      "id": "ll34",
+      "text_key": "q.love-language.ll34",
+      "w": {
+        "expressive": 0,
+        "attentive": -2
+      }
+    },
+    {
+      "id": "ll35",
+      "text_key": "q.love-language.ll35",
+      "w": {
+        "expressive": 0,
+        "attentive": -2
+      }
+    },
+    {
+      "id": "ll36",
+      "text_key": "q.love-language.ll36",
+      "w": {
+        "expressive": 0,
+        "attentive": -2
+      }
+    }
+  ]
+}

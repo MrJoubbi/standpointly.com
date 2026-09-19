@@ -1,0 +1,398 @@
+{
+  "id": "work-style",
+  "version": 1,
+  "title_key": "test.work-style.title",
+  "summary_key": "test.work-style.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "collaboration_rhythm",
+      "name_key": "axis.collaboration_rhythm.name",
+      "negative_label_key": "axis.collaboration_rhythm.negative",
+      "positive_label_key": "axis.collaboration_rhythm.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "iteration_pace",
+      "name_key": "axis.iteration_pace.name",
+      "negative_label_key": "axis.iteration_pace.negative",
+      "positive_label_key": "axis.iteration_pace.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "monastic_scholar",
+      "name_key": "sector.work-style.monastic_scholar",
+      "label_key": "cell.work-style.monastic_scholar",
+      "description_key": "description.work-style.monastic_scholar"
+    },
+    {
+      "id": "meticulous_planner",
+      "name_key": "sector.work-style.meticulous_planner",
+      "label_key": "cell.work-style.meticulous_planner",
+      "description_key": "description.work-style.meticulous_planner"
+    },
+    {
+      "id": "agile_synthesizer",
+      "name_key": "sector.work-style.agile_synthesizer",
+      "label_key": "cell.work-style.agile_synthesizer",
+      "description_key": "description.work-style.agile_synthesizer"
+    },
+    {
+      "id": "methodical_executor",
+      "name_key": "sector.work-style.methodical_executor",
+      "label_key": "cell.work-style.methodical_executor",
+      "description_key": "description.work-style.methodical_executor"
+    },
+    {
+      "id": "balanced_operator",
+      "name_key": "sector.work-style.balanced_operator",
+      "label_key": "cell.work-style.balanced_operator",
+      "description_key": "description.work-style.balanced_operator"
+    },
+    {
+      "id": "collaborative_accelerator",
+      "name_key": "sector.work-style.collaborative_accelerator",
+      "label_key": "cell.work-style.collaborative_accelerator",
+      "description_key": "description.work-style.collaborative_accelerator"
+    },
+    {
+      "id": "deliberate_craftsman",
+      "name_key": "sector.work-style.deliberate_craftsman",
+      "label_key": "cell.work-style.deliberate_craftsman",
+      "description_key": "description.work-style.deliberate_craftsman"
+    },
+    {
+      "id": "rapid_solo_builder",
+      "name_key": "sector.work-style.rapid_solo_builder",
+      "label_key": "cell.work-style.rapid_solo_builder",
+      "description_key": "description.work-style.rapid_solo_builder"
+    },
+    {
+      "id": "dynamic_catalyst",
+      "name_key": "sector.work-style.dynamic_catalyst",
+      "label_key": "cell.work-style.dynamic_catalyst",
+      "description_key": "description.work-style.dynamic_catalyst"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ws01",
+      "text_key": "q.work-style.ws01",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws02",
+      "text_key": "q.work-style.ws02",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws03",
+      "text_key": "q.work-style.ws03",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws04",
+      "text_key": "q.work-style.ws04",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws05",
+      "text_key": "q.work-style.ws05",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws06",
+      "text_key": "q.work-style.ws06",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws07",
+      "text_key": "q.work-style.ws07",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 2
+      }
+    },
+    {
+      "id": "ws08",
+      "text_key": "q.work-style.ws08",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 2
+      }
+    },
+    {
+      "id": "ws09",
+      "text_key": "q.work-style.ws09",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": -2
+      }
+    },
+    {
+      "id": "ws10",
+      "text_key": "q.work-style.ws10",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": -2
+      }
+    },
+    {
+      "id": "ws11",
+      "text_key": "q.work-style.ws11",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws12",
+      "text_key": "q.work-style.ws12",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws13",
+      "text_key": "q.work-style.ws13",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws14",
+      "text_key": "q.work-style.ws14",
+      "w": {
+        "collaboration_rhythm": 2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws15",
+      "text_key": "q.work-style.ws15",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws16",
+      "text_key": "q.work-style.ws16",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws17",
+      "text_key": "q.work-style.ws17",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws18",
+      "text_key": "q.work-style.ws18",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws19",
+      "text_key": "q.work-style.ws19",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws20",
+      "text_key": "q.work-style.ws20",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws21",
+      "text_key": "q.work-style.ws21",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 2
+      }
+    },
+    {
+      "id": "ws22",
+      "text_key": "q.work-style.ws22",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 2
+      }
+    },
+    {
+      "id": "ws23",
+      "text_key": "q.work-style.ws23",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": -2
+      }
+    },
+    {
+      "id": "ws24",
+      "text_key": "q.work-style.ws24",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": -2
+      }
+    },
+    {
+      "id": "ws25",
+      "text_key": "q.work-style.ws25",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws26",
+      "text_key": "q.work-style.ws26",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws27",
+      "text_key": "q.work-style.ws27",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws28",
+      "text_key": "q.work-style.ws28",
+      "w": {
+        "collaboration_rhythm": -2,
+        "iteration_pace": 0
+      }
+    },
+    {
+      "id": "ws29",
+      "text_key": "q.work-style.ws29",
+      "w": {
+        "collaboration_rhythm": 0,
+        "iteration_pace": 2
+      }
+    },
+    {
+      "id": "ws30",
+      "text_key": "q.work-style.ws30",
+      "w": {
+        "collaboration_rhythm": 0,
+        "iteration_pace": 2
+      }
+    },
+    {
+      "id": "ws31",
+      "text_key": "q.work-style.ws31",
+      "w": {
+        "collaboration_rhythm": 0,
+        "iteration_pace": 2
+      }
+    },
+    {
+      "id": "ws32",
+      "text_key": "q.work-style.ws32",
+      "w": {
+        "collaboration_rhythm": 0,
+        "iteration_pace": 2
+      }
+    },
+    {
+      "id": "ws33",
+      "text_key": "q.work-style.ws33",
+      "w": {
+        "collaboration_rhythm": 0,
+        "iteration_pace": -2
+      }
+    },
+    {
+      "id": "ws34",
+      "text_key": "q.work-style.ws34",
+      "w": {
+        "collaboration_rhythm": 0,
+        "iteration_pace": -2
+      }
+    },
+    {
+      "id": "ws35",
+      "text_key": "q.work-style.ws35",
+      "w": {
+        "collaboration_rhythm": 0,
+        "iteration_pace": -2
+      }
+    },
+    {
+      "id": "ws36",
+      "text_key": "q.work-style.ws36",
+      "w": {
+        "collaboration_rhythm": 0,
+        "iteration_pace": -2
+      }
+    }
+  ]
+}

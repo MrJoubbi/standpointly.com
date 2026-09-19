@@ -1,0 +1,398 @@
+{
+  "id": "decision-making-style",
+  "version": 1,
+  "title_key": "test.decision-making-style.title",
+  "summary_key": "test.decision-making-style.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "analytic_rigor",
+      "name_key": "axis.analytic_rigor.name",
+      "negative_label_key": "axis.analytic_rigor.negative",
+      "positive_label_key": "axis.analytic_rigor.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "deliberation_pace",
+      "name_key": "axis.deliberation_pace.name",
+      "negative_label_key": "axis.deliberation_pace.negative",
+      "positive_label_key": "axis.deliberation_pace.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "intuitive_contemplator",
+      "name_key": "sector.decision-making-style.intuitive_contemplator",
+      "label_key": "cell.decision-making-style.intuitive_contemplator",
+      "description_key": "description.decision-making-style.intuitive_contemplator"
+    },
+    {
+      "id": "measured_scholar",
+      "name_key": "sector.decision-making-style.measured_scholar",
+      "label_key": "cell.decision-making-style.measured_scholar",
+      "description_key": "description.decision-making-style.measured_scholar"
+    },
+    {
+      "id": "systematic_evaluator",
+      "name_key": "sector.decision-making-style.systematic_evaluator",
+      "label_key": "cell.decision-making-style.systematic_evaluator",
+      "description_key": "description.decision-making-style.systematic_evaluator"
+    },
+    {
+      "id": "instinctive_responder",
+      "name_key": "sector.decision-making-style.instinctive_responder",
+      "label_key": "cell.decision-making-style.instinctive_responder",
+      "description_key": "description.decision-making-style.instinctive_responder"
+    },
+    {
+      "id": "pragmatic_arbitrator",
+      "name_key": "sector.decision-making-style.pragmatic_arbitrator",
+      "label_key": "cell.decision-making-style.pragmatic_arbitrator",
+      "description_key": "description.decision-making-style.pragmatic_arbitrator"
+    },
+    {
+      "id": "data_driven_commander",
+      "name_key": "sector.decision-making-style.data_driven_commander",
+      "label_key": "cell.decision-making-style.data_driven_commander",
+      "description_key": "description.decision-making-style.data_driven_commander"
+    },
+    {
+      "id": "gut_initiator",
+      "name_key": "sector.decision-making-style.gut_initiator",
+      "label_key": "cell.decision-making-style.gut_initiator",
+      "description_key": "description.decision-making-style.gut_initiator"
+    },
+    {
+      "id": "swift_pragmatist",
+      "name_key": "sector.decision-making-style.swift_pragmatist",
+      "label_key": "cell.decision-making-style.swift_pragmatist",
+      "description_key": "description.decision-making-style.swift_pragmatist"
+    },
+    {
+      "id": "calculated_disruptor",
+      "name_key": "sector.decision-making-style.calculated_disruptor",
+      "label_key": "cell.decision-making-style.calculated_disruptor",
+      "description_key": "description.decision-making-style.calculated_disruptor"
+    }
+  ],
+  "questions": [
+    {
+      "id": "dms01",
+      "text_key": "q.decision-making-style.dms01",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms02",
+      "text_key": "q.decision-making-style.dms02",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms03",
+      "text_key": "q.decision-making-style.dms03",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms04",
+      "text_key": "q.decision-making-style.dms04",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms05",
+      "text_key": "q.decision-making-style.dms05",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms06",
+      "text_key": "q.decision-making-style.dms06",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms07",
+      "text_key": "q.decision-making-style.dms07",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 2
+      }
+    },
+    {
+      "id": "dms08",
+      "text_key": "q.decision-making-style.dms08",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 2
+      }
+    },
+    {
+      "id": "dms09",
+      "text_key": "q.decision-making-style.dms09",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": -2
+      }
+    },
+    {
+      "id": "dms10",
+      "text_key": "q.decision-making-style.dms10",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": -2
+      }
+    },
+    {
+      "id": "dms11",
+      "text_key": "q.decision-making-style.dms11",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms12",
+      "text_key": "q.decision-making-style.dms12",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms13",
+      "text_key": "q.decision-making-style.dms13",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms14",
+      "text_key": "q.decision-making-style.dms14",
+      "w": {
+        "analytic_rigor": 2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms15",
+      "text_key": "q.decision-making-style.dms15",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms16",
+      "text_key": "q.decision-making-style.dms16",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms17",
+      "text_key": "q.decision-making-style.dms17",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms18",
+      "text_key": "q.decision-making-style.dms18",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms19",
+      "text_key": "q.decision-making-style.dms19",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms20",
+      "text_key": "q.decision-making-style.dms20",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms21",
+      "text_key": "q.decision-making-style.dms21",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 2
+      }
+    },
+    {
+      "id": "dms22",
+      "text_key": "q.decision-making-style.dms22",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 2
+      }
+    },
+    {
+      "id": "dms23",
+      "text_key": "q.decision-making-style.dms23",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": -2
+      }
+    },
+    {
+      "id": "dms24",
+      "text_key": "q.decision-making-style.dms24",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": -2
+      }
+    },
+    {
+      "id": "dms25",
+      "text_key": "q.decision-making-style.dms25",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms26",
+      "text_key": "q.decision-making-style.dms26",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms27",
+      "text_key": "q.decision-making-style.dms27",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms28",
+      "text_key": "q.decision-making-style.dms28",
+      "w": {
+        "analytic_rigor": -2,
+        "deliberation_pace": 0
+      }
+    },
+    {
+      "id": "dms29",
+      "text_key": "q.decision-making-style.dms29",
+      "w": {
+        "analytic_rigor": 0,
+        "deliberation_pace": 2
+      }
+    },
+    {
+      "id": "dms30",
+      "text_key": "q.decision-making-style.dms30",
+      "w": {
+        "analytic_rigor": 0,
+        "deliberation_pace": 2
+      }
+    },
+    {
+      "id": "dms31",
+      "text_key": "q.decision-making-style.dms31",
+      "w": {
+        "analytic_rigor": 0,
+        "deliberation_pace": 2
+      }
+    },
+    {
+      "id": "dms32",
+      "text_key": "q.decision-making-style.dms32",
+      "w": {
+        "analytic_rigor": 0,
+        "deliberation_pace": 2
+      }
+    },
+    {
+      "id": "dms33",
+      "text_key": "q.decision-making-style.dms33",
+      "w": {
+        "analytic_rigor": 0,
+        "deliberation_pace": -2
+      }
+    },
+    {
+      "id": "dms34",
+      "text_key": "q.decision-making-style.dms34",
+      "w": {
+        "analytic_rigor": 0,
+        "deliberation_pace": -2
+      }
+    },
+    {
+      "id": "dms35",
+      "text_key": "q.decision-making-style.dms35",
+      "w": {
+        "analytic_rigor": 0,
+        "deliberation_pace": -2
+      }
+    },
+    {
+      "id": "dms36",
+      "text_key": "q.decision-making-style.dms36",
+      "w": {
+        "analytic_rigor": 0,
+        "deliberation_pace": -2
+      }
+    }
+  ]
+}

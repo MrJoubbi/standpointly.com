@@ -1,0 +1,398 @@
+{
+  "id": "career-personality",
+  "version": 1,
+  "title_key": "test.career-personality.title",
+  "summary_key": "test.career-personality.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "technical_managerial",
+      "name_key": "axis.technical_managerial.name",
+      "negative_label_key": "axis.technical_managerial.negative",
+      "positive_label_key": "axis.technical_managerial.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "autonomy_orientation",
+      "name_key": "axis.autonomy_orientation.name",
+      "negative_label_key": "axis.autonomy_orientation.negative",
+      "positive_label_key": "axis.autonomy_orientation.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "institutional_craftsman",
+      "name_key": "sector.career-personality.institutional_craftsman",
+      "label_key": "cell.career-personality.institutional_craftsman",
+      "description_key": "description.career-personality.institutional_craftsman"
+    },
+    {
+      "id": "corporate_director",
+      "name_key": "sector.career-personality.corporate_director",
+      "label_key": "cell.career-personality.corporate_director",
+      "description_key": "description.career-personality.corporate_director"
+    },
+    {
+      "id": "executive_titan",
+      "name_key": "sector.career-personality.executive_titan",
+      "label_key": "cell.career-personality.executive_titan",
+      "description_key": "description.career-personality.executive_titan"
+    },
+    {
+      "id": "steady_specialist",
+      "name_key": "sector.career-personality.steady_specialist",
+      "label_key": "cell.career-personality.steady_specialist",
+      "description_key": "description.career-personality.steady_specialist"
+    },
+    {
+      "id": "balanced_professional",
+      "name_key": "sector.career-personality.balanced_professional",
+      "label_key": "cell.career-personality.balanced_professional",
+      "description_key": "description.career-personality.balanced_professional"
+    },
+    {
+      "id": "autonomous_lead",
+      "name_key": "sector.career-personality.autonomous_lead",
+      "label_key": "cell.career-personality.autonomous_lead",
+      "description_key": "description.career-personality.autonomous_lead"
+    },
+    {
+      "id": "freelance_artisan",
+      "name_key": "sector.career-personality.freelance_artisan",
+      "label_key": "cell.career-personality.freelance_artisan",
+      "description_key": "description.career-personality.freelance_artisan"
+    },
+    {
+      "id": "independent_consultant",
+      "name_key": "sector.career-personality.independent_consultant",
+      "label_key": "cell.career-personality.independent_consultant",
+      "description_key": "description.career-personality.independent_consultant"
+    },
+    {
+      "id": "venture_innovator",
+      "name_key": "sector.career-personality.venture_innovator",
+      "label_key": "cell.career-personality.venture_innovator",
+      "description_key": "description.career-personality.venture_innovator"
+    }
+  ],
+  "questions": [
+    {
+      "id": "cp01",
+      "text_key": "q.career-personality.cp01",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp02",
+      "text_key": "q.career-personality.cp02",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp03",
+      "text_key": "q.career-personality.cp03",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp04",
+      "text_key": "q.career-personality.cp04",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp05",
+      "text_key": "q.career-personality.cp05",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp06",
+      "text_key": "q.career-personality.cp06",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp07",
+      "text_key": "q.career-personality.cp07",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 2
+      }
+    },
+    {
+      "id": "cp08",
+      "text_key": "q.career-personality.cp08",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 2
+      }
+    },
+    {
+      "id": "cp09",
+      "text_key": "q.career-personality.cp09",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": -2
+      }
+    },
+    {
+      "id": "cp10",
+      "text_key": "q.career-personality.cp10",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": -2
+      }
+    },
+    {
+      "id": "cp11",
+      "text_key": "q.career-personality.cp11",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp12",
+      "text_key": "q.career-personality.cp12",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp13",
+      "text_key": "q.career-personality.cp13",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp14",
+      "text_key": "q.career-personality.cp14",
+      "w": {
+        "technical_managerial": 2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp15",
+      "text_key": "q.career-personality.cp15",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp16",
+      "text_key": "q.career-personality.cp16",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp17",
+      "text_key": "q.career-personality.cp17",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp18",
+      "text_key": "q.career-personality.cp18",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp19",
+      "text_key": "q.career-personality.cp19",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp20",
+      "text_key": "q.career-personality.cp20",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp21",
+      "text_key": "q.career-personality.cp21",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 2
+      }
+    },
+    {
+      "id": "cp22",
+      "text_key": "q.career-personality.cp22",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 2
+      }
+    },
+    {
+      "id": "cp23",
+      "text_key": "q.career-personality.cp23",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": -2
+      }
+    },
+    {
+      "id": "cp24",
+      "text_key": "q.career-personality.cp24",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": -2
+      }
+    },
+    {
+      "id": "cp25",
+      "text_key": "q.career-personality.cp25",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp26",
+      "text_key": "q.career-personality.cp26",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp27",
+      "text_key": "q.career-personality.cp27",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp28",
+      "text_key": "q.career-personality.cp28",
+      "w": {
+        "technical_managerial": -2,
+        "autonomy_orientation": 0
+      }
+    },
+    {
+      "id": "cp29",
+      "text_key": "q.career-personality.cp29",
+      "w": {
+        "technical_managerial": 0,
+        "autonomy_orientation": 2
+      }
+    },
+    {
+      "id": "cp30",
+      "text_key": "q.career-personality.cp30",
+      "w": {
+        "technical_managerial": 0,
+        "autonomy_orientation": 2
+      }
+    },
+    {
+      "id": "cp31",
+      "text_key": "q.career-personality.cp31",
+      "w": {
+        "technical_managerial": 0,
+        "autonomy_orientation": 2
+      }
+    },
+    {
+      "id": "cp32",
+      "text_key": "q.career-personality.cp32",
+      "w": {
+        "technical_managerial": 0,
+        "autonomy_orientation": 2
+      }
+    },
+    {
+      "id": "cp33",
+      "text_key": "q.career-personality.cp33",
+      "w": {
+        "technical_managerial": 0,
+        "autonomy_orientation": -2
+      }
+    },
+    {
+      "id": "cp34",
+      "text_key": "q.career-personality.cp34",
+      "w": {
+        "technical_managerial": 0,
+        "autonomy_orientation": -2
+      }
+    },
+    {
+      "id": "cp35",
+      "text_key": "q.career-personality.cp35",
+      "w": {
+        "technical_managerial": 0,
+        "autonomy_orientation": -2
+      }
+    },
+    {
+      "id": "cp36",
+      "text_key": "q.career-personality.cp36",
+      "w": {
+        "technical_managerial": 0,
+        "autonomy_orientation": -2
+      }
+    }
+  ]
+}

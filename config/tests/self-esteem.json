@@ -1,0 +1,398 @@
+{
+  "id": "self-esteem",
+  "version": 1,
+  "title_key": "test.self-esteem.title",
+  "summary_key": "test.self-esteem.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "self_efficacy",
+      "name_key": "axis.self_efficacy.name",
+      "negative_label_key": "axis.self_efficacy.negative",
+      "positive_label_key": "axis.self_efficacy.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "unconditional_worth",
+      "name_key": "axis.unconditional_worth.name",
+      "negative_label_key": "axis.unconditional_worth.negative",
+      "positive_label_key": "axis.unconditional_worth.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "serene_anchor",
+      "name_key": "sector.self-esteem.serene_anchor",
+      "label_key": "cell.self-esteem.serene_anchor",
+      "description_key": "description.self-esteem.serene_anchor"
+    },
+    {
+      "id": "grounded_realist",
+      "name_key": "sector.self-esteem.grounded_realist",
+      "label_key": "cell.self-esteem.grounded_realist",
+      "description_key": "description.self-esteem.grounded_realist"
+    },
+    {
+      "id": "radiant_sovereign",
+      "name_key": "sector.self-esteem.radiant_sovereign",
+      "label_key": "cell.self-esteem.radiant_sovereign",
+      "description_key": "description.self-esteem.radiant_sovereign"
+    },
+    {
+      "id": "quiet_evaluator",
+      "name_key": "sector.self-esteem.quiet_evaluator",
+      "label_key": "cell.self-esteem.quiet_evaluator",
+      "description_key": "description.self-esteem.quiet_evaluator"
+    },
+    {
+      "id": "resilient_striver",
+      "name_key": "sector.self-esteem.resilient_striver",
+      "label_key": "cell.self-esteem.resilient_striver",
+      "description_key": "description.self-esteem.resilient_striver"
+    },
+    {
+      "id": "driven_achiever",
+      "name_key": "sector.self-esteem.driven_achiever",
+      "label_key": "cell.self-esteem.driven_achiever",
+      "description_key": "description.self-esteem.driven_achiever"
+    },
+    {
+      "id": "vulnerable_critic",
+      "name_key": "sector.self-esteem.vulnerable_critic",
+      "label_key": "cell.self-esteem.vulnerable_critic",
+      "description_key": "description.self-esteem.vulnerable_critic"
+    },
+    {
+      "id": "strained_performer",
+      "name_key": "sector.self-esteem.strained_performer",
+      "label_key": "cell.self-esteem.strained_performer",
+      "description_key": "description.self-esteem.strained_performer"
+    },
+    {
+      "id": "defensive_perfectionist",
+      "name_key": "sector.self-esteem.defensive_perfectionist",
+      "label_key": "cell.self-esteem.defensive_perfectionist",
+      "description_key": "description.self-esteem.defensive_perfectionist"
+    }
+  ],
+  "questions": [
+    {
+      "id": "se01",
+      "text_key": "q.self-esteem.se01",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se02",
+      "text_key": "q.self-esteem.se02",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se03",
+      "text_key": "q.self-esteem.se03",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se04",
+      "text_key": "q.self-esteem.se04",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se05",
+      "text_key": "q.self-esteem.se05",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se06",
+      "text_key": "q.self-esteem.se06",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se07",
+      "text_key": "q.self-esteem.se07",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 2
+      }
+    },
+    {
+      "id": "se08",
+      "text_key": "q.self-esteem.se08",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 2
+      }
+    },
+    {
+      "id": "se09",
+      "text_key": "q.self-esteem.se09",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": -2
+      }
+    },
+    {
+      "id": "se10",
+      "text_key": "q.self-esteem.se10",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": -2
+      }
+    },
+    {
+      "id": "se11",
+      "text_key": "q.self-esteem.se11",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se12",
+      "text_key": "q.self-esteem.se12",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se13",
+      "text_key": "q.self-esteem.se13",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se14",
+      "text_key": "q.self-esteem.se14",
+      "w": {
+        "self_efficacy": 2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se15",
+      "text_key": "q.self-esteem.se15",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se16",
+      "text_key": "q.self-esteem.se16",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se17",
+      "text_key": "q.self-esteem.se17",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se18",
+      "text_key": "q.self-esteem.se18",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se19",
+      "text_key": "q.self-esteem.se19",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se20",
+      "text_key": "q.self-esteem.se20",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se21",
+      "text_key": "q.self-esteem.se21",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 2
+      }
+    },
+    {
+      "id": "se22",
+      "text_key": "q.self-esteem.se22",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 2
+      }
+    },
+    {
+      "id": "se23",
+      "text_key": "q.self-esteem.se23",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": -2
+      }
+    },
+    {
+      "id": "se24",
+      "text_key": "q.self-esteem.se24",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": -2
+      }
+    },
+    {
+      "id": "se25",
+      "text_key": "q.self-esteem.se25",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se26",
+      "text_key": "q.self-esteem.se26",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se27",
+      "text_key": "q.self-esteem.se27",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se28",
+      "text_key": "q.self-esteem.se28",
+      "w": {
+        "self_efficacy": -2,
+        "unconditional_worth": 0
+      }
+    },
+    {
+      "id": "se29",
+      "text_key": "q.self-esteem.se29",
+      "w": {
+        "self_efficacy": 0,
+        "unconditional_worth": 2
+      }
+    },
+    {
+      "id": "se30",
+      "text_key": "q.self-esteem.se30",
+      "w": {
+        "self_efficacy": 0,
+        "unconditional_worth": 2
+      }
+    },
+    {
+      "id": "se31",
+      "text_key": "q.self-esteem.se31",
+      "w": {
+        "self_efficacy": 0,
+        "unconditional_worth": 2
+      }
+    },
+    {
+      "id": "se32",
+      "text_key": "q.self-esteem.se32",
+      "w": {
+        "self_efficacy": 0,
+        "unconditional_worth": 2
+      }
+    },
+    {
+      "id": "se33",
+      "text_key": "q.self-esteem.se33",
+      "w": {
+        "self_efficacy": 0,
+        "unconditional_worth": -2
+      }
+    },
+    {
+      "id": "se34",
+      "text_key": "q.self-esteem.se34",
+      "w": {
+        "self_efficacy": 0,
+        "unconditional_worth": -2
+      }
+    },
+    {
+      "id": "se35",
+      "text_key": "q.self-esteem.se35",
+      "w": {
+        "self_efficacy": 0,
+        "unconditional_worth": -2
+      }
+    },
+    {
+      "id": "se36",
+      "text_key": "q.self-esteem.se36",
+      "w": {
+        "self_efficacy": 0,
+        "unconditional_worth": -2
+      }
+    }
+  ]
+}

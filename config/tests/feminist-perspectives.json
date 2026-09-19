@@ -1,0 +1,398 @@
+{
+  "id": "feminist-perspectives",
+  "version": 1,
+  "title_key": "test.feminist-perspectives.title",
+  "summary_key": "test.feminist-perspectives.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "institutional_scope",
+      "name_key": "axis.institutional_scope.name",
+      "negative_label_key": "axis.institutional_scope.negative",
+      "positive_label_key": "axis.institutional_scope.positive",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "gender_fluidity",
+      "name_key": "axis.gender_fluidity.name",
+      "negative_label_key": "axis.gender_fluidity.negative",
+      "positive_label_key": "axis.gender_fluidity.positive",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "traditional_equity",
+      "name_key": "sector.feminist-perspectives.traditional_equity",
+      "label_key": "cell.feminist-perspectives.traditional_equity",
+      "description_key": "description.feminist-perspectives.traditional_equity"
+    },
+    {
+      "id": "civic_reformer",
+      "name_key": "sector.feminist-perspectives.civic_reformer",
+      "label_key": "cell.feminist-perspectives.civic_reformer",
+      "description_key": "description.feminist-perspectives.civic_reformer"
+    },
+    {
+      "id": "radical_deconstructionist",
+      "name_key": "sector.feminist-perspectives.radical_deconstructionist",
+      "label_key": "cell.feminist-perspectives.radical_deconstructionist",
+      "description_key": "description.feminist-perspectives.radical_deconstructionist"
+    },
+    {
+      "id": "libertarian_individualist",
+      "name_key": "sector.feminist-perspectives.libertarian_individualist",
+      "label_key": "cell.feminist-perspectives.libertarian_individualist",
+      "description_key": "description.feminist-perspectives.libertarian_individualist"
+    },
+    {
+      "id": "intersectional_pragmatist",
+      "name_key": "sector.feminist-perspectives.intersectional_pragmatist",
+      "label_key": "cell.feminist-perspectives.intersectional_pragmatist",
+      "description_key": "description.feminist-perspectives.intersectional_pragmatist"
+    },
+    {
+      "id": "transformational_abolitionist",
+      "name_key": "sector.feminist-perspectives.transformational_abolitionist",
+      "label_key": "cell.feminist-perspectives.transformational_abolitionist",
+      "description_key": "description.feminist-perspectives.transformational_abolitionist"
+    },
+    {
+      "id": "autonomous_egalitarian",
+      "name_key": "sector.feminist-perspectives.autonomous_egalitarian",
+      "label_key": "cell.feminist-perspectives.autonomous_egalitarian",
+      "description_key": "description.feminist-perspectives.autonomous_egalitarian"
+    },
+    {
+      "id": "materialist_advocate",
+      "name_key": "sector.feminist-perspectives.materialist_advocate",
+      "label_key": "cell.feminist-perspectives.materialist_advocate",
+      "description_key": "description.feminist-perspectives.materialist_advocate"
+    },
+    {
+      "id": "liberationist_visionary",
+      "name_key": "sector.feminist-perspectives.liberationist_visionary",
+      "label_key": "cell.feminist-perspectives.liberationist_visionary",
+      "description_key": "description.feminist-perspectives.liberationist_visionary"
+    }
+  ],
+  "questions": [
+    {
+      "id": "fp01",
+      "text_key": "q.feminist-perspectives.fp01",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp02",
+      "text_key": "q.feminist-perspectives.fp02",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp03",
+      "text_key": "q.feminist-perspectives.fp03",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp04",
+      "text_key": "q.feminist-perspectives.fp04",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp05",
+      "text_key": "q.feminist-perspectives.fp05",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp06",
+      "text_key": "q.feminist-perspectives.fp06",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp07",
+      "text_key": "q.feminist-perspectives.fp07",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 2
+      }
+    },
+    {
+      "id": "fp08",
+      "text_key": "q.feminist-perspectives.fp08",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 2
+      }
+    },
+    {
+      "id": "fp09",
+      "text_key": "q.feminist-perspectives.fp09",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": -2
+      }
+    },
+    {
+      "id": "fp10",
+      "text_key": "q.feminist-perspectives.fp10",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": -2
+      }
+    },
+    {
+      "id": "fp11",
+      "text_key": "q.feminist-perspectives.fp11",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp12",
+      "text_key": "q.feminist-perspectives.fp12",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp13",
+      "text_key": "q.feminist-perspectives.fp13",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp14",
+      "text_key": "q.feminist-perspectives.fp14",
+      "w": {
+        "institutional_scope": 2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp15",
+      "text_key": "q.feminist-perspectives.fp15",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp16",
+      "text_key": "q.feminist-perspectives.fp16",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp17",
+      "text_key": "q.feminist-perspectives.fp17",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp18",
+      "text_key": "q.feminist-perspectives.fp18",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp19",
+      "text_key": "q.feminist-perspectives.fp19",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp20",
+      "text_key": "q.feminist-perspectives.fp20",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp21",
+      "text_key": "q.feminist-perspectives.fp21",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 2
+      }
+    },
+    {
+      "id": "fp22",
+      "text_key": "q.feminist-perspectives.fp22",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 2
+      }
+    },
+    {
+      "id": "fp23",
+      "text_key": "q.feminist-perspectives.fp23",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": -2
+      }
+    },
+    {
+      "id": "fp24",
+      "text_key": "q.feminist-perspectives.fp24",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": -2
+      }
+    },
+    {
+      "id": "fp25",
+      "text_key": "q.feminist-perspectives.fp25",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp26",
+      "text_key": "q.feminist-perspectives.fp26",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp27",
+      "text_key": "q.feminist-perspectives.fp27",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp28",
+      "text_key": "q.feminist-perspectives.fp28",
+      "w": {
+        "institutional_scope": -2,
+        "gender_fluidity": 0
+      }
+    },
+    {
+      "id": "fp29",
+      "text_key": "q.feminist-perspectives.fp29",
+      "w": {
+        "institutional_scope": 0,
+        "gender_fluidity": 2
+      }
+    },
+    {
+      "id": "fp30",
+      "text_key": "q.feminist-perspectives.fp30",
+      "w": {
+        "institutional_scope": 0,
+        "gender_fluidity": 2
+      }
+    },
+    {
+      "id": "fp31",
+      "text_key": "q.feminist-perspectives.fp31",
+      "w": {
+        "institutional_scope": 0,
+        "gender_fluidity": 2
+      }
+    },
+    {
+      "id": "fp32",
+      "text_key": "q.feminist-perspectives.fp32",
+      "w": {
+        "institutional_scope": 0,
+        "gender_fluidity": 2
+      }
+    },
+    {
+      "id": "fp33",
+      "text_key": "q.feminist-perspectives.fp33",
+      "w": {
+        "institutional_scope": 0,
+        "gender_fluidity": -2
+      }
+    },
+    {
+      "id": "fp34",
+      "text_key": "q.feminist-perspectives.fp34",
+      "w": {
+        "institutional_scope": 0,
+        "gender_fluidity": -2
+      }
+    },
+    {
+      "id": "fp35",
+      "text_key": "q.feminist-perspectives.fp35",
+      "w": {
+        "institutional_scope": 0,
+        "gender_fluidity": -2
+      }
+    },
+    {
+      "id": "fp36",
+      "text_key": "q.feminist-perspectives.fp36",
+      "w": {
+        "institutional_scope": 0,
+        "gender_fluidity": -2
+      }
+    }
+  ]
+}

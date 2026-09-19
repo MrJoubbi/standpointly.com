@@ -1,0 +1,398 @@
+{
+  "id": "stress",
+  "version": 1,
+  "title_key": "test.stress.title",
+  "summary_key": "test.stress.summary",
+  "scale": {
+    "type": "likert5",
+    "values": [
+      {
+        "key": "strongly_disagree",
+        "value": -2
+      },
+      {
+        "key": "disagree",
+        "value": -1
+      },
+      {
+        "key": "neutral",
+        "value": 0
+      },
+      {
+        "key": "agree",
+        "value": 1
+      },
+      {
+        "key": "strongly_agree",
+        "value": 2
+      }
+    ]
+  },
+  "axes": {
+    "x": {
+      "id": "strain",
+      "name_key": "axis.strain.name",
+      "negative_label_key": "axis.strain.low",
+      "positive_label_key": "axis.strain.high",
+      "max_raw": 112
+    },
+    "y": {
+      "id": "coping",
+      "name_key": "axis.coping.name",
+      "negative_label_key": "axis.coping.depleted",
+      "positive_label_key": "axis.coping.resilient",
+      "max_raw": 64
+    }
+  },
+  "scoring": {
+    "gain": 0.9,
+    "clamp": 1,
+    "band": 0.33
+  },
+  "cells": [
+    {
+      "id": "anchored_flourisher",
+      "name_key": "sector.stress.anchored_flourisher",
+      "label_key": "cell.stress.anchored_flourisher",
+      "description_key": "description.stress.anchored_flourisher"
+    },
+    {
+      "id": "grounded_operator",
+      "name_key": "sector.stress.grounded_operator",
+      "label_key": "cell.stress.grounded_operator",
+      "description_key": "description.stress.grounded_operator"
+    },
+    {
+      "id": "resilient_striver",
+      "name_key": "sector.stress.resilient_striver",
+      "label_key": "cell.stress.resilient_striver",
+      "description_key": "description.stress.resilient_striver"
+    },
+    {
+      "id": "sheltered_steady",
+      "name_key": "sector.stress.sheltered_steady",
+      "label_key": "cell.stress.sheltered_steady",
+      "description_key": "description.stress.sheltered_steady"
+    },
+    {
+      "id": "balanced_regulator",
+      "name_key": "sector.stress.balanced_regulator",
+      "label_key": "cell.stress.balanced_regulator",
+      "description_key": "description.stress.balanced_regulator"
+    },
+    {
+      "id": "pressured_performer",
+      "name_key": "sector.stress.pressured_performer",
+      "label_key": "cell.stress.pressured_performer",
+      "description_key": "description.stress.pressured_performer"
+    },
+    {
+      "id": "withdrawn_quiet",
+      "name_key": "sector.stress.withdrawn_quiet",
+      "label_key": "cell.stress.withdrawn_quiet",
+      "description_key": "description.stress.withdrawn_quiet"
+    },
+    {
+      "id": "vulnerable_adapter",
+      "name_key": "sector.stress.vulnerable_adapter",
+      "label_key": "cell.stress.vulnerable_adapter",
+      "description_key": "description.stress.vulnerable_adapter"
+    },
+    {
+      "id": "depleted_struggler",
+      "name_key": "sector.stress.depleted_struggler",
+      "label_key": "cell.stress.depleted_struggler",
+      "description_key": "description.stress.depleted_struggler"
+    }
+  ],
+  "questions": [
+    {
+      "id": "st01",
+      "text_key": "q.stress.st01",
+      "w": {
+        "strain": 2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st02",
+      "text_key": "q.stress.st02",
+      "w": {
+        "strain": 2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st03",
+      "text_key": "q.stress.st03",
+      "w": {
+        "strain": 2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st04",
+      "text_key": "q.stress.st04",
+      "w": {
+        "strain": 2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st05",
+      "text_key": "q.stress.st05",
+      "w": {
+        "strain": 2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st06",
+      "text_key": "q.stress.st06",
+      "w": {
+        "strain": 2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st07",
+      "text_key": "q.stress.st07",
+      "w": {
+        "strain": 2,
+        "coping": 2
+      }
+    },
+    {
+      "id": "st08",
+      "text_key": "q.stress.st08",
+      "w": {
+        "strain": 2,
+        "coping": 2
+      }
+    },
+    {
+      "id": "st09",
+      "text_key": "q.stress.st09",
+      "w": {
+        "strain": 2,
+        "coping": -2
+      }
+    },
+    {
+      "id": "st10",
+      "text_key": "q.stress.st10",
+      "w": {
+        "strain": 2,
+        "coping": -2
+      }
+    },
+    {
+      "id": "st11",
+      "text_key": "q.stress.st11",
+      "w": {
+        "strain": 2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st12",
+      "text_key": "q.stress.st12",
+      "w": {
+        "strain": 2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st13",
+      "text_key": "q.stress.st13",
+      "w": {
+        "strain": 2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st14",
+      "text_key": "q.stress.st14",
+      "w": {
+        "strain": 2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st15",
+      "text_key": "q.stress.st15",
+      "w": {
+        "strain": -2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st16",
+      "text_key": "q.stress.st16",
+      "w": {
+        "strain": -2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st17",
+      "text_key": "q.stress.st17",
+      "w": {
+        "strain": -2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st18",
+      "text_key": "q.stress.st18",
+      "w": {
+        "strain": -2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st19",
+      "text_key": "q.stress.st19",
+      "w": {
+        "strain": -2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st20",
+      "text_key": "q.stress.st20",
+      "w": {
+        "strain": -2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st21",
+      "text_key": "q.stress.st21",
+      "w": {
+        "strain": -2,
+        "coping": 2
+      }
+    },
+    {
+      "id": "st22",
+      "text_key": "q.stress.st22",
+      "w": {
+        "strain": -2,
+        "coping": 2
+      }
+    },
+    {
+      "id": "st23",
+      "text_key": "q.stress.st23",
+      "w": {
+        "strain": -2,
+        "coping": -2
+      }
+    },
+    {
+      "id": "st24",
+      "text_key": "q.stress.st24",
+      "w": {
+        "strain": -2,
+        "coping": -2
+      }
+    },
+    {
+      "id": "st25",
+      "text_key": "q.stress.st25",
+      "w": {
+        "strain": -2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st26",
+      "text_key": "q.stress.st26",
+      "w": {
+        "strain": -2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st27",
+      "text_key": "q.stress.st27",
+      "w": {
+        "strain": -2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st28",
+      "text_key": "q.stress.st28",
+      "w": {
+        "strain": -2,
+        "coping": 0
+      }
+    },
+    {
+      "id": "st29",
+      "text_key": "q.stress.st29",
+      "w": {
+        "strain": 0,
+        "coping": 2
+      }
+    },
+    {
+      "id": "st30",
+      "text_key": "q.stress.st30",
+      "w": {
+        "strain": 0,
+        "coping": 2
+      }
+    },
+    {
+      "id": "st31",
+      "text_key": "q.stress.st31",
+      "w": {
+        "strain": 0,
+        "coping": 2
+      }
+    },
+    {
+      "id": "st32",
+      "text_key": "q.stress.st32",
+      "w": {
+        "strain": 0,
+        "coping": 2
+      }
+    },
+    {
+      "id": "st33",
+      "text_key": "q.stress.st33",
+      "w": {
+        "strain": 0,
+        "coping": -2
+      }
+    },
+    {
+      "id": "st34",
+      "text_key": "q.stress.st34",
+      "w": {
+        "strain": 0,
+        "coping": -2
+      }
+    },
+    {
+      "id": "st35",
+      "text_key": "q.stress.st35",
+      "w": {
+        "strain": 0,
+        "coping": -2
+      }
+    },
+    {
+      "id": "st36",
+      "text_key": "q.stress.st36",
+      "w": {
+        "strain": 0,
+        "coping": -2
+      }
+    }
+  ]
+}
