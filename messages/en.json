@@ -1,104 +1,104 @@
 {
   "test": {
     "political": {
-      "title": "The Political Test",
-      "summary": "Where you sit on two questions most political disagreement actually turns on: who should own and distribute things, and how far the state may direct private life."
+      "title": "The Political Compass: Where Do You Stand?",
+      "summary": "Where do you land politically? Map your economic and social views on a clean 2D grid — free from partisan spin."
     },
     "attachment": {
-      "title": "Attachment Style",
-      "summary": "How you form and hold close relationships, across the two dimensions the research literature actually uses: avoidance and anxiety."
+      "title": "What's Your Attachment Style?",
+      "summary": "How do you love, connect, and handle closeness in relationships? Take the test to see your style across anxiety and avoidance."
     },
     "big-five": {
-      "title": "The Big Five Personality Spectrum",
-      "summary": "Map your core behavioral tendencies across two primary psychometric meta-traits: Plasticity (Exploration & Drive) and Stability (Equanimity & Emotional Regulation)."
+      "title": "The Big Five Personality Test",
+      "summary": "Discover your core personality blueprint across openness, emotional resilience, curiosity, and drive."
     },
     "love-language": {
-      "title": "Relational Affection Modalities",
-      "summary": "Discover how you express and receive relational closeness, balancing Expressive Affirmation (verbal warmth and physical affection) with Attentive Devotion (dedicated time and supportive service)."
+      "title": "What's Your Love Language?",
+      "summary": "Find out how you express and receive affection — words of praise, physical touch, quality time, and everyday devotion."
     },
     "moral-foundations": {
-      "title": "Moral Foundations Compass",
-      "summary": "Evaluate the evolutionary foundations of your moral judgments across Universal Individualizing values (harm reduction, fairness, individual liberty) and Institutional Binding values (ingroup solidarity, authority, communal sanctity)."
+      "title": "What Are Your Core Moral Foundations?",
+      "summary": "What truly drives your sense of right and wrong? Discover which evolutionary values guide your moral instincts."
     },
     "stress": {
-      "title": "Perceived Stress & Resilience Profile",
-      "summary": "Assess your psychological equilibrium under acute and ambient demand, comparing environmental strain and cognitive overload against adaptive self-efficacy and coping agency."
+      "title": "How Stressed Are You Really?",
+      "summary": "Find out how much daily pressure you're carrying, and whether your mind and body have the buffer to handle it."
     },
     "leadership-style": {
-      "title": "Executive Leadership Architecture",
-      "summary": "Analyze your executive influence across two foundational axes: Authority Pacing (directive precision vs. collaborative empowerment) and Strategic Horizon (operational execution vs. visionary transformation)."
+      "title": "What Kind of Leader Are You?",
+      "summary": "Discover your leadership style — whether you lead with bold vision, hands-on execution, or by empowering your team."
     },
     "dark-triad": {
-      "title": "The Dark Triad Spectrum",
-      "summary": "Evaluate subclinical personality traits across Machiavellian tactical strategy and ego-narcissistic ambition."
+      "title": "What's Your Dark Side? (Dark Triad Test)",
+      "summary": "Explore your ego, strategic mind, and appetite for rule-breaking — honest, insightful, and judgment-free."
     },
     "empathy": {
-      "title": "Affective & Cognitive Empathy Mapping",
-      "summary": "Differentiate your empathic capacities between cognitive perspective-taking and affective emotional resonance."
+      "title": "How Empathetic Are You?",
+      "summary": "Do you feel what other people feel, or do you understand how they think? Discover your empathy style."
     },
     "emotional-intelligence": {
-      "title": "Emotional Intelligence Spectrum",
-      "summary": "Map your emotional architecture across granular self-awareness and intentional self-regulation."
+      "title": "What's Your Emotional Intelligence (EQ)?",
+      "summary": "See how well you read the room, understand your feelings, and navigate high-stakes moments."
     },
     "self-esteem": {
-      "title": "Self-Worth & Contingency Profile",
-      "summary": "Distinguish between active competence-based self-efficacy and unconditional, intrinsic self-acceptance."
+      "title": "How Healthy Is Your Self-Esteem?",
+      "summary": "Is your confidence rooted from within, or does it depend on external success and others' approval?"
     },
     "compatibility": {
-      "title": "Relational Compatibility Matrix",
-      "summary": "Evaluate your partnership dynamics across desired relational interdependence and lifestyle rhythm structure."
+      "title": "What Do You Need in a Relationship? (Compatibility Test)",
+      "summary": "Discover your relational rhythm — what you need in a partner for emotional closeness, independence, and daily life."
     },
     "relationship-anxiety": {
-      "title": "Relational Security & Vigilance",
-      "summary": "Map interpersonal vulnerabilities across abandonment vigilance and explicit reassurance dependency."
+      "title": "Relationship Anxiety Test: How Secure Are You in Love?",
+      "summary": "Do you overthink texts, fear being abandoned, or crave constant reassurance? Check your security score."
     },
     "boundaries": {
-      "title": "Interpersonal Boundary Architecture",
-      "summary": "Examine your boundary dynamics across self-differentiation sovereignty and structural relational permeability."
+      "title": "How Strong Are Your Boundaries?",
+      "summary": "Can you say no without feeling guilty? Discover where you draw the line with friends, family, and work."
     },
     "feminist-perspectives": {
-      "title": "Feminist Perspectives Compass",
-      "summary": "Navigate diverse feminist intellectual traditions across systemic structural critique and pluralistic gender fluidity."
+      "title": "How Much of a Feminist Are You?",
+      "summary": "Where do you stand on modern feminism, equality, gender roles, and social change? Take the quiz to find your archetype."
     },
     "gender-equality": {
-      "title": "Gender Parity & Structural Equity",
-      "summary": "Examine attitudes toward socioeconomic parity and egalitarian role symmetry across public and private life."
+      "title": "Where Do You Stand on Gender Equality?",
+      "summary": "Explore your perspectives on workplace parity, shared home life, leadership, and cultural expectations."
     },
     "individualism-collectivism": {
-      "title": "Individualism vs. Collectivism Spectrum",
-      "summary": "Map your cultural and moral compass across personal sovereign agency and collective communal solidarity."
+      "title": "Individualist or Collectivist: How Do You See Society?",
+      "summary": "Are you driven by personal freedom and self-reliance, or community duty and shared purpose?"
     },
     "burnout": {
-      "title": "Occupational Burnout & Exhaustion Index",
-      "summary": "Track occupational strain across emotional and physical depletion and mental cynical disengagement."
+      "title": "Are You Burnt Out? (Workplace Burnout Test)",
+      "summary": "Are you just tired, or truly burnt out? Check your emotional exhaustion, cynicism, and day-to-day energy reserves."
     },
     "emotional-regulation": {
-      "title": "Emotion Regulation Strategies",
-      "summary": "Analyze cognitive reframing versus expressive containment based on Gross's Process Model of Emotion Regulation."
+      "title": "How Do You Handle Tough Emotions?",
+      "summary": "Do you reframe problems, bottle things up, or express what you feel? Discover your emotional coping style."
     },
     "resilience": {
-      "title": "Psychological Resilience & Tenacity",
-      "summary": "Assess psychological bounce-back and adaptive flexibility under severe acute challenges (CD-RISC model)."
+      "title": "How Resilient Are You Under Pressure?",
+      "summary": "How fast do you bounce back when life knocks you down? Test your mental toughness and recovery speed."
     },
     "procrastination": {
-      "title": "Procrastination & Temporal Delay",
-      "summary": "Analyze cognitive delay mechanisms across task aversion hesitation and temporal discounting impulsivity."
+      "title": "Why Do You Procrastinate?",
+      "summary": "Is it perfectionism, task dread, or the thrill of the last minute? Discover what's holding you back."
     },
     "career-personality": {
-      "title": "Career Personality & Occupational Anchors",
-      "summary": "Identify your primary vocational anchor across technical craftsmanship and entrepreneurial sovereignty (Schein framework)."
+      "title": "What Career Path Truly Fits You?",
+      "summary": "Discover your core vocational calling — whether you're an independent craftsman, builder, leader, or visionary."
     },
     "work-style": {
-      "title": "Workplace Rhythm & Execution Style",
-      "summary": "Examine your optimal working conditions across collaborative breadth and rapid iterative pacing."
+      "title": "What's Your Work Style?",
+      "summary": "Do you thrive in deep focus or team collaboration? Fast-paced sprints or steady, organized systems?"
     },
     "career-values": {
-      "title": "Career Values & Motivating Drivers",
-      "summary": "Identify your deepest occupational drivers across commercial mastery and holistic lifestyle equilibrium (Super's model)."
+      "title": "What Do You Value Most in Your Career?",
+      "summary": "Is it money and security, creative freedom, prestige, or work-life balance? Rank what actually drives you."
     },
     "decision-making-style": {
-      "title": "Decision-Making Style Matrix",
-      "summary": "Map your cognitive decision heuristics across empirical analytical rigor and rapid action pacing (Scott & Bruce GDMS)."
+      "title": "How Do You Make Big Decisions?",
+      "summary": "Are you analytical and data-driven, gut-instinct oriented, or consensus-seeking? Find your decision style."
     }
   },
   "axis": {
@@ -1209,42 +1209,42 @@
       "b36": "I refuse to let anyone disrupt my scheduled routines under any circumstance."
     },
     "feminist-perspectives": {
-      "fp01": "Gender disparities cannot be solved merely by individual grit; institutions must be overhauled.",
-      "fp02": "Unpaid domestic caregiving represents massive economic labor that society systematically exploits.",
-      "fp03": "Patriarchal power dynamics permeate language, corporate hierarchies, and cultural media.",
-      "fp04": "Equal opportunity policies must actively account for systemic historical disadvantages.",
-      "fp05": "Corporate boards and political bodies require proactive structural intervention to achieve equity.",
-      "fp06": "The traditional nuclear family structure historically functioned to concentrate economic power in men.",
-      "fp07": "True liberation demands dismantling patriarchal economic structures while freeing gender from binary cages.",
-      "fp08": "We must overturn systemic institutional oppression and embrace radical, fluid self-identification.",
-      "fp09": "We need powerful state interventions for maternal leave and childcare while honoring maternal roles.",
-      "fp10": "Massive structural economic support for women is vital, recognizing unique biological realities.",
-      "fp11": "Workplace cultures are predominantly built around masculine norms that penalize caregiving.",
-      "fp12": "Achieving genuine gender justice requires dismantling interlocking systems of economic privilege.",
-      "fp13": "Social institutions often socialize women into accommodating subservience from childhood.",
-      "fp14": "Legislation must address systemic wage gaps, maternal penalties, and glass ceilings directly.",
-      "fp15": "Individual talent, hard work, and personal choices matter far more than patriarchal oppression.",
-      "fp16": "Modern democratic societies have largely achieved formal legal equality for all individuals.",
-      "fp17": "Women and men possess distinct biological traits that naturally influence vocational choices.",
-      "fp18": "Government mandates and quotas undermine true meritocracy and fair competition.",
-      "fp19": "Success in modern careers is open to anyone willing to put in the requisite dedication.",
-      "fp20": "Overemphasizing systemic victimhood disempowers individuals from taking agency over their lives.",
-      "fp21": "Individuals should be completely free to construct their own fluid gender identity without state regulation.",
-      "fp22": "Personal freedom to transcend traditional gender norms should flourish through free individual choice.",
-      "fp23": "Men and women have distinct biological callings; true freedom lies in mutual, honorable complementarity.",
-      "fp24": "Traditional family values and natural sex differences provide the healthiest foundation for society.",
-      "fp25": "The gender pay gap largely reflects voluntary choices regarding hours, risks, and specialties.",
-      "fp26": "Traditional gender arrangements often provide profound emotional stability and mutual joy.",
-      "fp27": "Social engineering to enforce equal outcomes creates resentment and bureaucratic overreach.",
-      "fp28": "Individual empowerment through education and entrepreneurship beats ideological activism.",
-      "fp29": "Gender identity is fundamentally a social construct rather than a rigid biological imperative.",
-      "fp30": "Society should fully embrace diverse gender expressions beyond the conventional binary.",
-      "fp31": "Rigid masculine and feminine stereotypes harm both men and women by suppressing authentic selfhood.",
-      "fp32": "Language and cultural expectations should evolve to accommodate non-binary identities seamlessly.",
-      "fp33": "Biological sex is binary, immutable, and provides the foundation for masculine and feminine traits.",
-      "fp34": "Men and women possess natural psychological differences that complement one another harmoniously.",
-      "fp35": "Eradicating traditional distinctions between motherhood and fatherhood destabilizes children's development.",
-      "fp36": "Cultural traditions recognizing distinct male and female roles have stood the test of millennia for good reason."
+      "fp01": "Closing the gender gap requires changing workplace rules and laws, not just telling women to work harder.",
+      "fp02": "Unpaid cooking, cleaning, and childcare at home is real work that society takes for granted.",
+      "fp03": "Women still face subtle double standards in the workplace and media that men don't.",
+      "fp04": "Companies and schools should actively create programs to help women catch up in male-dominated fields.",
+      "fp05": "Having more women in corporate boardrooms and political office should be an urgent priority.",
+      "fp06": "Traditional family setups have historically left women financially dependent on men.",
+      "fp07": "True equality means completely breaking down old gender expectations in both career and romance.",
+      "fp08": "People should be free to express their gender identity however they feel without judgment.",
+      "fp09": "Government-funded paid parental leave and affordable childcare are essential for true gender equality.",
+      "fp10": "Mothers who take time off to raise children deserve strong economic protection and respect.",
+      "fp11": "Modern work culture still quietly penalizes parents—especially moms—who choose family over 60-hour weeks.",
+      "fp12": "You can't achieve real gender equality without also fighting poverty and economic unfairness.",
+      "fp13": "From childhood, girls are often taught to be polite people-pleasers, while boys are encouraged to be bold.",
+      "fp14": "Companies should face strict fines if they pay women less than men for doing the exact same work.",
+      "fp15": "In today's world, personal talent and hustle matter far more than gender barriers.",
+      "fp16": "In modern society, women and men already enjoy equal legal rights and opportunities.",
+      "fp17": "Men and women are naturally wired differently, which naturally leads to different life and career choices.",
+      "fp18": "Hiring quotas and diversity mandates do more harm than good; people should be hired strictly on merit.",
+      "fp19": "Any woman with enough drive, resilience, and talent can reach the very top of her field today.",
+      "fp20": "Focusing too much on victimhood holds people back more than actual discrimination does.",
+      "fp21": "Anyone should be free to dress, act, and identify however they want without government interference.",
+      "fp22": "Breaking traditional gender rules should be celebrated as an act of personal freedom.",
+      "fp23": "Men and women bring naturally different strengths to a relationship that complement each other.",
+      "fp24": "Traditional family values with a mother and father remain the healthiest foundation for raising kids.",
+      "fp25": "The wage gap mostly comes down to personal choices about careers, dangerous jobs, and time off for kids.",
+      "fp26": "A marriage where the husband is the primary breadwinner and the wife manages the home can be deeply fulfilling.",
+      "fp27": "Trying to force a 50/50 gender balance in every single job goes against natural preferences.",
+      "fp28": "Real empowerment comes from education and financial independence, not political slogans.",
+      "fp29": "What we think of as 'masculine' or 'feminine' is mostly created by culture, not hardwired biology.",
+      "fp30": "Society should warmly accept people whose gender expression falls outside traditional male or female boxes.",
+      "fp31": "Telling boys 'big boys don't cry' or girls 'act like a lady' damages emotional health.",
+      "fp32": "Schools and workplaces should respect people's chosen names and pronouns without debate.",
+      "fp33": "Biological sex is simple science—male and female—and it cannot be changed.",
+      "fp34": "Men and women have distinct biological callings that fit together naturally.",
+      "fp35": "Mothers and fathers bring fundamentally different, irreplaceable things to raising a child.",
+      "fp36": "Traditional gender roles have survived for centuries because they provide stability and clarity."
     },
     "gender-equality": {
       "ge01": "Corporations should be legally required to publish detailed gender pay gap audits annually.",
@@ -2293,31 +2293,31 @@
     "s3_body": "For inquiries regarding advertising, sponsorship opportunities, or editorial collaborations, contact our business desk at {contact}."
   },
   "home": {
-    "hero_title": "Understand yourself. Understand the people around you.",
-    "hero_body": "Standpointly builds measuring instruments, not quizzes. Each test asks you to react to a set of statements, scores them on two independent axes, and shows you where you land — with every weight and every formula published, so you can check the result instead of just believing it.",
-    "hero_cta": "Take the political test",
-    "hero_secondary": "How the scoring works",
-    "tests_title": "The Assessment Fields",
-    "tests_body": "Standpointly instruments are organized into 5 scientific fields. Discover where you stand across personality, relationships, beliefs, values, wellbeing, and work.",
-    "status_available": "Available",
+    "hero_title": "Discover where you stand. Share where you land.",
+    "hero_body": "Free, transparent 2D compass tests that map your personality, relationships, values, and career. No sign-up, no paywalls, and results designed to compare and share with friends.",
+    "hero_cta": "Take the Political Compass",
+    "hero_secondary": "Explore All Tests",
+    "tests_title": "Explore All Tests",
+    "tests_body": "Choose a test below to discover where you land across personality, relationships, politics, wellbeing, and work.",
+    "status_available": "Ready to take",
     "status_planned": "In development",
-    "card_meta": "{count} statements · about {minutes} min",
-    "card_cta": "Start",
+    "card_meta": "{count} questions · ~{minutes} min",
+    "card_cta": "Start test",
     "card_unavailable": "In development",
-    "how_title": "How a test works",
-    "how_1_title": "Answer the statements",
-    "how_1_body": "One statement per screen, five options, no time limit. There is no right answer and no trick question — a statement you find easy to agree with is doing exactly as much work as one you don't.",
-    "how_2_title": "Two independent axes",
-    "how_2_body": "Each statement carries a weight on one or both axes. Your answers are summed, normalised, and placed on a grid. Because the weights on each axis cancel to zero, agreeing with everything puts you in the middle rather than anywhere flattering.",
-    "how_3_title": "A position, with its reasoning",
-    "how_3_body": "You get two numbers, a named region, and a description that includes the strongest objection to the position you landed in. The result lives in its own link, so you can keep it, share it, or throw it away.",
-    "why_title": "Why trust this one",
-    "why_1_title": "The method is published",
-    "why_1_body": "Every formula, every constant and every known limitation is on the method page — including the fact that the current calibration is provisional until real pilot data exists.",
-    "why_2_title": "Nothing is collected",
-    "why_2_body": "No account, no database, no analytics, no cookies. Your answers stay in your browser and your result exists only in the URL you were given.",
-    "why_3_title": "It is not a horoscope",
-    "why_3_body": "Nine named regions cannot contain the real variety of political belief, and the name you get is a label for a neighbourhood rather than a description of you. The site says so on the result page too."
+    "how_title": "How it works",
+    "how_1_title": "React to everyday statements",
+    "how_1_body": "One statement per screen, 5 simple options, no timer. Go with your gut instinct — there are no right or wrong answers.",
+    "how_2_title": "Mapped on two independent axes",
+    "how_2_body": "Your responses place you on an interactive 2D compass map, capturing real nuances that standard 1-dimensional quizzes miss.",
+    "how_3_title": "Rich archetypes you can share",
+    "how_3_body": "Get your personalized archetype, key strengths, blindspots, and an instant share card to compare standpoints with friends.",
+    "why_title": "Why Standpointly?",
+    "why_1_title": "100% Transparent Scoring",
+    "why_1_body": "Every axis, weight, and calculation is openly explained. No black-box algorithms or hidden scoring tricks.",
+    "why_2_title": "Completely Private & Free",
+    "why_2_body": "No email gates, no accounts, and no tracking. Your answers stay private in your browser, and results are instant.",
+    "why_3_title": "Built to Compare & Share",
+    "why_3_body": "Human beliefs and personalities are nuanced. Our 2D maps let you visualize your standpoint and compare side-by-side with friends or partners."
   },
   "field": {
     "all": "All Fields",
@@ -2385,164 +2385,164 @@
   },
   "planned": {
     "big-five": {
-      "title": "Big Five",
-      "summary": "The foundational five-factor model of personality, measuring openness, conscientiousness, extraversion, agreeableness, and neuroticism."
+      "title": "The Big Five Personality Test",
+      "summary": "Discover your core personality blueprint across openness, emotional resilience, curiosity, and drive."
     },
     "dark-triad": {
-      "title": "Dark Triad",
-      "summary": "Subclinical personality assessment measuring Machiavellian strategy, narcissism, and psychopathic traits."
+      "title": "What's Your Dark Side? (Dark Triad Test)",
+      "summary": "Explore your ego, strategic mind, and appetite for rule-breaking — honest, insightful, and judgment-free."
     },
     "empathy": {
-      "title": "Empathy",
-      "summary": "Differentiates between cognitive perspective-taking and affective emotional resonance in interpersonal situations."
+      "title": "How Empathetic Are You?",
+      "summary": "Do you feel what other people feel, or do you understand how they think? Discover your empathy style."
     },
     "emotional-intelligence": {
-      "title": "Emotional Intelligence",
-      "summary": "Evaluates emotional self-awareness, cognitive regulation, social attunement, and relationship management."
+      "title": "What's Your Emotional Intelligence (EQ)?",
+      "summary": "See how well you read the room, understand your feelings, and navigate high-stakes moments."
     },
     "self-esteem": {
-      "title": "Self-Esteem",
-      "summary": "Explores core self-worth, emotional stability, self-compassion, and authentic vs contingent validation."
+      "title": "How Healthy Is Your Self-Esteem?",
+      "summary": "Is your confidence rooted from within, or does it depend on external success and others' approval?"
     },
     "human-behavior": {
-      "title": "Human Behavior",
-      "summary": "Analyzes fundamental motivational drivers, decision-making heuristics, and social behavioral instincts."
+      "title": "Human Behavior & Motivation",
+      "summary": "Discover your fundamental motivational drivers, decision instincts, and social behaviors."
     },
     "attachment": {
-      "title": "Attachment Style",
-      "summary": "How you form and hold close relationships, across the two dimensions the research literature actually uses: avoidance and anxiety."
+      "title": "What's Your Attachment Style?",
+      "summary": "How do you love, connect, and handle closeness in relationships? Check your style across anxiety and avoidance."
     },
     "attachment-style": {
-      "title": "Attachment Style",
-      "summary": "How you form and hold close relationships, across the two dimensions the research literature actually uses: avoidance and anxiety."
+      "title": "What's Your Attachment Style?",
+      "summary": "How do you love, connect, and handle closeness in relationships? Check your style across anxiety and avoidance."
     },
     "love-language": {
-      "title": "Love Language",
-      "summary": "Identifies your primary and secondary modalities for expressing and receiving relational affection."
+      "title": "What's Your Love Language?",
+      "summary": "Find out how you express and receive affection — words, touch, quality time, and everyday devotion."
     },
     "compatibility": {
-      "title": "Relationship Compatibility",
-      "summary": "Assesses interpersonal complementarity, friction dynamics, and mutual values alignment."
+      "title": "What Do You Need in a Relationship? (Compatibility Test)",
+      "summary": "Discover your relational rhythm — what you need in a partner for emotional closeness, independence, and daily life."
     },
     "relationship-compatibility": {
-      "title": "Relationship Compatibility",
-      "summary": "Assesses interpersonal complementarity, friction dynamics, and mutual values alignment."
+      "title": "What Do You Need in a Relationship? (Compatibility Test)",
+      "summary": "Discover your relational rhythm — what you need in a partner for emotional closeness, independence, and daily life."
     },
     "relationship-anxiety": {
-      "title": "Relationship Anxiety",
-      "summary": "Measures relationship hypervigilance, reassurance seeking, and attachment security."
+      "title": "Relationship Anxiety Test: How Secure Are You in Love?",
+      "summary": "Do you overthink texts, fear being abandoned, or crave constant reassurance? Check your security score."
     },
     "boundaries": {
-      "title": "Relationship Boundaries",
-      "summary": "Measures boundary permeability, interpersonal assertiveness, and healthy emotional differentiation."
+      "title": "How Strong Are Your Boundaries?",
+      "summary": "Can you say no without feeling guilty? Discover where you draw the line with friends, family, and work."
     },
     "relationship-boundaries": {
-      "title": "Relationship Boundaries",
-      "summary": "Measures boundary permeability, interpersonal assertiveness, and healthy emotional differentiation."
+      "title": "How Strong Are Your Boundaries?",
+      "summary": "Can you say no without feeling guilty? Discover where you draw the line with friends, family, and work."
     },
     "communication": {
-      "title": "Communication Style",
-      "summary": "Examines conflict navigation styles, expressive clarity, receptivity, and listening habits."
+      "title": "What's Your Communication Style?",
+      "summary": "How do you express feelings, handle disagreements, and listen when emotions run high?"
     },
     "political": {
-      "title": "Political Ideology",
-      "summary": "Where you sit between collective provision vs private enterprise, and social authority vs liberty."
+      "title": "The Political Compass: Where Do You Stand?",
+      "summary": "Where do you land politically? Map your economic and social views on a clean 2D grid — free from partisan spin."
     },
     "political-ideology": {
-      "title": "Political Ideology",
-      "summary": "Where you sit between collective provision vs private enterprise, and social authority vs liberty."
+      "title": "The Political Compass: Where Do You Stand?",
+      "summary": "Where do you land politically? Map your economic and social views on a clean 2D grid — free from partisan spin."
     },
     "feminism": {
-      "title": "Feminist Perspectives",
-      "summary": "Measures nuanced standpoints on gender equality, gender roles, institutional structures, and personal autonomy across multidimensional axes."
+      "title": "How Much of a Feminist Are You?",
+      "summary": "Where do you stand on modern feminism, equality, gender roles, and social change? Take the quiz to find your archetype."
     },
     "feminist-perspectives": {
-      "title": "Feminist Perspectives",
-      "summary": "Measures nuanced standpoints on gender equality, gender roles, institutional structures, and personal autonomy across multidimensional axes."
+      "title": "How Much of a Feminist Are You?",
+      "summary": "Where do you stand on modern feminism, equality, gender roles, and social change? Take the quiz to find your archetype."
     },
     "moral-foundations": {
-      "title": "Moral Foundations",
-      "summary": "Scores your moral reasoning across care, fairness, loyalty, authority, sanctity, and liberty."
+      "title": "What Are Your Core Moral Foundations?",
+      "summary": "What truly drives your sense of right and wrong? Discover which evolutionary values guide your moral instincts."
     },
     "moral": {
-      "title": "Moral Foundations",
-      "summary": "Which moral intuitions you weigh most heavily when they pull against each other."
+      "title": "What Are Your Core Moral Foundations?",
+      "summary": "What truly drives your sense of right and wrong? Discover which evolutionary values guide your moral instincts."
     },
     "gender": {
-      "title": "Gender Equality",
-      "summary": "Explores standpoints on gender norms, occupational parity, and domestic role expectations."
+      "title": "Where Do You Stand on Gender Equality?",
+      "summary": "Explore your perspectives on workplace parity, shared home life, leadership, and cultural expectations."
     },
     "gender-equality": {
-      "title": "Gender Equality",
-      "summary": "Explores standpoints on gender norms, occupational parity, and domestic role expectations."
+      "title": "Where Do You Stand on Gender Equality?",
+      "summary": "Explore your perspectives on workplace parity, shared home life, leadership, and cultural expectations."
     },
     "individualism-collectivism": {
-      "title": "Individualism vs Collectivism",
-      "summary": "Examines the balance between individual autonomy, personal merit, and collective responsibility."
+      "title": "Individualist or Collectivist: How Do You See Society?",
+      "summary": "Are you driven by personal freedom and self-reliance, or community duty and shared purpose?"
     },
     "social-values": {
-      "title": "Social Values",
-      "summary": "Measures positions on societal cohesion, traditional norms versus progressive reform, and collective duties."
+      "title": "Social Values & Culture",
+      "summary": "Where do you stand on tradition versus progress, civic duties, and societal cohesion?"
     },
     "stress": {
-      "title": "Stress",
-      "summary": "Evaluates cognitive strain appraisal, everyday tension patterns, and personal stress tolerance (self-reflection instrument; non-clinical)."
+      "title": "How Stressed Are You Really?",
+      "summary": "Find out how much daily pressure you're carrying, and whether your mind and body have the buffer to handle it."
     },
     "burnout": {
-      "title": "Burnout",
-      "summary": "Measures chronic work exhaustion, mental cynicism, depersonalisation, and perceived efficacy."
+      "title": "Are You Burnt Out? (Workplace Burnout Test)",
+      "summary": "Are you just tired, or truly burnt out? Check your emotional exhaustion, cynicism, and day-to-day energy reserves."
     },
     "resilience": {
-      "title": "Resilience",
-      "summary": "Measures psychological recovery velocity, cognitive adaptability, and constructive coping following adversity."
+      "title": "How Resilient Are You Under Pressure?",
+      "summary": "How fast do you bounce back when life knocks you down? Test your mental toughness and recovery speed."
     },
     "emotional-regulation": {
-      "title": "Emotional Regulation",
-      "summary": "Assesses cognitive reappraisal strategies, expressive suppression habits, and distress tolerance."
+      "title": "How Do You Handle Tough Emotions?",
+      "summary": "Do you reframe problems, bottle things up, or express what you feel? Discover your emotional coping style."
     },
     "procrastination": {
-      "title": "Procrastination",
-      "summary": "Analyzes task aversion, temporal discounting, perfectionistic hesitation, and decisional delay."
+      "title": "Why Do You Procrastinate?",
+      "summary": "Is it perfectionism, task dread, or the thrill of the last minute? Discover what's holding you back."
     },
     "career": {
-      "title": "Career Personality",
-      "summary": "Uncovers primary vocational anchors, motivational incentives, and occupational fulfillment drivers."
+      "title": "What Career Path Truly Fits You?",
+      "summary": "Discover your core vocational calling — whether you're an independent craftsman, builder, leader, or visionary."
     },
     "career-personality": {
-      "title": "Career Personality",
-      "summary": "Uncovers primary vocational anchors, motivational incentives, and occupational fulfillment drivers."
+      "title": "What Career Path Truly Fits You?",
+      "summary": "Discover your core vocational calling — whether you're an independent craftsman, builder, leader, or visionary."
     },
     "leadership": {
-      "title": "Leadership Style",
-      "summary": "Identifies dominant leadership posture across visionary, directive, servant, and situational leadership models."
+      "title": "What Kind of Leader Are You?",
+      "summary": "Discover your leadership style — whether you lead with bold vision, hands-on execution, or by empowering your team."
     },
     "leadership-style": {
-      "title": "Leadership Style",
-      "summary": "Identifies dominant leadership posture across visionary, directive, servant, and situational leadership models."
+      "title": "What Kind of Leader Are You?",
+      "summary": "Discover your leadership style — whether you lead with bold vision, hands-on execution, or by empowering your team."
     },
     "disc": {
-      "title": "DISC",
+      "title": "DISC Work Behavior Style",
       "summary": "Workplace behavioral profiling across Dominance, Influence, Steadiness, and Conscientiousness."
     },
     "riasec": {
-      "title": "RIASEC",
-      "summary": "Holland Occupational Themes categorizing Realistic, Investigative, Artistic, Social, Enterprising, and Conventional interests."
+      "title": "RIASEC Career Interests",
+      "summary": "Holland vocational themes across Realistic, Investigative, Artistic, Social, Enterprising, and Conventional fields."
     },
     "work-style": {
-      "title": "Work Style",
-      "summary": "Determines optimal workflow pace, autonomy preferences, collaboration needs, and problem-solving rhythm."
+      "title": "What's Your Work Style?",
+      "summary": "Do you thrive in deep focus or team collaboration? Fast-paced sprints or steady, organized systems?"
     },
     "career-values": {
-      "title": "Career Values",
-      "summary": "Identifies core vocational values across intellectual challenge, security, impact, autonomy, and mastery."
+      "title": "What Do You Value Most in Your Career?",
+      "summary": "Is it money and security, creative freedom, prestige, or work-life balance? Rank what actually drives you."
     },
     "decision-making-style": {
-      "title": "Decision-Making Style",
-      "summary": "Analyzes analytical, intuitive, collaborative, and pragmatic approaches to strategic decisions."
+      "title": "How Do You Make Big Decisions?",
+      "summary": "Are you analytical and data-driven, gut-instinct oriented, or consensus-seeking? Find your decision style."
     },
     "interpersonal": {
-      "title": "Interpersonal style",
-      "summary": "How you behave in groups, and what other people are likely to read that behaviour as."
+      "title": "How Do People See You in Groups?",
+      "summary": "Discover your social posture — how you communicate, contribute, and relate in group settings."
     }
   },
   "theme": {

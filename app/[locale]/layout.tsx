@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Standpointly",
   },
   description:
-    "Discover where you stand. A research-informed psychometric assessment platform structured across 5 scientific fields: Personality, Relationships, Beliefs & Values, Wellbeing, and Work & Career.",
+    "Discover where you stand. Free, transparent 2D compass tests that map your personality, relationships, values, and career — built to share and compare.",
   keywords: [
     "psychometrics 2D grid",
     "personality test",

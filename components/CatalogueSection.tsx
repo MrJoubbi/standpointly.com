@@ -59,36 +59,36 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
     <section id="catalogue" className="bg-canvas py-16 sm:py-24 border-t border-line">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         
-        {/* Section Header: Academic, Editorial & Authoritative */}
+        {/* Section Header: Clean, Engaging & Inviting */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10 border-b border-line">
           <div>
             <div className="flex items-center gap-3">
-              <span className="font-mono text-xs font-semibold tracking-(--tracking-plate) text-accent uppercase">
-                Battery Architecture
+              <span className="font-mono text-xs font-semibold tracking-wider text-accent uppercase">
+                Interactive 2D Compasses
               </span>
               <span className="text-line-strong">/</span>
               <span className="font-mono text-xs text-muted tracking-wider uppercase">
-                5 Research Fields · {totalInstruments} Standard Instruments
+                5 Categories · {totalAvailable} Free Tests
               </span>
             </div>
             <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-ink">
-              The Assessment Fields
+              Browse All Compass Tests
             </h2>
             <p className="mt-3 max-w-[68ch] text-[16px] sm:text-[17px] leading-[1.65] text-muted">
-              {t("home.tests_body")}
+              Discover where you land across personality, relationships, values, wellbeing, and work. Every test is 100% free, private, and gives you a visual 2D compass result to share and compare.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-4 lg:self-end shrink-0">
             <div className="flex items-center gap-6 rounded-xl border border-line bg-surface px-5 py-3 text-xs">
               <div>
-                <div className="font-mono text-[10px] uppercase text-muted tracking-wider">Operational</div>
-                <div className="text-base font-bold text-ink">{totalAvailable} Instruments</div>
+                <div className="font-mono text-[10px] uppercase text-muted tracking-wider">Ready to Take</div>
+                <div className="text-base font-bold text-accent">{totalAvailable} Free Tests</div>
               </div>
               <div className="h-7 w-px bg-line" />
               <div>
-                <div className="font-mono text-[10px] uppercase text-muted tracking-wider">In Development</div>
-                <div className="text-base font-bold text-ink">{totalInstruments - totalAvailable} Instruments</div>
+                <div className="font-mono text-[10px] uppercase text-muted tracking-wider">Privacy</div>
+                <div className="text-base font-bold text-ink">100% Anonymous</div>
               </div>
             </div>
           </div>
@@ -222,10 +222,10 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
                 {/* 11. Exact Field Header Hierarchy */}
                 <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 pb-6 border-b border-line">
                   <div>
-                    {/* Line 1: FIELD 01 · 5 STANDARD INSTRUMENTS */}
+                    {/* Line 1: Category Tag */}
                     <div className="flex items-center gap-2.5">
                       <span className="font-mono text-xs font-bold text-accent uppercase tracking-wider">
-                        FIELD {cluster.code} · {cluster.tests.length} STANDARD INSTRUMENTS
+                        CATEGORY {cluster.code} · {cluster.tests.length} Tests
                       </span>
                     </div>
 
@@ -299,20 +299,13 @@ function StandardInstrumentCard({
   const cardContent = (
     <div className="flex flex-col justify-between h-full">
       <div>
-        {/* Top line with code and status */}
+        {/* Top line with time and category badge */}
         <div className="flex items-center justify-between gap-2">
-          <span className="font-mono text-[11px] font-semibold tracking-wider text-muted">
-            CODE: {test.code}
+          <span className="font-mono text-[11px] font-medium text-muted">
+            {isAvailable ? `~${test.minutes} min · ${test.questionCount} questions` : "~4 min · 2D Compass"}
           </span>
-          <span
-            className={[
-              "rounded px-2 py-0.5 font-mono text-[10px] font-bold tracking-wider uppercase",
-              isAvailable
-                ? "bg-accent text-on-accent"
-                : "bg-line/60 text-muted",
-            ].join(" ")}
-          >
-            {isAvailable ? "STANDARD INSTRUMENT" : "IN DEVELOPMENT"}
+          <span className="rounded px-2 py-0.5 font-mono text-[10px] font-bold tracking-wider uppercase bg-accent/10 text-accent">
+            2D Compass
           </span>
         </div>
 
@@ -329,23 +322,12 @@ function StandardInstrumentCard({
 
       {/* Footer info and CTA */}
       <div className="mt-6 pt-4 border-t border-line/60 flex items-center justify-between text-[12px]">
-        {isAvailable ? (
-          <>
-            <span className="font-mono text-[11px] text-muted">
-              {test.questionCount} statements · ~{test.minutes}m
-            </span>
-            <span className="inline-flex items-center gap-1.5 font-semibold text-accent group-hover:translate-x-0.5 transition-transform">
-              Begin Test <ArrowRight className="h-3.5 w-3.5" />
-            </span>
-          </>
-        ) : (
-          <div className="flex items-center justify-between w-full font-mono text-[11px] text-muted">
-            <span>Research Battery</span>
-            <span className="inline-flex items-center gap-1 text-muted/80 group-hover:text-ink transition-colors">
-              Instrument Spec <ArrowRight className="h-3 w-3" />
-            </span>
-          </div>
-        )}
+        <span className="font-mono text-[11px] text-muted">
+          Instant visual archetype
+        </span>
+        <span className="inline-flex items-center gap-1.5 font-semibold text-accent group-hover:translate-x-0.5 transition-transform">
+          Take Test <ArrowRight className="h-3.5 w-3.5" />
+        </span>
       </div>
     </div>
   );
