@@ -87,8 +87,8 @@ export function CatalogueSection({ clusters, locale }: CatalogueSectionProps) {
               </div>
               <div className="h-7 w-px bg-line" />
               <div>
-                <div className="font-mono text-[10px] uppercase text-muted tracking-wider">Privacy</div>
-                <div className="text-base font-bold text-ink">100% Anonymous</div>
+                <div className="font-mono text-[10px] uppercase text-muted tracking-wider">Categories</div>
+                <div className="text-base font-bold text-ink">5 Fields</div>
               </div>
             </div>
           </div>

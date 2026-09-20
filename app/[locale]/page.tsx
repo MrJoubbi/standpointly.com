@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowRight, Flame, Star } from "lucide-react";
+import { ArrowRight, Flame } from "lucide-react";
 
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -13,39 +13,39 @@ const SITE_URL = process.env.SITE_URL ?? "https://standpointly.com";
 const TRENDING_CONFIG = [
   {
     id: "political",
-    tag: "🔥 #1 Most Popular",
+    tag: "⭐ Flagship Compass",
     tagStyle: "bg-red-500/10 text-red-600 dark:text-red-400 border-red-500/20",
-    completions: "210k completed",
+    axis: "Economic vs. Social",
   },
   {
     id: "feminist-perspectives",
-    tag: "⚡ Trending Now",
+    tag: "⚡ Trending Topic",
     tagStyle: "bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/20",
-    completions: "85k completed",
+    axis: "Gender & Society",
   },
   {
     id: "attachment",
-    tag: "❤️ Relationship #1",
+    tag: "❤️ Dating & Relationships",
     tagStyle: "bg-pink-500/10 text-pink-600 dark:text-pink-400 border-pink-500/20",
-    completions: "64k completed",
+    axis: "Anxiety vs. Avoidance",
   },
   {
     id: "burnout",
     tag: "💼 Work & Energy",
     tagStyle: "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20",
-    completions: "48k completed",
+    axis: "Exhaustion vs. Cynicism",
   },
   {
     id: "dark-triad",
-    tag: "👁️ Most Shared",
+    tag: "👁️ Personality Spectrum",
     tagStyle: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20",
-    completions: "39k completed",
+    axis: "Ego & Strategy",
   },
   {
     id: "love-language",
-    tag: "💌 Couples Favorite",
+    tag: "💌 Couples & Connection",
     tagStyle: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20",
-    completions: "52k completed",
+    axis: "Affection Modalities",
   },
 ];
 
@@ -95,19 +95,7 @@ export default async function HomePage({
         {/* Hero */}
         <section className="mx-auto max-w-5xl px-4 pt-2 pb-10 sm:px-6 sm:pt-4 sm:pb-12">
           <div className="rounded-[24px] sm:rounded-[28px] bg-tint px-6 py-10 sm:px-14 sm:py-16 border border-line/40">
-            {/* Social proof pill */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-line bg-surface/80 px-3.5 py-1 text-xs font-medium text-ink shadow-2xs backdrop-blur-xs">
-              <span className="flex items-center text-amber-500">
-                <Star className="h-3.5 w-3.5 fill-current" />
-              </span>
-              <span>4.9 / 5 Rating</span>
-              <span className="text-line-strong">·</span>
-              <span className="text-muted">450,000+ Completed</span>
-              <span className="text-line-strong">·</span>
-              <span className="font-semibold text-accent">100% Free & Private</span>
-            </div>
-
-            <h1 className="display-optical mt-5 max-w-[18ch] font-display text-[2.1rem] font-bold leading-[1.1] text-ink sm:text-[3.25rem] sm:font-extrabold sm:leading-[1.08]">
+            <h1 className="display-optical max-w-[18ch] font-display text-[2.1rem] font-bold leading-[1.1] text-ink sm:text-[3.25rem] sm:font-extrabold sm:leading-[1.08]">
               {t("home.hero_title")}
             </h1>
             <p className="mt-4 sm:mt-5 max-w-[54ch] text-[15px] sm:text-lg leading-[1.6] text-muted">
@@ -154,7 +142,7 @@ export default async function HomePage({
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-muted font-mono">
-              Over 450,000 standpoints mapped & shared
+              Visual 2D archetype maps — compare side-by-side with friends
             </p>
           </div>
 
@@ -177,7 +165,7 @@ export default async function HomePage({
                         {item.tag}
                       </span>
                       <span className="text-[11px] font-mono text-muted">
-                        {item.completions}
+                        {item.axis}
                       </span>
                     </div>
 
